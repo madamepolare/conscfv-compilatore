@@ -61,6 +61,26 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
     }
   }, [showFields])
 
+  // Initialize dropdowns with existing data
+  useEffect(() => {
+    if (data && insegnamento.areaAFAM) {
+      const sads = filterSADByArea(data, insegnamento.areaAFAM)
+      setSadOptions(sads)
+      
+      if (insegnamento.sad) {
+        const profili = filterProfili(data, insegnamento.sad)
+        const vecchiSAD = filterVecchiSAD(data, insegnamento.sad)
+        setProfiliOptions(profili)
+        setVecchiSADOptions(vecchiSAD)
+        
+        if (insegnamento.vecchioSAD) {
+          const campi = filterCampiDisciplinari(data, insegnamento.vecchioSAD)
+          setCampiDisciplinariOptions(campi)
+        }
+      }
+    }
+  }, [data, insegnamento.areaAFAM, insegnamento.sad, insegnamento.vecchioSAD])
+
   const handleAreaChange = (e) => {
     const area = e.target.value
     
@@ -167,7 +187,10 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
 
   return (
     <div 
-      ref={setNodeRef}
+      ref={(node) => {
+        setNodeRef(node)
+        cardRef.current = node
+      }}
       style={style}
       id={`insegnamento-${insegnamento.id}`} 
       className={`insegnamento-card ${collapsed ? 'collapsed' : ''} ${isDragging ? 'dragging' : ''}`}
