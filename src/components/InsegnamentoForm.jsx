@@ -338,7 +338,8 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                   readOnly
                 />
               </div>
-SWITCHER: Insegnamento Libero vs Campo Disciplinare */}
+
+              {/* SWITCHER: Insegnamento Libero vs Campo Disciplinare */}
               <div className="form-group full-width">
                 <div className="switcher-container">
                   <label className="switcher-label">Tipo di insegnamento</label>
