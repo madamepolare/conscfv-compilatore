@@ -17,6 +17,7 @@ const AREA_OPTIONS = ['ABA', 'AND', 'ANAD', 'ISSM', 'ISIA']
 export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, onRemove }) {
   const [showFields, setShowFields] = useState(!!insegnamento.areaAFAM)
   const [collapsed, setCollapsed] = useState(false)
+  const [isInsegnamentoLibero, setIsInsegnamentoLibero] = useState(insegnamento.tipoInsegnamento !== 'campoDisciplinare')
   const [sadOptions, setSadOptions] = useState([])
   const [profiliOptions, setProfiliOptions] = useState([])
   const [vecchiSADOptions, setVecchiSADOptions] = useState([])
@@ -337,32 +338,72 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                   readOnly
                 />
               </div>
-
-              {/* CAMPO 8: Insegnamento */}
+SWITCHER: Insegnamento Libero vs Campo Disciplinare */}
               <div className="form-group full-width">
-                <label>Insegnamento</label>
-                <textarea
-                  value={insegnamento.insegnamento}
-                  onChange={(e) => onUpdate(insegnamento.id, { insegnamento: e.target.value })}
-                  className="form-control"
-                  rows="3"
-                />
+                <div className="switcher-container">
+                  <label className="switcher-label">Tipo di insegnamento</label>
+                  <div className="switcher-toggle">
+                    <button
+                      type="button"
+                      className={`toggle-btn ${isInsegnamentoLibero ? 'active' : ''}`}
+                      onClick={() => {
+                        setIsInsegnamentoLibero(true)
+                        onUpdate(insegnamento.id, { 
+                          tipoInsegnamento: 'libero',
+                          campoDisciplinare: '' 
+                        })
+                      }}
+                    >
+                      Insegnamento Libero
+                    </button>
+                    <button
+                      type="button"
+                      className={`toggle-btn ${!isInsegnamentoLibero ? 'active' : ''}`}
+                      onClick={() => {
+                        setIsInsegnamentoLibero(false)
+                        onUpdate(insegnamento.id, { 
+                          tipoInsegnamento: 'campoDisciplinare',
+                          insegnamento: '' 
+                        })
+                      }}
+                    >
+                      Campo Disciplinare
+                    </button>
+                  </div>
+                </div>
               </div>
 
-              {/* CAMPO 9: Campo disciplinare */}
-              <div className="form-group">
-                <label>Campo disciplinare 1</label>
-                <select
-                  value={insegnamento.campoDisciplinare}
-                  onChange={(e) => onUpdate(insegnamento.id, { campoDisciplinare: e.target.value })}
-                  className="form-control"
-                  disabled={campiDisciplinariOptions.length === 0}
-                >
-                  <option value="">Seleziona Campo Disciplinare</option>
-                  {campiDisciplinariOptions.map(campo => (
-                    <option key={campo} value={campo}>{campo}</option>
-                  ))}
-                </select>
+              {/* CAMPO 8: Insegnamento (condizionale) */}
+              {isInsegnamentoLibero && (
+                <div className="form-group full-width">
+                  <label>Insegnamento</label>
+                  <textarea
+                    value={insegnamento.insegnamento}
+                    onChange={(e) => onUpdate(insegnamento.id, { insegnamento: e.target.value })}
+                    className="form-control"
+                    rows="3"
+                    placeholder="Inserisci nome insegnamento"
+                  />
+                </div>
+              )}
+
+              {/* CAMPO 9: Campo disciplinare (condizionale) */}
+              {!isInsegnamentoLibero && (
+                <div className="form-group full-width">
+                  <label>Campo Disciplinare</label>
+                  <select
+                    value={insegnamento.campoDisciplinare}
+                    onChange={(e) => onUpdate(insegnamento.id, { campoDisciplinare: e.target.value })}
+                    className="form-control"
+                    disabled={campiDisciplinariOptions.length === 0}
+                  >
+                    <option value="">Seleziona Campo Disciplinare</option>
+                    {campiDisciplinariOptions.map(campo => (
+                      <option key={campo} value={campo}>{campo}</option>
+                    ))}
+                  </select>
+                </div>
+              )}lect>
               </div>
             </div>
           )}

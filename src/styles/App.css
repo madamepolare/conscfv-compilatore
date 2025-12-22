@@ -413,6 +413,69 @@ textarea.form-control {
   min-height: 80px;
 }
 
+/* Switcher Toggle */
+.switcher-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.switcher-label {
+  font-weight: 500;
+  color: #666;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.switcher-toggle {
+  display: flex;
+  gap: 0.5rem;
+  background: #f0f0f0;
+  padding: 0.25rem;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  white-space: nowrap;
+}
+
+.toggle-btn:hover {
+  color: #292929;
+}
+
+.toggle-btn.active {
+  background: white;
+  color: #36348E;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .switcher-toggle {
+    width: 100%;
+  }
+  
+  .toggle-btn {
+    flex: 1;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.75rem;
+  }
+}
+
 /* Compiled View */
 .compiled-view {
   flex: 1;
