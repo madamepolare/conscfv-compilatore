@@ -403,8 +403,7 @@ SWITCHER: Insegnamento Libero vs Campo Disciplinare */}
                     ))}
                   </select>
                 </div>
-              )}lect>
-              </div>
+              )}
             </div>
           )}
         </div>

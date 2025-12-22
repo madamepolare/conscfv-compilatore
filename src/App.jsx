@@ -45,6 +45,7 @@ function App() {
       denominazioneVecchioSAD: '',
       insegnamento: '',
       campoDisciplinare: '',
+      tipoInsegnamento: 'libero',
       collapsed: false
     }
     setInsegnamenti([...insegnamenti, newInsegnamento])
