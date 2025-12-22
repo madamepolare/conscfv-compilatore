@@ -74,7 +74,9 @@ export function filterCampiDisciplinari(data, sadVecchio) {
   
   const campiSet = new Set()
   filteredData.forEach(row => {
-    if (row['Campi disciplinari']) campiSet.add(row['Campi disciplinari'])
+    if (row['Campi disciplinari']) {
+      campiSet.add(row['Campi disciplinari'])
+    }
   })
   
   return Array.from(campiSet).sort()

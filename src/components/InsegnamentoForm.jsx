@@ -63,21 +63,25 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
 
   // Initialize dropdowns with existing data
   useEffect(() => {
-    if (data && insegnamento.areaAFAM) {
+    if (!data || data.length === 0) return
+    
+    if (insegnamento.areaAFAM) {
       const sads = filterSADByArea(data, insegnamento.areaAFAM)
       setSadOptions(sads)
+      setShowFields(true)
       
       if (insegnamento.sad) {
         const profili = filterProfili(data, insegnamento.sad)
         const vecchiSAD = filterVecchiSAD(data, insegnamento.sad)
         setProfiliOptions(profili)
         setVecchiSADOptions(vecchiSAD)
-        
-        if (insegnamento.vecchioSAD) {
-          const campi = filterCampiDisciplinari(data, insegnamento.vecchioSAD)
-          setCampiDisciplinariOptions(campi)
-        }
       }
+    }
+    
+    // Initialize campi disciplinari separately to ensure it updates
+    if (insegnamento.vecchioSAD) {
+      const campi = filterCampiDisciplinari(data, insegnamento.vecchioSAD)
+      setCampiDisciplinariOptions(campi)
     }
   }, [data, insegnamento.areaAFAM, insegnamento.sad, insegnamento.vecchioSAD])
 
