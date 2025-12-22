@@ -1,0 +1,42 @@
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import InsegnamentoForm from './InsegnamentoForm'
+
+export default function InsegnamentiList({ insegnamenti, data, onUpdate, onRemove, onToggleCollapse }) {
+  const listRef = useRef(null)
+
+  useEffect(() => {
+    if (listRef.current) {
+      const items = listRef.current.querySelectorAll('.insegnamento-card')
+      gsap.fromTo(items,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }
+      )
+    }
+  }, [insegnamenti.length])
+
+  if (insegnamenti.length === 0) {
+    return (
+      <div className="empty-state">
+        <p>Nessun insegnamento aggiunto.</p>
+        <p>Clicca su "+ Nuovo Insegnamento" per iniziare.</p>
+      </div>
+    )
+  }
+
+  return (
+    <div ref={listRef} className="insegnamenti-list">
+      {insegnamenti.map((insegnamento, index) => (
+        <InsegnamentoForm
+          key={insegnamento.id}
+          insegnamento={insegnamento}
+          index={index}
+          data={data}
+          onUpdate={onUpdate}
+          onRemove={onRemove}
+          onToggleCollapse={onToggleCollapse}
+        />
+      ))}
+    </div>
+  )
+}
