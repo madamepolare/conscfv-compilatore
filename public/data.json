@@ -7,10 +7,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM001",
     "SAD nuovo nome 2": "Arpa",
-    "Profili": null,
+    "Profili": "Arpa",
     "SAD vecchio 2": "CODI25",
     "SAD vecchio nome 2": "ACCOMPAGNAMENTO PIANISTICO",
-    "Campi disciplinari": "Lettura dello spartito",
+    "Campi disciplinari": "Accompagnamento pianistico",
     "ISTITUZIONI AFAM": "Accademia Nazionale d'Arte Drammatica \"Silvio d'Amico\""
   },
   {
@@ -21,10 +21,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM002",
     "SAD nuovo nome 2": "Chitarra",
-    "Profili": null,
+    "Profili": "Chitarra",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Anatomia artistica e rappresentazioni del corpo",
     "ISTITUZIONI AFAM": "Accademia Nazionale di Danza"
   },
   {
@@ -35,10 +35,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM003",
     "SAD nuovo nome 2": "Mandolino",
-    "Profili": null,
+    "Profili": "Mandolino",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica del repertorio vocale",
+    "Campi disciplinari": "Antropologia e sociologia delle arti, del design e dello spettacolo",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Bari"
   },
   {
@@ -49,10 +49,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM004",
     "SAD nuovo nome 2": "Contrabbasso",
-    "Profili": null,
+    "Profili": "Contrabbasso",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica dell'accompagnamento e della collaborazione al pianoforte",
+    "Campi disciplinari": "Applicazioni digitali per le arti e il design",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Bologna"
   },
   {
@@ -63,10 +63,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM005",
     "SAD nuovo nome 2": "Viola",
-    "Profili": null,
+    "Profili": "Viola",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea e di trasposizione tonale",
+    "Campi disciplinari": "Arpa",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Carrara"
   },
   {
@@ -77,10 +77,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM006",
     "SAD nuovo nome 2": "Violino",
-    "Profili": null,
+    "Profili": "Violino",
     "SAD vecchio 2": "COME03",
     "SAD vecchio nome 2": "ACUSTICA MUSICALE",
-    "Campi disciplinari": "Acustica degli spazi musicali",
+    "Campi disciplinari": "Arte del fumetto",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Catania"
   },
   {
@@ -91,10 +91,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM007",
     "SAD nuovo nome 2": "Violoncello",
-    "Profili": null,
+    "Profili": "Violoncello",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Acustica degli strumenti musicali",
+    "Campi disciplinari": "Arte del videogioco",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Catanzaro"
   },
   {
@@ -105,10 +105,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM008",
     "SAD nuovo nome 2": "Basso tuba",
-    "Profili": null,
+    "Profili": "Basso tuba",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Acustica musicale",
+    "Campi disciplinari": "Arteterapia",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Firenze"
   },
   {
@@ -119,10 +119,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM009",
     "SAD nuovo nome 2": "Clarinetto",
-    "Profili": null,
+    "Profili": "Clarinetto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Musica, media e tecnologie",
+    "Campi disciplinari": "Basso tuba",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Foggia"
   },
   {
@@ -133,10 +133,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM010",
     "SAD nuovo nome 2": "Corno",
-    "Profili": null,
+    "Profili": "Corno",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Psicoacustica musicale",
+    "Campi disciplinari": "Canto",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Frosinone"
   },
   {
@@ -147,10 +147,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM011",
     "SAD nuovo nome 2": "Fagotto",
-    "Profili": null,
+    "Profili": "Fagotto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Teorie della percezione sonora e musicale, teorie dell'ascolto",
+    "Campi disciplinari": "Canto per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Genova"
   },
   {
@@ -161,10 +161,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM012",
     "SAD nuovo nome 2": "Flauto",
-    "Profili": null,
+    "Profili": "Flauto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Teorie e tecniche della comunicazione audiovisiva e multimediale",
+    "Campi disciplinari": "Chitarra",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di L'Aquila"
   },
   {
@@ -175,10 +175,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM013",
     "SAD nuovo nome 2": "Oboe",
-    "Profili": null,
+    "Profili": "Oboe",
     "SAD vecchio 2": "CODI01",
     "SAD vecchio nome 2": "ARPA",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Clarinetto",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Lecce"
   },
   {
@@ -189,10 +189,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM014",
     "SAD nuovo nome 2": "Saxofono",
-    "Profili": null,
+    "Profili": "Saxofono",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Composizione",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Macerata"
   },
   {
@@ -203,10 +203,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM015",
     "SAD nuovo nome 2": "Tromba",
-    "Profili": null,
+    "Profili": "Tromba",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Composizione della danza, progettazione e realizzazione coreografica",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Milano"
   },
   {
@@ -220,7 +220,7 @@
     "Profili": "Trombone",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Composizione musicale elettroacustica e multimediale",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Napoli"
   },
   {
@@ -231,10 +231,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Eufonio",
+    "Profili": "Diritto delle arti",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Violoncello",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Palermo"
   },
   {
@@ -245,10 +245,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM017",
     "SAD nuovo nome 2": "Organo",
-    "Profili": null,
+    "Profili": "Organo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Composizione, strumentazione e direzione per orchestra di fiati",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Perugia"
   },
   {
@@ -259,10 +259,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM018",
     "SAD nuovo nome 2": "Pianoforte",
-    "Profili": null,
+    "Profili": "Pianoforte",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Contrabbasso",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Ravenna"
   },
   {
@@ -273,10 +273,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM019",
     "SAD nuovo nome 2": "Strumenti a percussione",
-    "Profili": null,
+    "Profili": "Strumenti a percussione",
     "SAD vecchio 2": "COMA01",
     "SAD vecchio nome 2": "ARPA RINASCIMENTALE E BAROCCA",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "Coreologia",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Reggio Calabria"
   },
   {
@@ -287,10 +287,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM020",
     "SAD nuovo nome 2": "Canto",
-    "Profili": null,
+    "Profili": "Canto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Corno",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Roma"
   },
   {
@@ -301,10 +301,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM021",
     "SAD nuovo nome 2": "Accompagnamento pianistico",
-    "Profili": null,
+    "Profili": "Accompagnamento pianistico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "Coro",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Sassari"
   },
   {
@@ -318,7 +318,7 @@
     "Profili": "Fisarmonica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Intavolature",
+    "Campi disciplinari": "Costume",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Torino"
   },
   {
@@ -329,10 +329,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Bandoneon",
+    "Profili": "Storia e teoria della comunicazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Urbino"
   },
   {
@@ -343,10 +343,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Armonica a bocca cromatica",
+    "Profili": "Tecniche della comunicazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Venezia"
   },
   {
@@ -360,7 +360,7 @@
     "Profili": "Arpa storica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Design della comunicazione",
     "ISTITUZIONI AFAM": "Accademia di Belle Arti di Verona"
   },
   {
@@ -371,10 +371,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Chitarra storica",
+    "Profili": "Analisi e cultura del Progetto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica del basso continuo allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Adria"
   },
   {
@@ -385,10 +385,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Liuto",
+    "Profili": "Tecniche di modellazione digitale 3D",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Alessandria"
   },
   {
@@ -399,10 +399,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Mandolino storico",
+    "Profili": "Eco Design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Avellino"
   },
   {
@@ -416,7 +416,7 @@
     "Profili": "Viola da braccio storica",
     "SAD vecchio 2": "COMJ01",
     "SAD vecchio nome 2": "BASSO ELETTRICO",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Economia, management marketing delle imprese culturali creative e dello spettacolo",
     "ISTITUZIONI AFAM": "Conservatorio di Bari"
   },
   {
@@ -427,10 +427,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Viola da gamba",
+    "Profili": "Systemic Design per le reti sociali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Benevento"
   },
   {
@@ -441,10 +441,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Violino storico",
+    "Profili": "Progettazione editoriale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Bologna"
   },
   {
@@ -455,10 +455,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Violoncello storico",
+    "Profili": "Illuminotecnica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Bolzano"
   },
   {
@@ -469,10 +469,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Violone e contrabbasso storico",
+    "Profili": "Design degli ambienti",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Brescia"
   },
   {
@@ -486,7 +486,7 @@
     "Profili": "Clarinetto storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Fenomenologia delle arti contemporanee e teoria delle arti multimediali",
     "ISTITUZIONI AFAM": "Conservatorio di Cagliari"
   },
   {
@@ -497,10 +497,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Cornetto",
+    "Profili": "Comunicazione visiva",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Caltanissetta"
   },
   {
@@ -511,10 +511,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Corno storico",
+    "Profili": "Progettazione tipografica",
     "SAD vecchio 2": "COMP01",
     "SAD vecchio nome 2": "BASSO ELETTRICO POP ROCK",
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Campobasso"
   },
   {
@@ -525,10 +525,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Fagotto storico",
+    "Profili": "Narrazione per immagini",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Castelfranco Veneto"
   },
   {
@@ -539,10 +539,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Flauto dolce",
+    "Profili": "Scenografia teatrale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Catania"
   },
   {
@@ -553,10 +553,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Flauto traversiere",
+    "Profili": "Elementi di progettazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Cesena-Rimini"
   },
   {
@@ -567,10 +567,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Oboe storico",
+    "Profili": "Prototipazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Como"
   },
   {
@@ -581,10 +581,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tromba storica",
+    "Profili": "Scenografia cinematografica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Cosenza"
   },
   {
@@ -595,10 +595,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Trombone storico",
+    "Profili": "Scenografia per la danza",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Cremona"
   },
   {
@@ -612,7 +612,7 @@
     "Profili": "Basso continuo alle tastiere storiche",
     "SAD vecchio 2": "CODI08",
     "SAD vecchio nome 2": "BASSO TUBA",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Lingua e letteratura italiana",
     "ISTITUZIONI AFAM": "Conservatorio di Cuneo"
   },
   {
@@ -623,10 +623,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Clavicembalo e tastiere storiche",
+    "Profili": "Restauro dei mosaici e dei rivestimenti lapidei (MiC 1)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Fermo"
   },
   {
@@ -637,10 +637,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Organo storico",
+    "Profili": "Tecniche dei dipinti su supporto ligneo e tessile per il",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Ferrara"
   },
   {
@@ -651,10 +651,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Pianoforte storico",
+    "Profili": "Restauro dei manufatti piani (Mic 6)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Firenze"
   },
   {
@@ -668,7 +668,7 @@
     "Profili": "Canto storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Linguaggi plastici per le arti visive",
     "ISTITUZIONI AFAM": "Conservatorio di Foggia"
   },
   {
@@ -679,10 +679,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Prepolifonia",
+    "Profili": "Tecniche della lavorazione dei materiali tessili (MiC 3)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Frosinone"
   },
   {
@@ -696,7 +696,7 @@
     "Profili": "Basso elettrico jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Metodi e strumenti per la rappresentazione del progetto",
     "ISTITUZIONI AFAM": "Conservatorio di Gallarate"
   },
   {
@@ -707,10 +707,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Chitarra jazz",
+    "Profili": "Tecniche del marmo e delle pietre dure per il restauro",
     "SAD vecchio 2": "COMJ11",
     "SAD vecchio nome 2": "BATTERIA E PERCUSSIONI JAZZ",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Genova"
   },
   {
@@ -721,10 +721,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Contrabbasso jazz",
+    "Profili": "Tecniche dei materiali organici (MiC 6)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di L'Aquila"
   },
   {
@@ -735,10 +735,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Violino jazz",
+    "Profili": "Restauro dei manufatti cartacei e pergamenacei (MiC 9)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di La Spezia"
   },
   {
@@ -749,10 +749,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Basso elettrico pop",
+    "Profili": "Restauro dei materiali librari e archivistici (MiC 9)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Latina"
   },
   {
@@ -763,10 +763,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Chitarra pop",
+    "Profili": "Chimica per il Restauro",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Lecce-Ceglie Messapica"
   },
   {
@@ -780,7 +780,7 @@
     "Profili": "Clarinetto jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Musica d'insieme per strumenti a fiato",
     "ISTITUZIONI AFAM": "Conservatorio di Livorno"
   },
   {
@@ -791,10 +791,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Saxofono jazz",
+    "Profili": "Scienze biologiche per il restauro",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Lucca"
   },
   {
@@ -805,10 +805,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tromba jazz",
+    "Profili": "Tecniche dei materiali cartacei e pergamenacei per il",
     "SAD vecchio 2": "COMP04",
     "SAD vecchio nome 2": "BATTERIA E PERCUSSIONI POP ROCK",
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Mantova"
   },
   {
@@ -819,10 +819,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Trombone jazz",
+    "Profili": "Cinematografia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Matera"
   },
   {
@@ -833,10 +833,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Flauto jazz",
+    "Profili": "Fotografia per i beni culturali e il patrimonio",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Messina"
   },
   {
@@ -847,10 +847,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Armonica a bocca jazz",
+    "Profili": "Beni culturali e ambientali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Milano"
   },
   {
@@ -864,7 +864,7 @@
     "Profili": "Pianoforte jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Musicologia e storia della musica",
     "ISTITUZIONI AFAM": "Conservatorio di Modena-Carpi"
   },
   {
@@ -875,10 +875,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tastiere elettroniche jazz",
+    "Profili": "Scenografia televisiva",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Monopoli"
   },
   {
@@ -889,10 +889,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Fisarmonica jazz",
+    "Profili": "Trucco per il teatro",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Napoli"
   },
   {
@@ -903,10 +903,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Pianoforte e tastiere pop",
+    "Profili": "Tecniche sartoriali e di confezione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Batteria e percussioni per strumenti e canto Pop Rock",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Nocera Terinese"
   },
   {
@@ -920,7 +920,7 @@
     "Profili": "Batteria e percussioni jazz",
     "SAD vecchio 2": "CODM01",
     "SAD vecchio nome 2": "BIBLIOGRAFIA E BIBLIOTECONONIA MUSICALE",
-    "Campi disciplinari": "Biblioteconomia e documentazione musicale",
+    "Campi disciplinari": "Organo",
     "ISTITUZIONI AFAM": "Conservatorio di Novara"
   },
   {
@@ -931,10 +931,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Vibrafono jazz",
+    "Profili": "Progettazione del piano di regia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Catalogazione musicale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Padova"
   },
   {
@@ -945,10 +945,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Batteria e percussioni pop",
+    "Profili": "Regia dello spettacolo digitale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Diritto e legislazione sulla tutela del patrimonio bibliografico musicale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Palermo"
   },
   {
@@ -962,7 +962,7 @@
     "Profili": "Canto jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di archivistica musicale",
+    "Campi disciplinari": "Pianoforte",
     "ISTITUZIONI AFAM": "Conservatorio di Parma"
   },
   {
@@ -973,10 +973,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Canto pop",
+    "Profili": "Restauro dei manufatti su supporto tessile (MiC 3)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di catalogazione musicale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Pavia"
   },
   {
@@ -990,7 +990,7 @@
     "Profili": "Strumenti/Canto e repertori di tradizione musicale regionale italiana",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Storia dei supporti musicali cartacei e non cartacei",
+    "Campi disciplinari": "Pratica pianistica e della lettura vocale e pianistica",
     "ISTITUZIONI AFAM": "Conservatorio di Perugia"
   },
   {
@@ -1001,10 +1001,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Strumenti/Canto e repertori di tradizione musicale europea",
+    "Profili": "Tecniche dei manufatti in cuoio e pelle (MiC 6 e/ 9)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Strumenti e metodi della ricerca bibliografica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Pesaro"
   },
   {
@@ -1015,10 +1015,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Strumenti/Canto e repertori di tradizione musicale extra-europea",
+    "Profili": "Restauro dei manufatti su supporto ligneo (MiC 3)",
     "SAD vecchio 2": "CODI23",
     "SAD vecchio nome 2": "CANTO",
-    "Campi disciplinari": "Fondamenti di storia della vocalità",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Pescara"
   },
   {
@@ -1032,7 +1032,7 @@
     "Profili": "Musica da camera",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione vocale",
+    "Campi disciplinari": "Processi di produzione e tecnologie dei materiali",
     "ISTITUZIONI AFAM": "Conservatorio di Piacenza"
   },
   {
@@ -1043,10 +1043,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Musica vocale da camera",
+    "Profili": "Restauro dei materiali organici (MiC 6)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Potenza"
   },
   {
@@ -1057,10 +1057,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Lied",
+    "Profili": "Tecniche dei mosaici e dei rivestimenti lapidei per il",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Ravenna"
   },
   {
@@ -1071,10 +1071,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Didattica della musica d'insieme",
+    "Profili": "Tecniche della doratura per il restauro (MiC 3 e/o 4)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Reggio Calabria"
   },
   {
@@ -1085,10 +1085,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM035",
     "SAD nuovo nome 2": "Musica d'insieme per strumenti a fiato",
-    "Profili": null,
+    "Profili": "Musica d'insieme per strumenti a fiato",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Relazione Musica- Danza",
     "ISTITUZIONI AFAM": "Conservatorio di Reggio Emilia"
   },
   {
@@ -1099,10 +1099,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM036",
     "SAD nuovo nome 2": "Musica d'insieme per strumenti ad arco",
-    "Profili": null,
+    "Profili": "Musica d'insieme per strumenti ad arco",
     "SAD vecchio 2": "COMJ12",
     "SAD vecchio nome 2": "CANTO JAZZ",
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Restauro dei manufatti dipinti su supporto ligneo e tessile. Manufatti scolpiti in legno e/o polimaterici, naturali o policromi, arredi e strutture lignee. Manufatti in materiali sintetici lavorati, assemblati e/o dipinti.",
     "ISTITUZIONI AFAM": "Conservatorio di Ribera"
   },
   {
@@ -1116,7 +1116,7 @@
     "Profili": "Musica d'insieme jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura del canto jazz",
+    "Campi disciplinari": "Restauro e tecniche degli strumenti musicali, strumentazioni e strumenti scientifici e tecnici",
     "ISTITUZIONI AFAM": "Conservatorio di Roma"
   },
   {
@@ -1127,10 +1127,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Musica d'insieme pop",
+    "Profili": "Tecniche e tecnologie della grafica d’arte per il restauro",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Rovigo"
   },
   {
@@ -1141,10 +1141,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche d'improvvisazione musicale",
+    "Profili": "Fenomenologia delle arti contemporanee",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Salerno"
   },
   {
@@ -1155,10 +1155,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM038",
     "SAD nuovo nome 2": "Musica d'insieme per voci e strumenti storici",
-    "Profili": null,
+    "Profili": "Musica d'insieme per voci e strumenti storici",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Storia della vocalità jazz",
+    "Campi disciplinari": "Restauro e tecniche dei materiali lapidei e derivati; superfici decorate dell'architettura",
     "ISTITUZIONI AFAM": "Conservatorio di Sassari"
   },
   {
@@ -1172,7 +1172,7 @@
     "Profili": "Pratica organistica e canto gregoriano",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Restauro e tecniche del Materiale librario e archivistico, manufatti cartacei e pergamenacei, materiale fotografico, cinematografico e digitale",
     "ISTITUZIONI AFAM": "Conservatorio di Siena"
   },
   {
@@ -1186,7 +1186,7 @@
     "Profili": "Storia della musica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Saxofono",
     "ISTITUZIONI AFAM": "Conservatorio di Taranto"
   },
   {
@@ -1197,10 +1197,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Etnomusicologia",
+    "Profili": "Storia del Teatro e dello Spettacolo",
     "SAD vecchio 2": "COMP05",
     "SAD vecchio nome 2": "CANTO POP ROCK",
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Teramo"
   },
   {
@@ -1211,10 +1211,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia del jazz",
+    "Profili": "Storia della moda",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Terni"
   },
   {
@@ -1225,10 +1225,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia della popular music",
+    "Profili": "Storia dell’arte antica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Torino"
   },
   {
@@ -1239,10 +1239,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Poesia per musica e drammaturgia musicale",
+    "Profili": "Storia dell’architettura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Trapani"
   },
   {
@@ -1253,10 +1253,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Didattica della storia della musica",
+    "Profili": "Culture digitali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Trento-Riva del Garda"
   },
   {
@@ -1267,10 +1267,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Bibliografia e biblioteconomia musicale",
+    "Profili": "Storia dell'arte medievale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Trieste"
   },
   {
@@ -1284,7 +1284,7 @@
     "Profili": "Composizione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Sistemi interattivi",
     "ISTITUZIONI AFAM": "Conservatorio di Udine"
   },
   {
@@ -1295,10 +1295,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Composizione per la musica applicata all’immagine",
+    "Profili": "Etnomusicologia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Canto per strumenti Pop Rock",
+    "Campi disciplinari": "Scenografia",
     "ISTITUZIONI AFAM": "Conservatorio di Venezia"
   },
   {
@@ -1309,10 +1309,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Teoria dell'armonia e analisi",
+    "Profili": "Antropologia e sociologia delle arti, del design e dello",
     "SAD vecchio 2": "COMA16",
     "SAD vecchio nome 2": "CANTO RINASCIMENTALE E BAROCCO",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Verona"
   },
   {
@@ -1323,10 +1323,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Composizione polifonica vocale",
+    "Profili": "Antropologia culturale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia della vocalità",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Vibo Valentia"
   },
   {
@@ -1337,10 +1337,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Composizione per didattica della musica",
+    "Profili": "Sociologia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "Conservatorio di Vicenza"
   },
   {
@@ -1354,7 +1354,7 @@
     "Profili": "Composizione, arrangiamento e concertazione jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura vocale",
+    "Campi disciplinari": "Strumenti a corde per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": "ISIA di Faenza"
   },
   {
@@ -1365,10 +1365,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Composizione, arrangiamento e concertazione pop",
+    "Profili": "Teorie e applicazioni della didattica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "ISIA di Firenze"
   },
   {
@@ -1382,7 +1382,7 @@
     "Profili": "Composizione e strumentazione per orchestra di fiati",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Strumenti a fiato storici",
     "ISTITUZIONI AFAM": "ISIA di Pescara"
   },
   {
@@ -1393,10 +1393,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Direzione per orchestra di fiati",
+    "Profili": "Comunicazione di pubblica utilità",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": "ISIA di Roma"
   },
   {
@@ -1407,10 +1407,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM044",
     "SAD nuovo nome 2": "Esecuzione della musica elettroacustica e applicazioni del suono per le arti interattive",
-    "Profili": null,
+    "Profili": "Esecuzione della musica elettroacustica e applicazioni del suono per le arti interattive",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Strumenti a percussione per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": "ISIA di Urbino"
   },
   {
@@ -1421,10 +1421,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM045",
     "SAD nuovo nome 2": "Composizione musicale elettroacustica e multimediale",
-    "Profili": null,
+    "Profili": "Composizione musicale elettroacustica e multimediale",
     "SAD vecchio 2": "CODI02",
     "SAD vecchio nome 2": "CHITARRA",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Strumenti a pizzico storici",
     "ISTITUZIONI AFAM": "Istituto Superiore di Studi Musicali di Aosta"
   },
   {
@@ -1438,7 +1438,7 @@
     "Profili": "Informatica musicale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Strumenti a tastiera per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": "Politecnico delle Arti di Bergamo"
   },
   {
@@ -1449,10 +1449,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Acustica musicale",
+    "Profili": "Teorie e tecniche della programmazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Intavolature e loro trascrizione per chitarra",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1466,7 +1466,7 @@
     "Profili": "Elettroacustica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Strumenti ad ancia libera",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1477,10 +1477,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Multimedialità",
+    "Profili": "Tecnologie digitali per la danza",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1494,7 +1494,7 @@
     "Profili": "Direzione di coro",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Systemic design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1505,10 +1505,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Esercitazioni corali",
+    "Profili": "Interaction design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica dell'accompagnamento estemporaneo",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1519,10 +1519,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Didattica del canto corale",
+    "Profili": "Linguaggi e tecnologie web",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1536,7 +1536,7 @@
     "Profili": "Direzione d'orchestra",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Tecniche artistiche della scultura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1547,10 +1547,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Esercitazioni orchestrali",
+    "Profili": "Installazioni interattive",
     "SAD vecchio 2": "COMJ02",
     "SAD vecchio nome 2": "CHITARRA JAZZ",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1561,10 +1561,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM050",
     "SAD nuovo nome 2": "Lettura della partitura",
-    "Profili": null,
+    "Profili": "Lettura della partitura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Tecniche e tecnologie del prodotto moda",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1578,7 +1578,7 @@
     "Profili": "Pratica pianistica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Tecniche per la pittura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1589,10 +1589,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Didattica della lettura vocale e pianistica",
+    "Profili": "Physical computing",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1606,7 +1606,7 @@
     "Profili": "Teoria della musica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Tecnologie digitali per le arti",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1617,10 +1617,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Alfabetizzazione musicale",
+    "Profili": "Audiovisivi interattivi",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1634,7 +1634,7 @@
     "Profili": "Pedagogia musicale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Teoria e tecnica dell'interpretazione scenica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1645,10 +1645,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Psicologia della musica",
+    "Profili": "Documentaristica",
     "SAD vecchio 2": "COMP02",
     "SAD vecchio nome 2": "CHITARRA POP ROCK",
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1659,10 +1659,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM054",
     "SAD nuovo nome 2": "Movimento espressivo e consapevolezza corporea per le arti performative",
-    "Profili": null,
+    "Profili": "Movimento espressivo e consapevolezza corporea per le arti performative",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Teoria, storia e metodo dei mass media",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1673,10 +1673,10 @@
     "Area": "ABA",
     "SAD nuovo 2": "AFAM055",
     "SAD nuovo nome 2": "Teoria e tecnica dell'interpretazione scenica",
-    "Profili": null,
+    "Profili": "Teoria e tecnica dell'interpretazione scenica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Teorie e pratiche della conservazione, valorizzazione e comunicazione del patrimonio materiale e immateriale",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1690,7 +1690,7 @@
     "Profili": "Letteratura italiana",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Teorie e tecniche computazionali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1701,10 +1701,10 @@
     "Area": "ABA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Lingua italiana per stranieri",
+    "Profili": "Storia dell'arte moderna",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1718,7 +1718,7 @@
     "Profili": "lingue europee",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Trombone",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1732,7 +1732,7 @@
     "Profili": "lingua tedesca",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Viola",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1743,10 +1743,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "lingua extraeuropee",
+    "Profili": "Fenomenologie del sacro",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Chitarra per strumenti e canto Pop Rock",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1757,10 +1757,10 @@
     "Area": "AND",
     "SAD nuovo 2": "AFAM058",
     "SAD nuovo nome 2": "Diritto delle arti, del design, dello spettacolo e dei beni culturali",
-    "Profili": "Diritto delle arti",
+    "Profili": "Diritto del design",
     "SAD vecchio 2": "CODI09",
     "SAD vecchio nome 2": "CLARINETTO",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Voce",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1771,10 +1771,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Diritto del design",
+    "Profili": "Antropologia e sociologia delle arti, del design e dello",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1785,10 +1785,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Diritto dello spettacolo",
+    "Profili": "Fisiodanza",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1799,10 +1799,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Diritto dei beni culturali",
+    "Profili": "Fisiotecnica della danza",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1813,10 +1813,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Diritto d’autore e della proprietà intellettuale",
+    "Profili": "Anatomia applicata alla danza",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1827,10 +1827,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Diritto e legislazione scolastica e dell’Alta formazione",
+    "Profili": "Acrobatica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1844,7 +1844,7 @@
     "Profili": "Economia, management e marketing delle imprese",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1858,7 +1858,7 @@
     "Profili": "Economia e management dell’arte",
     "SAD vecchio 2": "COMJ05",
     "SAD vecchio nome 2": "CLARINETTO JAZZ",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1869,10 +1869,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Economia e management dello spettacolo",
+    "Profili": "Danza educativa",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1883,10 +1883,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Economia e management della moda",
+    "Profili": "Composizione della danza",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1897,10 +1897,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Economia e management del design",
+    "Profili": "Pratiche di improvvisazione e della performance nella",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1911,10 +1911,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Marketing",
+    "Profili": "Lighting design per lo spettacolo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1928,7 +1928,7 @@
     "Profili": "Musicoterapia generale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1939,10 +1939,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Musicoterapia metodi e tecniche",
+    "Profili": "Tecnica della danza classica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1953,10 +1953,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Musicoterapia applicata",
+    "Profili": "Repertorio della danza classica",
     "SAD vecchio 2": "COMA06",
     "SAD vecchio nome 2": "CLARINETTO STORICO",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1967,10 +1967,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Musicoterapia e ricerca",
+    "Profili": "Tecnica della danza moderna e contemporanea",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1984,7 +1984,7 @@
     "Profili": "Tecnica della danza classica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -1995,10 +1995,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Repertorio della danza classica",
+    "Profili": "Relazione musica-danza classica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2009,10 +2009,10 @@
     "Area": "AND",
     "SAD nuovo 2": "AFAM062",
     "SAD nuovo nome 2": "Tecnica e repertorio della danza moderna e contemporanea",
-    "Profili": "Tecnica della danza moderna e contemporanea",
+    "Profili": "Repertorio della danza moderna e contemporanea",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2023,10 +2023,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Repertorio della danza moderna e contemporanea",
+    "Profili": "Alfabetizzazione musicale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Teoria della percezione e psicologia della forma",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2037,10 +2037,10 @@
     "Area": "AND",
     "SAD nuovo 2": "AFAM063",
     "SAD nuovo nome 2": "Fisiodanza, anatomia e danza educativa",
-    "Profili": "Fisiodanza",
+    "Profili": "Danzaterapia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2051,10 +2051,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Fisiotecnica della danza",
+    "Profili": "Storia del jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Scienze del suono per la musica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2065,10 +2065,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Anatomia applicata alla danza",
+    "Profili": "Teoria della danza",
     "SAD vecchio 2": "COMA15",
     "SAD vecchio nome 2": "CLAVICEMBALO E TASTIERE STORICHE",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2079,10 +2079,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Acrobatica",
+    "Profili": "Storia dell'arte contemporanea",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2093,10 +2093,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Danza educativa",
+    "Profili": "Scenotecnica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2107,10 +2107,10 @@
     "Area": "AND",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Danzaterapia",
+    "Profili": "Storia del Cinema",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Intavolature",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2121,10 +2121,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Psicologia e Pedagogia della danza",
+    "Profili": "Tecniche della recitazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2135,10 +2135,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": "AFAM064",
     "SAD nuovo nome 2": "Composizione della danza, progettazione e realizzazione coreografica",
-    "Profili": "Composizione della danza",
+    "Profili": "Progettazione e realizzazione coreografica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2149,10 +2149,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Pratiche di improvvisazione e della performance nella",
+    "Profili": "Tecniche dell’improvvisazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2163,10 +2163,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Progettazione e realizzazione coreografica",
+    "Profili": "Recitazione cinematografica e televisiva",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica del basso continuo agli strumenti",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2177,10 +2177,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Regia e drammaturgia della danza",
+    "Profili": "Recitazione in lingua inglese",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2191,10 +2191,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": "AFAM065",
     "SAD nuovo nome 2": "Coreologia",
-    "Profili": "Teoria della danza",
+    "Profili": "Storia della danza",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2205,10 +2205,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia della danza",
+    "Profili": "Drammaturgia e analisi testuale",
     "SAD vecchio 2": "CODC01",
     "SAD vecchio nome 2": "COMPOSIZIONE",
-    "Campi disciplinari": "Analisi compositiva",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2219,10 +2219,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Etnocoreologia",
+    "Profili": "Tecniche di scritture drammaturgiche",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Composizione",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2233,10 +2233,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": "AFAM066",
     "SAD nuovo nome 2": "Relazione Musica- Danza",
-    "Profili": "Relazione musica-danza classica",
+    "Profili": "Relazione musica-danza moderna e contemporanea",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Elaborazione, trascrizione e arrangiamento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2247,10 +2247,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Relazione musica-danza moderna e contemporanea",
+    "Profili": "Diritto dello spettacolo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Forme, sistemi e linguaggi musicali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2261,10 +2261,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Relazione musica-danza per l'attore",
+    "Profili": "Economia e management dello spettacolo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Sistemi armonici",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2275,10 +2275,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": "AFAM067",
     "SAD nuovo nome 2": "Recitazione",
-    "Profili": "Tecniche della recitazione",
+    "Profili": "Recitazione in versi",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Strumentazione e orchestrazione",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2289,10 +2289,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche dell’improvvisazione",
+    "Profili": "Mimo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche compositive",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2303,10 +2303,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Recitazione cinematografica e televisiva",
+    "Profili": "Recitazione con le maschere",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche contrappuntistiche",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2317,10 +2317,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Recitazione in lingua inglese",
+    "Profili": "Scherma",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche dell'improvvisazione",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2331,10 +2331,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Recitazione in versi",
+    "Profili": "Acrobatica",
     "SAD vecchio 2": "CODC07",
     "SAD vecchio nome 2": "COMPOSIZIONE E ARRANGIAMENTO POP-ROCK",
-    "Campi disciplinari": "Armonia rock e pop",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2345,10 +2345,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Recitazione su partitura musicale",
+    "Profili": "Educazione alla voce",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Forme, sistemi e linguaggi rock e pop",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2359,10 +2359,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Pedagogia teatrale",
+    "Profili": "Voice in the speech",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche compositive pop rock",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2373,10 +2373,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Teatroterapia",
+    "Profili": "Combat",
     "SAD vecchio 2": "CODC04",
     "SAD vecchio nome 2": "COMPOSIZIONE JAZZ",
-    "Campi disciplinari": "Armonia jazz",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2387,10 +2387,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Dizione",
+    "Profili": "Scenografia e scenotecnica per il Teatro di figura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Forme, sistemi e linguaggi jazz",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2401,10 +2401,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Manovra delle marionette, dei pupi e dei burattini",
+    "Profili": "Rendering e compositing per il 3D",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche compositive jazz",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2415,10 +2415,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Manipolazione delle ombre",
+    "Profili": "Arte Digitale",
     "SAD vecchio 2": "COME02",
     "SAD vecchio nome 2": "COMPOSIZIONE MUSICALE ELETTROACUSTICA",
-    "Campi disciplinari": "Analisi della musica elettroacustica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2429,10 +2429,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Recitare con gli oggetti",
+    "Profili": "Realtà estese",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Composizione audiovisiva integrata",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2443,10 +2443,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Recitazione con le marionette, i pupi, i burattini e le",
+    "Profili": "Tecnologie digitali per il teatro",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Composizione musicale elettroacustica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2457,10 +2457,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Recitazione, manipolazione e manovra di marionette,",
+    "Profili": "Canto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Composizione musicale informatica",
+    "Campi disciplinari": "Corno",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2471,10 +2471,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": "AFAM068",
     "SAD nuovo nome 2": "Movimento",
-    "Profili": "Mimo",
+    "Profili": "Arti marziali",
     "SAD vecchio 2": "CODC02",
     "SAD vecchio nome 2": "COMPOSIZIONE PER LA MUSICA APPLICATA ALLE IMMAGINI",
-    "Campi disciplinari": "Arrangiamento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2485,10 +2485,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Recitazione con le maschere",
+    "Profili": "Relazione musica-danza per l'attore",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Composizione per la comunicazione visuale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2499,10 +2499,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scherma",
+    "Profili": "Teoria della musica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Composizione per la musica applicata alle immagini",
+    "Campi disciplinari": "Tecnologie digitali per le arti",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2513,10 +2513,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Acrobatica",
+    "Profili": "Tecniche del training vocale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Orchestrazione e arrangiamento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2527,10 +2527,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Combat",
+    "Profili": "Recitazione su partitura musicale",
     "SAD vecchio 2": "CODC03",
     "SAD vecchio nome 2": "COMPOSIZIONE POLIFONICA VOCALE",
-    "Campi disciplinari": "Composizione polifonica vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2541,10 +2541,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Arti marziali",
+    "Profili": "lingua extraeuropee",
     "SAD vecchio 2": "COCM02",
     "SAD vecchio nome 2": "COMUNICAZIONE DELLO SPETTACOLO",
-    "Campi disciplinari": "Comunicazione istituzionale dello spettacolo dal vivo",
+    "Campi disciplinari": "Violino",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2555,10 +2555,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche del training fisico",
+    "Profili": "Pittura di scena",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "La comunicazione pubblicitaria",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2569,10 +2569,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Danza moderna e contemporanea per l’attore",
+    "Profili": "Teoria della forma",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Principi generali della comunicazione",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2583,10 +2583,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Didattica del training fisico",
+    "Profili": "Disegno e rilievo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Promozione di eventi culturali e di spettacolo dal vivo",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2597,10 +2597,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Didattica della danza",
+    "Profili": "Lighting design per l’architettura e i beni culturali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche e pianificazione della comunicazione",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2611,10 +2611,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": "AFAM069",
     "SAD nuovo nome 2": "Voce",
-    "Profili": "Educazione alla voce",
+    "Profili": "Esercitazioni tecniche di lettura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche e strategie di comunicazione multimediale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2625,10 +2625,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Voice in the speech",
+    "Profili": "Presa diretta per il cinema e la radiotelevisione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Ufficio stampa e pubbliche relazioni",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2639,10 +2639,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche del training vocale",
+    "Profili": "Scenografia teatrale",
     "SAD vecchio 2": "CODI04",
     "SAD vecchio nome 2": "CONTRABBASSO",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2653,10 +2653,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Esercitazioni tecniche di lettura",
+    "Profili": "Teoria del colore",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2667,10 +2667,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Canto per l’attore",
+    "Profili": "Elementi di Maquillage",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2681,10 +2681,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Musical",
+    "Profili": "Trucco per il cinema e il video",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2695,10 +2695,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Didattica del training vocale",
+    "Profili": "Pedagogia teatrale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2709,10 +2709,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": "AFAM070",
     "SAD nuovo nome 2": "Regia",
-    "Profili": "Progettazione del piano di regia",
+    "Profili": "Regia teatrale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2723,10 +2723,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Regia teatrale",
+    "Profili": "Regia lirica e del teatro musicale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2737,10 +2737,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Regia lirica e del teatro musicale",
+    "Profili": "Regia cinematografica",
     "SAD vecchio 2": "COMJ03",
     "SAD vecchio nome 2": "CONTRABBASSO JAZZ",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2751,10 +2751,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Regia cinematografica",
+    "Profili": "Regia televisiva",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2765,10 +2765,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Regia televisiva",
+    "Profili": "Storia e cultura del design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2779,10 +2779,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Regia radiofonica",
+    "Profili": "Antropologia culturale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2793,10 +2793,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Video Maker",
+    "Profili": "Storia della Radio, della Televisione e dei Media digitali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2807,10 +2807,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": "AFAM071",
     "SAD nuovo nome 2": "Scrittura",
-    "Profili": "Drammaturgia e analisi testuale",
+    "Profili": "Scrittura per il teatro di figura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2821,10 +2821,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche di scritture drammaturgiche",
+    "Profili": "Teoria e metodo dei mass media",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2835,10 +2835,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scrittura per il teatro di figura",
+    "Profili": "Storia della popular music",
     "SAD vecchio 2": "COMA07",
     "SAD vecchio nome 2": "CORNETTO",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "Scienze e diagnostica per il restauro",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2849,10 +2849,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Sceneggiatura cinematografica",
+    "Profili": "Basic Design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2863,10 +2863,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Sceneggiatura televisiva",
+    "Profili": "Storia del disegno e della grafica d'arte",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2877,10 +2877,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Sceneggiatura per i nuovi media",
+    "Profili": "Lineamenti di architettura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2891,10 +2891,10 @@
     "Area": "ANAD",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scrittura creativa",
+    "Profili": "Teatroterapia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2905,10 +2905,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": "AFAM072",
     "SAD nuovo nome 2": "Scenografia",
-    "Profili": "Scenografia teatrale",
+    "Profili": "Scenografia cinematografica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2919,10 +2919,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scenografia cinematografica",
+    "Profili": "Economia e management della moda",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2933,10 +2933,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scenografia per la danza",
+    "Profili": "Semiotica dell'immagine, del design e delle arti",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2947,10 +2947,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scenografia televisiva",
+    "Profili": "Economia e management del design",
     "SAD vecchio 2": "CODI10",
     "SAD vecchio nome 2": "CORNO",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2961,10 +2961,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scenotecnica",
+    "Profili": "Composizione per la musica applicata all’immagine",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Sound design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2975,10 +2975,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scenografia e scenotecnica per il Teatro di figura",
+    "Profili": "Teoria dell'armonia e analisi",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Storia delle arti applicate e del design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -2989,10 +2989,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Pittura di scena",
+    "Profili": "Composizione polifonica vocale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Storia delle arti performative, cinematografiche e mediali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3003,10 +3003,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": "AFAM073",
     "SAD nuovo nome 2": "Costume",
-    "Profili": "Trucco per il teatro",
+    "Profili": "Effetti speciali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3017,10 +3017,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Elementi di Maquillage",
+    "Profili": "Composizione, arrangiamento e concertazione pop",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Strumenti a fiato per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3031,10 +3031,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Trucco per il cinema e il video",
+    "Profili": "Direzione per orchestra di fiati",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Strumenti a percussione",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3045,10 +3045,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Effetti speciali",
+    "Profili": "Composizione, arrangiamento e concertazione jazz",
     "SAD vecchio 2": "COMA08",
     "SAD vecchio nome 2": "CORNO NATURALE",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "Strumenti a corde per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3059,10 +3059,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Protesi",
+    "Profili": "Esercitazioni corali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Tecnica e repertorio della danza classica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3073,10 +3073,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Body painting",
+    "Profili": "Composizione per didattica della musica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "Storia delle arti visive",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3087,10 +3087,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Calco facciale",
+    "Profili": "Musica vocale da camera",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Progettazione grafica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3101,10 +3101,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Progettazione del costume per il teatro",
+    "Profili": "Psicologia della musica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Teoria, ritmica e percezione musicale",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3115,10 +3115,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Elementi di figurinistica e disegno tecnico",
+    "Profili": "Didattica della lettura vocale e pianistica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Tecnologie del suono e della multimedialità",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3129,10 +3129,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Taglio e cucito",
+    "Profili": "Poesia per musica e drammaturgia musicale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Scienze e tecniche della comunicazione",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3143,10 +3143,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tessuto e materiali",
+    "Profili": "Movimento espressivo e consapevolezza corporea per le arti performative",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Teoria, storia e metodo dei mass media",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3157,10 +3157,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Trattamento dei tessuti e tinta",
+    "Profili": "Arpa",
     "SAD vecchio 2": "COID02",
     "SAD vecchio nome 2": "DIREZIONE D'ORCHESTRA",
-    "Campi disciplinari": "Concertazione e direzione dei repertori sinfonici e del teatro musicale",
+    "Campi disciplinari": "Accompagnamento pianistico",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3171,10 +3171,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": "AFAM074",
     "SAD nuovo nome 2": "Lighting design",
-    "Profili": "Illuminotecnica",
+    "Profili": "Light Art",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Direzione di gruppi strumentali e vocali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3185,10 +3185,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Lighting design per lo spettacolo",
+    "Profili": "Mandolino",
     "SAD vecchio 2": "COID03",
     "SAD vecchio nome 2": "DIREZIONE D'ORCHESTRA DI FIATI",
-    "Campi disciplinari": "Direzione d'orchestra di fiati",
+    "Campi disciplinari": "Antropologia e sociologia delle arti, del design e dello spettacolo",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3199,10 +3199,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Lighting design per l’architettura e i beni culturali",
+    "Profili": "Contrabbasso",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Musica d'insieme per fiati",
+    "Campi disciplinari": "Applicazioni digitali per le arti e il design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3213,10 +3213,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Light Art",
+    "Profili": "Viola",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori d'insieme per fiati",
+    "Campi disciplinari": "Arpa",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3230,7 +3230,7 @@
     "Profili": "Anatomia artistica",
     "SAD vecchio 2": "COID01",
     "SAD vecchio nome 2": "DIREZIONE DI CORO E COMPOSIZIONE CORALE",
-    "Campi disciplinari": "Analisi compositiva del repertorio corale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3241,10 +3241,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Anatomia dell’immagine",
+    "Profili": "Violoncello",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Composizione corale",
+    "Campi disciplinari": "Arte del videogioco",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3255,10 +3255,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Illustrazione scientifica",
+    "Profili": "Basso tuba",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Composizione polifonica rinascimentale",
+    "Campi disciplinari": "Arteterapia",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3269,10 +3269,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Elementi di morfologia e dinamiche della forma",
+    "Profili": "Clarinetto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Concertazione e direzione di coro: prassi esecutive e repertori",
+    "Campi disciplinari": "Basso tuba",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3283,10 +3283,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Iconografia e disegno anatomico",
+    "Profili": "Corno",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Direzione di gruppi vocali",
+    "Campi disciplinari": "Canto",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3297,10 +3297,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Semiologia del corpo",
+    "Profili": "Eufonio",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Elaborazione, trascrizione e arrangiamento per formazioni corali",
+    "Campi disciplinari": "Composizione, arrangiamento e concertazione per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3311,10 +3311,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Fenomenologia del corpo",
+    "Profili": "Fagotto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento corale",
+    "Campi disciplinari": "Canto per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3325,10 +3325,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche e linguaggi della rappresentazione del corpo",
+    "Profili": "Flauto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche compositive modali",
+    "Campi disciplinari": "Chitarra",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3342,7 +3342,7 @@
     "Profili": "Calcografia",
     "SAD vecchio 2": "CODD01",
     "SAD vecchio nome 2": "DIREZIONE DI CORO E REPERTORIO CORALE PER DIDATTICA DELLA MUSICA",
-    "Campi disciplinari": "Didattica del canto corale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3353,10 +3353,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Xilografia",
+    "Profili": "Saxofono",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Direzione e concertazione di coro",
+    "Campi disciplinari": "Composizione",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3367,10 +3367,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Litografia",
+    "Profili": "Tromba",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di tecnica vocale",
+    "Campi disciplinari": "Composizione della danza, progettazione e realizzazione coreografica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3381,10 +3381,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Serigrafia",
+    "Profili": "Trombone",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Repertorio corale",
+    "Campi disciplinari": "Composizione musicale elettroacustica e multimediale",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3395,10 +3395,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Editoria d’arte",
+    "Profili": "Bandoneon",
     "SAD vecchio 2": "CODD02",
     "SAD vecchio nome 2": "ELEMENTI DI COMPOSIZIONE PER DIDATTICA DELLA MUSICA",
-    "Campi disciplinari": "Didattica dell'improvvisazione",
+    "Campi disciplinari": "Design degli ambienti",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3409,10 +3409,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Linguaggi e tecnologie fotosensibili applicate alla",
+    "Profili": "Organo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Didattica della composizione",
+    "Campi disciplinari": "Composizione, strumentazione e direzione per orchestra di fiati",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3423,10 +3423,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche sperimentali della grafica",
+    "Profili": "Pratica organistica e canto gregoriano",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Elementi di composizione e analisi per Didattica della musica",
+    "Campi disciplinari": "Restauro e tecniche del Materiale librario e archivistico, manufatti cartacei e pergamenacei, materiale fotografico, cinematografico e digitale",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3440,7 +3440,7 @@
     "Profili": "Disegno",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di arrangiamento e trascrizione",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3451,10 +3451,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Illustrazione",
+    "Profili": "Strumenti a percussione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di strumentazione",
+    "Campi disciplinari": "Coreologia",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3465,10 +3465,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Disegno per le arti visive",
+    "Profili": "Canto",
     "SAD vecchio 2": "COME04",
     "SAD vecchio nome 2": "ELETTROACUSTICA",
-    "Campi disciplinari": "Elettroacustica",
+    "Campi disciplinari": "Corno",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3479,10 +3479,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Disegno per l’incisione",
+    "Profili": "Lied",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Storia delle tecnologie elettroacustiche",
+    "Campi disciplinari": "Recitazione",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3493,10 +3493,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Illustrazione per la grafica d’arte",
+    "Profili": "Accompagnamento pianistico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecnologie e tecniche del montaggio e della post-produzione audio e audio per video",
+    "Campi disciplinari": "Coro",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3507,10 +3507,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Illustrazione per l’editoria",
+    "Profili": "Didattica della musica d'insieme",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecnologie e tecniche del restauro audio",
+    "Campi disciplinari": "Regia",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3521,10 +3521,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Illustrazione per l’infanzia",
+    "Profili": "Armonica a bocca cromatica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecnologie e tecniche dell'amplificazione e dei sistemi di diffusione audio",
+    "Campi disciplinari": "Design del prodotto",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3538,7 +3538,7 @@
     "Profili": "Analisi e cultura del Progetto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecnologie e tecniche delle ripresa e della registrazione audio",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3549,10 +3549,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Elementi di progettazione",
+    "Profili": "lingue europee",
     "SAD vecchio 2": "COME01",
     "SAD vecchio nome 2": "ESECUZIONE E INTERPRETAZIONE DELLA MUSICA ELETTROACUSTICA",
-    "Campi disciplinari": "Ambienti esecutivi e di controllo per il live electronics",
+    "Campi disciplinari": "Trombone",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3563,10 +3563,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Teoria della forma",
+    "Profili": "Didattica della storia della musica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Ambienti esecutivi multimodali e interattivi",
+    "Campi disciplinari": "Scrittura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3577,10 +3577,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Teoria del colore",
+    "Profili": "Bibliografia e biblioteconomia musicale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Esecuzione e interpretazione della musica elettroacustica",
+    "Campi disciplinari": "Scultura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3591,10 +3591,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Basic Design",
+    "Profili": "Storia della musica",
     "SAD vecchio 2": "COMI01",
     "SAD vecchio nome 2": "ESERCITAZIONI CORALI",
-    "Campi disciplinari": "Formazione corale",
+    "Campi disciplinari": "Saxofono",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3608,7 +3608,7 @@
     "Profili": "Pittura contemporanea",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Musica d'insieme vocale e repertorio corale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3619,10 +3619,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Pittura sacra",
+    "Profili": "Etnomusicologia",
     "SAD vecchio 2": "COMI02",
     "SAD vecchio nome 2": "ESERCITAZIONI ORCHESTRALI",
-    "Campi disciplinari": "Formazione orchestrale",
+    "Campi disciplinari": "Scenografia",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3633,10 +3633,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Affresco",
+    "Profili": "Storia del jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Orchestra e repertorio orchestrale",
+    "Campi disciplinari": "Scienze del suono per la musica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3647,10 +3647,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Pittura murale e street art",
+    "Profili": "Storia della popular music",
     "SAD vecchio 2": "CODM02",
     "SAD vecchio nome 2": "ETNOMUSICOLOGIA",
-    "Campi disciplinari": "Antropologia della musica",
+    "Campi disciplinari": "Scienze e diagnostica per il restauro",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3664,7 +3664,7 @@
     "Profili": "Tecniche e tecnologie per la pittura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Etno - organologia",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3675,10 +3675,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Cromatologia",
+    "Profili": "Esercitazioni orchestrali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Etnomusicologia",
+    "Campi disciplinari": "Tecniche artistiche per la decorazione",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3689,10 +3689,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche e tecnologie delle arti visive",
+    "Profili": "Composizione e strumentazione per orchestra di fiati",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia della ricerca sul campo",
+    "Campi disciplinari": "Strumenti a fiato storici",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3703,10 +3703,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche extramediali",
+    "Profili": "Chitarra storica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Storia delle musiche extraeuropee",
+    "Campi disciplinari": "Design della moda",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3720,7 +3720,7 @@
     "Profili": "Tecniche di Fine Art",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Teoria e analisi delle forme musicali tradizionali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3731,10 +3731,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche di produzione grafica",
+    "Profili": "Viola da gamba",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Culture musicali e civiltà europee ed extraeuropee",
+    "Campi disciplinari": "Ergonomia",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3745,10 +3745,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tipografia",
+    "Profili": "Violino storico",
     "SAD vecchio 2": "CODI11",
     "SAD vecchio nome 2": "EUFONIO",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Esecuzione della musica elettroacustica e applicazioni del suono per le arti interattive",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3759,10 +3759,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Calligrafia",
+    "Profili": "Violoncello storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Estetica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3773,10 +3773,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Legatoria",
+    "Profili": "Cornetto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Fisiodanza, anatomia e danza educativa",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3787,10 +3787,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche e tecnologie tipografiche",
+    "Profili": "Corno storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Flauto",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3801,10 +3801,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche e tecnologie della stampa",
+    "Profili": "Fagotto storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Fotografia",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3815,10 +3815,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche grafiche speciali",
+    "Profili": "Flauto dolce",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Grafica d’arte",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3832,7 +3832,7 @@
     "Profili": "Tecniche della scultura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3843,10 +3843,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Fonderia",
+    "Profili": "Flauto traversiere",
     "SAD vecchio 2": "CODI12",
     "SAD vecchio nome 2": "FAGOTTO",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Ingegnerizzazione, matematica e fisica per il design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3857,10 +3857,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Marmo e pietre dure",
+    "Profili": "Oboe storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Lettura della partitura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3871,10 +3871,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Formatura, tecnologia e tipologia dei materiali",
+    "Profili": "Tromba storica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Lighting design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3885,10 +3885,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Lavorazione del legno",
+    "Profili": "Trombone storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Lineamenti e storia dell’architettura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3899,10 +3899,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": "AFAM083",
     "SAD nuovo nome 2": "Metodi e strumenti per la rappresentazione del progetto",
-    "Profili": "Tecniche di modellazione digitale 3D",
+    "Profili": "Disegno e morfologia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3913,10 +3913,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Rendering e compositing per il 3D",
+    "Profili": "Prepolifonia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di costruzione e rifinitura dell'ancia doppia",
+    "Campi disciplinari": "Mandolino",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3927,10 +3927,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Disegno e rilievo",
+    "Profili": "Clavicembalo e tastiere storiche",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Lingua straniera",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3941,10 +3941,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Disegno e morfologia",
+    "Profili": "Esecuzione della musica elettroacustica e applicazioni del suono per le arti interattive",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Strumenti a percussione per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3955,10 +3955,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche e linguaggi della rappresentazione",
+    "Profili": "Composizione musicale elettroacustica e multimediale",
     "SAD vecchio 2": "COMA09",
     "SAD vecchio nome 2": "FAGOTTO BAROCCO",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "Strumenti a pizzico storici",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3969,10 +3969,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Geometria descrittiva",
+    "Profili": "Multimedialità",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Strumenti ad arco storici",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -3983,10 +3983,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Disegno tecnico",
+    "Profili": "Elettroacustica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "Strumenti ad ancia libera",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4000,7 +4000,7 @@
     "Profili": "Decorazione multimediale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4011,10 +4011,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Decorazione degli ambienti",
+    "Profili": "Multimedialità",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Strumenti ad arco storici",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4025,10 +4025,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Decorazione urbana e opere site specific",
+    "Profili": "Didattica del canto corale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Tecnica e repertorio della danza moderna e contemporanea",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4039,10 +4039,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Decorazione per gli spazi interni",
+    "Profili": "Direzione d'orchestra",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica del basso continuo allo strumento",
+    "Campi disciplinari": "Tecniche artistiche della scultura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4053,10 +4053,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Progettazione e realizzazione opere tessili",
+    "Profili": "Musica da camera",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di costruzione e rifinitura dell'ancia doppia",
+    "Campi disciplinari": "Processi di produzione e tecnologie dei materiali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4067,10 +4067,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Vetro artistico contemporaneo",
+    "Profili": "Musica d'insieme per strumenti a fiato",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Relazione Musica- Danza",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4081,10 +4081,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Ceramica",
+    "Profili": "Musica d'insieme per strumenti ad arco",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Restauro dei manufatti dipinti su supporto ligneo e tessile. Manufatti scolpiti in legno e/o polimaterici, naturali o policromi, arredi e strutture lignee. Manufatti in materiali sintetici lavorati, assemblati e/o dipinti.",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4095,10 +4095,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Mosaico",
+    "Profili": "Musica d'insieme pop",
     "SAD vecchio 2": "CODI18",
     "SAD vecchio nome 2": "FISARMONICA",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Restauro e tecniche dei materiali e manufatti ceramici, vitrei e organici Materiali e manufatti in metallo e leghe",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4112,7 +4112,7 @@
     "Profili": "Metodologia e tecniche del mosaico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4123,10 +4123,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche del Micro mosaico",
+    "Profili": "Tecniche d'improvvisazione musicale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Restauro e tecniche dei materiali e manufatti tessili, organici e pelle",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4137,10 +4137,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche del vetro artistico",
+    "Profili": "Musica d'insieme jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Restauro e tecniche degli strumenti musicali, strumentazioni e strumenti scientifici e tecnici",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4151,10 +4151,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche della doratura",
+    "Profili": "Chitarra jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Metodi e tecniche di produzione grafica per le arti visive e per il design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4165,10 +4165,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche e tecnologie della ceramica",
+    "Profili": "Contrabbasso jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica dell'accompagnamento estemporaneo",
+    "Campi disciplinari": "Metodologia della progettazione",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4179,10 +4179,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche e tecnologie dell’arte tessile, del ricamo e",
+    "Profili": "Violino jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Modellistica per il design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4193,10 +4193,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": "AFAM086",
     "SAD nuovo nome 2": "Design della comunicazione",
-    "Profili": "Comunicazione visiva",
+    "Profili": "Comunicazione per l’identità della marca",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4207,10 +4207,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Comunicazione di pubblica utilità",
+    "Profili": "Saxofono jazz",
     "SAD vecchio 2": "CODI13",
     "SAD vecchio nome 2": "FLAUTO",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Musica d'insieme per strumenti ad arco",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4221,10 +4221,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Comunicazione per l’identità della marca",
+    "Profili": "Tromba jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "Musica d'insieme per voci e strumenti storici",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4235,10 +4235,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Comunicazione per gli ambienti",
+    "Profili": "Trombone jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Musica da camera strumentale e vocale",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4249,10 +4249,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Art Direction",
+    "Profili": "Flauto jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Musica liturgica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4263,10 +4263,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Etica del design e della comunicazione",
+    "Profili": "Tastiere elettroniche jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Musicoterapia",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4277,10 +4277,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": "AFAM087",
     "SAD nuovo nome 2": "Design del prodotto",
-    "Profili": "Eco Design",
+    "Profili": "Industrial Design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4291,10 +4291,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Industrial Design",
+    "Profili": "Vibrafono jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Pedagogia e didattica dell'arte e del design",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4305,10 +4305,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Medical Design",
+    "Profili": "Canto pop",
     "SAD vecchio 2": "COMA10",
     "SAD vecchio nome 2": "FLAUTO DOLCE",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "Pittura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4319,10 +4319,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Food Design",
+    "Profili": "Strumenti/Canto e repertori di tradizione musicale europea",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "Pratiche d'insieme ed estemporanee per i nuovi linguaggi musicali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4333,10 +4333,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design dei mezzi di trasporto",
+    "Profili": "Armonica a bocca jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "Musiche tradizionali",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4347,10 +4347,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design dell'imballaggio",
+    "Profili": "Basso elettrico pop",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Movimento",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4361,10 +4361,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design del prodotti ceramici",
+    "Profili": "Chitarra pop",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Movimento espressivo e consapevolezza corporea per le arti performative",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4375,10 +4375,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Wearable Design",
+    "Profili": "Fisarmonica jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Oboe",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4389,10 +4389,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design delle superfici",
+    "Profili": "Batteria e percussioni pop",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "Pedagogia musicale e psicologia della musica",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4403,10 +4403,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Etica del design",
+    "Profili": "Canto jazz",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Pianoforte",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4417,10 +4417,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": "AFAM088",
     "SAD nuovo nome 2": "Design degli ambienti",
-    "Profili": "Design degli ambienti",
+    "Profili": "Design degli interni",
     "SAD vecchio 2": "COMA12",
     "SAD vecchio nome 2": "FLAUTO TRAVERSIERE",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4431,10 +4431,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design degli interni",
+    "Profili": "Musicoterapia metodi e tecniche",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4445,10 +4445,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Landscape design",
+    "Profili": "Musicoterapia applicata",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4459,10 +4459,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design degli spazi espositivi",
+    "Profili": "Musicoterapia e ricerca",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4473,10 +4473,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Museografia",
+    "Profili": "Musicoterapia generale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4487,10 +4487,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Arredo Urbano",
+    "Profili": "Teoria e tecnica dell'interpretazione scenica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Teorie e pratiche della conservazione, valorizzazione e comunicazione del patrimonio materiale e immateriale",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4501,10 +4501,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": "AFAM089",
     "SAD nuovo nome 2": "Systemic design",
-    "Profili": "Systemic Design per le reti sociali",
+    "Profili": "Systemic Design per gli scenari avanzati",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4515,10 +4515,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Systemic Design per gli scenari avanzati",
+    "Profili": "Lettura della partitura",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "Tecniche e tecnologie del prodotto moda",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4529,10 +4529,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Analisi dei Sistemi",
+    "Profili": "Pratica pianistica",
     "SAD vecchio 2": "COMJ14",
     "SAD vecchio nome 2": "FLAUTO JAZZ",
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "Tecniche per la pittura",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4543,10 +4543,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Sistemica",
+    "Profili": "Canto storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "Linguaggi plastici per le arti visive",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4557,10 +4557,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design dei Servizi per i Beni Culturali e il Turismo",
+    "Profili": "Organo storico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi ",
+    "Campi disciplinari": "Linguaggi e pratiche artistiche della decorazione",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4571,10 +4571,10 @@
     "Area": "ISSM",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design dei Servizi Digitali e Infrastrutturali",
+    "Profili": "Alfabetizzazione musicale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "Teoria della percezione e psicologia della forma",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4585,10 +4585,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design dei servizi",
+    "Profili": "Ufficio stampa",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4599,10 +4599,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design dei Servizi per la PA",
+    "Profili": "Metodologia della didattica del design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4613,10 +4613,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design dei Servizi per le Imprese",
+    "Profili": "Fotografia come linguaggio artistico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4627,10 +4627,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design delle Politiche Territoriali",
+    "Profili": "Teoria del cinema e dell’audiovisivo",
     "SAD vecchio 2": "COME05",
     "SAD vecchio nome 2": "INFORMATICA MUSICALE",
-    "Campi disciplinari": "Campionamento, sintesi ed elaborazione digitale dei suoni",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4641,10 +4641,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design dei Processi Innovativi",
+    "Profili": "Storia e teoria della comunicazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Informatica musicale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4658,7 +4658,7 @@
     "Profili": "Principi e metodi di ergonomia e fattori umani (E/HF)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Sistemi e linguaggi di programmazione per l'audio e le applicazioni musicali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4669,10 +4669,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Ergonomia fisica",
+    "Profili": "Comunicazione per gli ambienti",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Videoscrittura musicale ed editoria musicale informatizzata",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4683,10 +4683,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Ergonomia organizzativa",
+    "Profili": "Landscape design",
     "SAD vecchio 2": "COTP02",
     "SAD vecchio nome 2": "LETTURA DELLE PARTITURA",
-    "Campi disciplinari": "Lettura della partitura",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4697,10 +4697,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Ergonomia cognitiva",
+    "Profili": "Progettazione grafica dell’imballaggio",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trasporto e riduzione al pianoforte",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4711,10 +4711,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Ergonomia del territorio",
+    "Profili": "Fotografia per l’editoria",
     "SAD vecchio 2": "CODI26",
     "SAD vecchio nome 2": "LIED ED ORATORIO IN LINGUA TEDESCA",
-    "Campi disciplinari": "Dizione e recitazione del testo poetico tedesco",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4725,10 +4725,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Ergonomia dell’inclusione",
+    "Profili": "Illuminotecnica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia della vocalità",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4739,10 +4739,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Ergonomia della luce",
+    "Profili": "Computer Graphics",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4756,7 +4756,7 @@
     "Profili": "Ingegnerizzazione di sistemi integrati",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4767,10 +4767,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Prototipazione digitale",
+    "Profili": "Game studies",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento vocale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4781,10 +4781,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design computazionale",
+    "Profili": "Teoria e estetica dell'interazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4795,10 +4795,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Manifattura avanzata",
+    "Profili": "Audio, mixaggio e progettazione sonora",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4809,10 +4809,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Scienze matematiche e fisiche per il design",
+    "Profili": "Produzione audiovisiva",
     "SAD vecchio 2": "CODL01",
     "SAD vecchio nome 2": "LINGUA E LETTERATURA ITALIANA",
-    "Campi disciplinari": "Letteratura italiana",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4823,10 +4823,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Matematica per il design",
+    "Profili": "Installazioni multimediali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Lingua italiana",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4837,10 +4837,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Fisica per il design",
+    "Profili": "Fotografia di paesaggio e territorio",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Lingua italiana per stranieri",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4851,10 +4851,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Logica per il design",
+    "Profili": "Anatomia dell’immagine",
     "SAD vecchio 2": "CODL02",
     "SAD vecchio nome 2": "LINGUA STRANIERA COMUNITARIA",
-    "Campi disciplinari": "Dizione per il canto",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4865,10 +4865,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Strutture e modelli matematici per il design",
+    "Profili": "Art Direction",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Lingua straniera comunitaria",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4882,7 +4882,7 @@
     "Profili": "Scienza e tecnologia dei materiali",
     "SAD vecchio 2": "COMA02",
     "SAD vecchio nome 2": "LIUTO",
-    "Campi disciplinari": "Accordature e temperamenti",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4893,10 +4893,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecnologie per il design",
+    "Profili": "Direzione della fotografia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4907,10 +4907,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Innovazione dei processi produttivi",
+    "Profili": "Progettazione grafica di interfacce",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4921,10 +4921,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecnologie e materiali innovativi per la ceramica",
+    "Profili": "Tecniche di produzione grafica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Intavolature",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4935,10 +4935,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Processi industriali dei materiali ceramici",
+    "Profili": "Fotografia di reportage",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4949,10 +4949,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Processi industriali dei materiali metallici",
+    "Profili": "Animazione digitale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4963,10 +4963,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Processi industriali demi materiali polimerici",
+    "Profili": "Vite e Intelligenze Artificiali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4977,10 +4977,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecnologia dei materiali nelle arti",
+    "Profili": "Interaction design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica del basso continuo allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -4991,10 +4991,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecnologia della carta",
+    "Profili": "Design della comunicazione sonora",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5005,10 +5005,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM093",
     "SAD nuovo nome 2": "Tecniche e tecnologie del prodotto moda",
-    "Profili": "Tecniche sartoriali e di confezione",
+    "Profili": "Realizzazione prototipi sperimentali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5019,10 +5019,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Realizzazione prototipi sperimentali",
+    "Profili": "Protesi",
     "SAD vecchio 2": "CODI03",
     "SAD vecchio nome 2": "MANDOLINO",
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5033,10 +5033,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecnologia del design tessile",
+    "Profili": "Tecniche della comunicazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5047,10 +5047,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Modellistica e tecniche della confezione",
+    "Profili": "Medical Design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Intavolature e loro trascrizione per mandolino",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5061,10 +5061,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Creazioni di sartoria e drappeggio su manichino",
+    "Profili": "Lighting design per lo spettacolo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5075,10 +5075,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Modellistica, abbigliamento e accessori su Cartamodello",
+    "Profili": "Design degli spazi espositivi",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5089,10 +5089,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Cucito e confezione",
+    "Profili": "Analisi dei Sistemi",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5103,10 +5103,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM094",
     "SAD nuovo nome 2": "Applicazioni digitali per le arti e il design",
-    "Profili": "Arte Digitale",
+    "Profili": "Data visualisation",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5117,10 +5117,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Computer Graphics",
+    "Profili": "Progettazione editoriale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5131,10 +5131,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Animazione digitale",
+    "Profili": "Prototipazione digitale",
     "SAD vecchio 2": "COME06",
     "SAD vecchio nome 2": "MULTIMEDIALITÀ",
-    "Campi disciplinari": "Sistemi, tecnologie, applicazioni e linguaggi di programmazione per la multimedialità",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5145,10 +5145,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Data visualisation",
+    "Profili": "Body painting",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Sistemi, tecnologie, applicazioni e programmazione audio e musicale per internet e per i sistemi di comunicazione mobile",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5159,10 +5159,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Post produzione dell’immagine digitale",
+    "Profili": "Illustrazione scientifica",
     "SAD vecchio 2": "COMI09",
     "SAD vecchio nome 2": "MUSICA D'INSIEME E POP-ROCK",
-    "Campi disciplinari": "Interazione creativa in piccola, media e grande formazione",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5173,10 +5173,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM095",
     "SAD nuovo nome 2": "Teorie e tecniche computazionali",
-    "Profili": "Teorie e tecniche della programmazione",
+    "Profili": "Filosofia della tecnologia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori pop-rock",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5187,10 +5187,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Linguaggi e tecnologie web",
+    "Profili": "Design del tessuto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di realizzazione di specifici assetti ritmo-fonici",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5201,10 +5201,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Physical computing",
+    "Profili": "Tecniche e linguaggi della rappresentazione",
     "SAD vecchio 2": "CODD03",
     "SAD vecchio nome 2": "MUSICA D'INSIEME PER DIDATTICA DELLA MUSICA",
-    "Campi disciplinari": "Didattica della musica d'insieme",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5215,10 +5215,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Vite e Intelligenze Artificiali",
+    "Profili": "Semiotica dell'immagine, del design e delle arti",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Musica d'insieme per Didattica della musica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5229,10 +5229,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Filosofia della tecnologia",
+    "Profili": "Illustrazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratiche di musica d'insieme",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5243,10 +5243,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Progettazione multimediale",
+    "Profili": "Geometria descrittiva",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Repertorio per ensemble strumentali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5257,10 +5257,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche informatiche multimediali",
+    "Profili": "Ufficio stampa",
     "SAD vecchio 2": "COMI05",
     "SAD vecchio nome 2": "MUSICA D'INSIEME PER STRUMENTI A ARCO",
-    "Campi disciplinari": "Musica d'insieme per strumenti ad arco",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5271,10 +5271,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM096",
     "SAD nuovo nome 2": "Arte del videogioco",
-    "Profili": "Game studies",
+    "Profili": "Game design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori d'insieme per strumenti ad arco",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5285,10 +5285,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Game design",
+    "Profili": "Disegno tecnico",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Quartetto",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5299,10 +5299,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Gamificication",
+    "Profili": "Post produzione dell’immagine digitale",
     "SAD vecchio 2": "COMI07",
     "SAD vecchio nome 2": "MUSICA D'INSIEME PER STRUMENTI ANTICHI",
-    "Campi disciplinari": "Musica d'insieme per voci e strumenti antichi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5313,10 +5313,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Sceneggiatura per il videogioco",
+    "Profili": "Modellazione fisica per il progetto",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori d'insieme per voci e strumenti antichi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5327,10 +5327,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM097",
     "SAD nuovo nome 2": "Sistemi interattivi",
-    "Profili": "Interaction design",
+    "Profili": "Installazioni interattive",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5341,10 +5341,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Installazioni interattive",
+    "Profili": "Elementi di morfologia e dinamiche della forma",
     "SAD vecchio 2": "COMI06",
     "SAD vecchio nome 2": "MUSICA D'INSIEME JAZZ",
-    "Campi disciplinari": "Interazione creativa in piccola, media e grande formazione",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5355,10 +5355,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Audiovisivi interattivi",
+    "Profili": "Elementi di progettazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori jazz",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5369,10 +5369,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Realtà estese",
+    "Profili": "Tecniche e metodologie di valutazione della ricerca",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di realizzazione di specifici assetti ritmo-fonici",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5383,10 +5383,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Teoria e estetica dell'interazione",
+    "Profili": "Fotografia per la Comunicazione e per l’impresa",
     "SAD vecchio 2": "COMI04",
     "SAD vecchio nome 2": "MUSICA D'INSIEME PER STRUMENTI A FIATO",
-    "Campi disciplinari": "Musica d'insieme per fiati",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5397,10 +5397,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM098",
     "SAD nuovo nome 2": "Sound design",
-    "Profili": "Presa diretta per il cinema e la radiotelevisione",
+    "Profili": "Sound art",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori d'insieme per fiati",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5411,10 +5411,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Audio, mixaggio e progettazione sonora",
+    "Profili": "Teoria della percezione",
     "SAD vecchio 2": "COMI03",
     "SAD vecchio nome 2": "MUSICA DA CAMERA",
-    "Campi disciplinari": "Musica da camera",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5425,10 +5425,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design della comunicazione sonora",
+    "Profili": "Storia della fotografia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Musica d'insieme per voci e strumenti delle musiche tradizionali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5439,10 +5439,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Sound art",
+    "Profili": "Storia del graphic design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Musica vocale da camera",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5453,10 +5453,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Design del paesaggio sonoro",
+    "Profili": "Metodologie didattiche per l’inclusione e bisogni",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori d'insieme da camera",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5467,10 +5467,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Progettazione degli spazi sonori e sistemi multimediali",
+    "Profili": "Fenomenologia dei media",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Musica d'insieme per voci e strumenti delle musiche tradizionali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5481,10 +5481,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM099",
     "SAD nuovo nome 2": "Linguaggi e tecniche dell’audiovisivo",
-    "Profili": "Cinematografia",
+    "Profili": "Montaggio",
     "SAD vecchio 2": "COMS01",
     "SAD vecchio nome 2": "MUSICA SACRA",
-    "Campi disciplinari": "Canto gregoriano",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5495,10 +5495,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Documentaristica",
+    "Profili": "Storia del libro, della stampa e dell’editoria d’arte",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Direzione di gruppi vocali e strumentali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5509,10 +5509,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Produzione audiovisiva",
+    "Profili": "Pedagogia e didattica dell'arte",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5523,10 +5523,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Direzione della fotografia",
+    "Profili": "Etica della comunicazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Innodia",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5537,10 +5537,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Montaggio",
+    "Profili": "Storia del costume",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Liturgia",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5551,10 +5551,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM100",
     "SAD nuovo nome 2": "Modellistica per il design",
-    "Profili": "Prototipazione",
+    "Profili": "Modellistica progettuale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Organo e improvvisazione organistica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5565,10 +5565,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Modellazione fisica per il progetto",
+    "Profili": "Diritto dei beni culturali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5579,10 +5579,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Modellistica progettuale",
+    "Profili": "Marketing",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica del basso continuo allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5596,7 +5596,7 @@
     "Profili": "Storia e teoria della comunicazione",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche contrappuntistiche",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5607,10 +5607,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Tecniche della comunicazione",
+    "Profili": "Design computazionale",
     "SAD vecchio 2": "CODI24",
     "SAD vecchio nome 2": "MUSICA VOCALE DA CAMERA",
-    "Campi disciplinari": "Improvvisazione alla voce o allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5621,10 +5621,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Semiotica dell'immagine, del design e delle arti",
+    "Profili": "Progettazione multimediale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura vocale e strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5635,10 +5635,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Ufficio stampa",
+    "Profili": "Tecnologie per il design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi esecutive e repertori",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5649,10 +5649,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM102",
     "SAD nuovo nome 2": "Storia delle arti visive",
-    "Profili": "Storia dell’arte antica",
+    "Profili": "Teoria e storia del restauro e problematiche di",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5663,10 +5663,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia dell'arte medievale",
+    "Profili": "Tecnologia del design tessile",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Trattati e metodi",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5677,10 +5677,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia dell'arte moderna",
+    "Profili": "Teorie e applicazioni della didattica",
     "SAD vecchio 2": "COMJ13",
     "SAD vecchio nome 2": "MUSICHE TRADIZIONALI",
-    "Campi disciplinari": "Antropologia della musica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5691,10 +5691,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia dell'arte contemporanea",
+    "Profili": "Sociologia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Prassi di creazione estemporanea nelle culture tradizionali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5705,10 +5705,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia del disegno e della grafica d'arte",
+    "Profili": "Metodologia della didattica del design",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Studio dei sistemi  musicali delle culture tradizionali",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5719,10 +5719,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia della fotografia",
+    "Profili": "Fenomenologie del sacro",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Strumenti e canto delle tradizioni musicali extraeuropee",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5733,10 +5733,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Teoria e storia del restauro e problematiche di",
+    "Profili": "Teoria e metodo dei mass media",
     "SAD vecchio 2": "CODM03",
     "SAD vecchio nome 2": "MUSICOLOGIA SISTEMATICA",
-    "Campi disciplinari": "Estetica della musica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5747,10 +5747,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia e metodologia della critica d’arte",
+    "Profili": "Tecniche e metodologie di valutazione della ricerca",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Filosofia della musica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5761,10 +5761,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Metodologia e teoria della storia dell’arte",
+    "Profili": "Psicologia dell’arte",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Iconografia musicale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5775,10 +5775,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": "AFAM103",
     "SAD nuovo nome 2": "Storia delle arti applicate e del design",
-    "Profili": "Storia della moda",
+    "Profili": "Storia della comunicazione visiva",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia della critica musicale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5789,10 +5789,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia e cultura del design",
+    "Profili": "Antropologia e sociologia delle arti, del design e dello",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Organologia",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5803,10 +5803,10 @@
     "Area": "ISIA",
     "SAD nuovo 2": null,
     "SAD nuovo nome 2": null,
-    "Profili": "Storia del graphic design",
+    "Profili": "Psicosociologia dei consumi",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Psicologia della musica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5859,10 +5859,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM104",
     "SAD nuovo nome 2": "Fenomenologia delle arti contemporanee e teoria delle arti multimediali",
-    "Profili": "Fenomenologia delle arti contemporanee",
+    "Profili": "Estetica dei new media",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5901,10 +5901,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM105",
     "SAD nuovo nome 2": "Lineamenti e storia dell’architettura",
-    "Profili": "Storia dell’architettura",
+    "Profili": "Storia dell'architettura teatrale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di costruzione e rifinitura dell'ancia doppia",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5960,7 +5960,7 @@
     "Profili": "Estetica delle arti visive",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Fondamenti di storia e tecnologia dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -5999,10 +5999,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM107",
     "SAD nuovo nome 2": "Pedagogia e didattica dell'arte e del design",
-    "Profili": "Teorie e applicazioni della didattica",
+    "Profili": "Metodologie didattiche per l’inclusione e bisogni",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6069,10 +6069,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM108",
     "SAD nuovo nome 2": "Tecnologie digitali per le arti",
-    "Profili": "Regia dello spettacolo digitale",
+    "Profili": "Videoinstallazione",
     "SAD vecchio 2": "CODC05",
     "SAD vecchio nome 2": "ORCHESTRAZIONE E CONCERTAZIONE JAZZ",
-    "Campi disciplinari": "Direzione di orchestra jazz",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6153,10 +6153,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM109",
     "SAD nuovo nome 2": "Antropologia e sociologia delle arti, del design e dello spettacolo",
-    "Profili": "Antropologia e sociologia delle arti, del design e dello",
+    "Profili": "Antropologia culturale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Legislazione e normativa del sistema dell'Alta formazione artistica e musicale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6209,10 +6209,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM110",
     "SAD nuovo nome 2": "Progettazione grafica",
-    "Profili": "Progettazione editoriale",
+    "Profili": "Progettazione tipografica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6268,7 +6268,7 @@
     "Profili": "Arte pubblica",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6310,7 +6310,7 @@
     "Profili": "Tecniche plastiche contemporanee",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Legislazione e organizzazione scolastica",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6363,10 +6363,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM113",
     "SAD nuovo nome 2": "Fotografia",
-    "Profili": "Fotografia per i beni culturali e il patrimonio",
+    "Profili": "Fotografia per la moda",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Psicologia musicale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6503,10 +6503,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM114",
     "SAD nuovo nome 2": "Design della moda",
-    "Profili": "Design del tessuto",
+    "Profili": "Design dell'accessorio",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6573,10 +6573,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM115",
     "SAD nuovo nome 2": "Storia delle arti performative, cinematografiche e mediali",
-    "Profili": "Storia del Teatro e dello Spettacolo",
+    "Profili": "Storia della scenografia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche di lettura estemporanea",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6643,10 +6643,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM116",
     "SAD nuovo nome 2": "Teorie e pratiche della conservazione, valorizzazione e comunicazione del patrimonio materiale e immateriale",
-    "Profili": "Beni culturali e ambientali",
+    "Profili": "Catalogazione e gestione del patrimonio",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Letteratura dello strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6702,7 +6702,7 @@
     "Profili": "Storia e Modelli dell’Arte terapia",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pianoforte e Tastiere per strumenti Pop Rock",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6811,10 +6811,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM118",
     "SAD nuovo nome 2": "Arte del fumetto",
-    "Profili": "Narrazione per immagini",
+    "Profili": "Fumetto e disegno sequenziale",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione e ornamentazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -6965,10 +6965,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM119",
     "SAD nuovo nome 2": "Teoria, storia e metodo dei mass media",
-    "Profili": "Teoria e metodo dei mass media",
+    "Profili": "Teoria del cinema e dell’audiovisivo",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Pratica e didattica dell'improvvisazione al pianoforte",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -7021,10 +7021,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM120",
     "SAD nuovo nome 2": "Scienze e diagnostica per il restauro",
-    "Profili": "Chimica per il Restauro",
+    "Profili": "Scienze della terra",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Tecniche fondamentali di accompagnamento pianistico",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -7091,10 +7091,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM121",
     "SAD nuovo nome 2": "Teoria della percezione e psicologia della forma",
-    "Profili": "Teoria della percezione",
+    "Profili": "Psicologia cognitiva",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -7161,10 +7161,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM122",
     "SAD nuovo nome 2": "Restauro e tecniche dei materiali lapidei e derivati; superfici decorate dell'architettura",
-    "Profili": "Restauro dei mosaici e dei rivestimenti lapidei (MiC 1)",
+    "Profili": "Restauro dei materiali lapidei e derivati (MiC 1)",
     "SAD vecchio 2": "COTP04",
     "SAD vecchio nome 2": "PREPOLIFONIA",
-    "Campi disciplinari": "Canto monodico",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -7357,10 +7357,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM123",
     "SAD nuovo nome 2": "Restauro dei manufatti dipinti su supporto ligneo e tessile. Manufatti scolpiti in legno e/o polimaterici, naturali o policromi, arredi e strutture lignee. Manufatti in materiali sintetici lavorati, assemblati e/o dipinti.",
-    "Profili": "Tecniche dei dipinti su supporto ligneo e tessile per il",
+    "Profili": "Tecniche della lavorazione del legno (MiC 4)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Metodologia dell'insegnamento strumentale",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -7511,10 +7511,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM124",
     "SAD nuovo nome 2": "Restauro e tecniche dei materiali e manufatti tessili, organici e pelle",
-    "Profili": "Restauro dei manufatti piani (Mic 6)",
+    "Profili": "Tecniche della lavorazione delle fibre tessili naturali per",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Storia della musica applicata alle immagini",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -7679,10 +7679,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM125",
     "SAD nuovo nome 2": "Restauro e tecniche dei materiali e manufatti ceramici, vitrei e organici Materiali e manufatti in metallo e leghe",
-    "Profili": "Tecniche dei materiali organici (MiC 6)",
+    "Profili": "Tecniche dei materiali ceramici e vitrei per il restauro",
     "SAD vecchio 2": "COCM03",
     "SAD vecchio nome 2": "STRATEGIA, PROGETTAZIONE, ORGANIZZAZIONE E GESTIONE DELLO SPETTACOLO",
-    "Campi disciplinari": "Contabilità, controllo di gestione e business planning",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -7833,10 +7833,10 @@
     "Area": null,
     "SAD nuovo 2": "AFAM126",
     "SAD nuovo nome 2": "Restauro e tecniche del Materiale librario e archivistico, manufatti cartacei e pergamenacei, materiale fotografico, cinematografico e digitale",
-    "Profili": "Restauro dei manufatti cartacei e pergamenacei (MiC 9)",
+    "Profili": "Tecniche della legatoria (MiC 9)",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Elaborazione, trascrizione e arrangiamento per orchestra di fiati",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
@@ -7990,7 +7990,7 @@
     "Profili": "Tecniche di realizzazione degli strumenti musicali",
     "SAD vecchio 2": null,
     "SAD vecchio nome 2": null,
-    "Campi disciplinari": "Improvvisazione allo strumento",
+    "Campi disciplinari": "nan",
     "ISTITUZIONI AFAM": null
   },
   {
