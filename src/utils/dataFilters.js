@@ -67,7 +67,7 @@ export function filterCampiDisciplinari(data, sadVecchio) {
   if (!sadVecchio) return []
   
   const filteredData = data.filter(row =>
-    row['SAD vecchio 1'] === sadVecchio &&
+    row['SAD vecchio 2'] === sadVecchio &&
     row['Campi disciplinari'] &&
     row['Campi disciplinari'] !== null
   )
