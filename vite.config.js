@@ -6,5 +6,13 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true
+  },
+  build: {
+    assetsInlineLimit: 0,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   }
 })
