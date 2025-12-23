@@ -120,6 +120,43 @@
   gap: 1.5rem;
 }
 
+.prova-finale-container {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.prova-finale-card {
+  background: #e8e9eb;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 2px solid #999;
+}
+
+.prova-finale-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #999;
+}
+
+.prova-finale-card.collapsed .card-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.prova-finale-card h3 {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .empty-state {
   flex: 1;
   display: flex;
@@ -538,6 +575,23 @@ textarea.form-control {
   transform: translateX(3px);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
   border-color: #36348E;
+}
+
+.compiled-item.prova-finale-item {
+  background: #e8e9eb;
+  border: 2px solid #999;
+}
+
+.compiled-item.prova-finale-item:hover {
+  border-color: #666;
+}
+
+.compiled-item.prova-finale-item .compiled-number {
+  background: #666;
+}
+
+.compiled-item.prova-finale-item .compiled-title {
+  color: #666;
 }
 
 .compiled-header-line {

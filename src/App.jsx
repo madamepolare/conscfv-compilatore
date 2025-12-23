@@ -10,6 +10,7 @@ import './styles/App.css'
 function App() {
   const [data, setData] = useState([])
   const [insegnamenti, setInsegnamenti] = useState([])
+  const [provaFinale, setProvaFinale] = useState({ descrizione: '', cfa: 0, collapsed: false })
   const [loading, setLoading] = useState(true)
 
   const sensors = useSensors(
@@ -89,7 +90,7 @@ function App() {
     }
   }
 
-  const totalCFA = insegnamenti.reduce((sum, ins) => sum + (ins.cfa || 0), 0)
+  const totalCFA = insegnamenti.reduce((sum, ins) => sum + (ins.cfa || 0), 0) + (provaFinale.cfa || 0)
 
   if (loading) {
     return (
@@ -128,6 +129,50 @@ function App() {
               />
             </SortableContext>
           </DndContext>
+          
+          {/* Prova Finale - sempre alla fine */}
+          <div className="prova-finale-container">
+            <div className={`prova-finale-card ${provaFinale.collapsed ? 'collapsed' : ''}`}>
+              <div className="card-header">
+                <div className="header-left">
+                  <h3>Prova Finale</h3>
+                </div>
+                <div className="header-right">
+                  <button 
+                    className="btn-icon btn-collapse" 
+                    onClick={() => setProvaFinale({ ...provaFinale, collapsed: !provaFinale.collapsed })}
+                    title={provaFinale.collapsed ? "Espandi" : "Comprimi"}
+                  >
+                    {provaFinale.collapsed ? '▼' : '▲'}
+                  </button>
+                </div>
+              </div>
+              {!provaFinale.collapsed && (
+                <div className="form-grid">
+                  <div className="form-group full-width">
+                    <label>Descrizione</label>
+                    <textarea
+                      value={provaFinale.descrizione}
+                      onChange={(e) => setProvaFinale({ ...provaFinale, descrizione: e.target.value })}
+                      className="form-control"
+                      rows="4"
+                      placeholder="Inserisci descrizione della prova finale"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Crediti (CFA) *</label>
+                    <input
+                      type="number"
+                      value={provaFinale.cfa || 0}
+                      onChange={(e) => setProvaFinale({ ...provaFinale, cfa: parseInt(e.target.value) || 0 })}
+                      className="form-control"
+                      min="0"
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
 
         <div className="right-column">
@@ -136,6 +181,7 @@ function App() {
           </div>
           <CompiledView 
             insegnamenti={insegnamenti}
+            provaFinale={provaFinale}
             totalCFA={totalCFA}
           />
         </div>

@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import jsPDF from 'jspdf'
 import 'jspdf-autotable'
 
-export default function CompiledView({ insegnamenti, totalCFA }) {
+export default function CompiledView({ insegnamenti, provaFinale, totalCFA }) {
   const viewRef = useRef(null)
 
   useEffect(() => {
@@ -178,6 +178,32 @@ export default function CompiledView({ insegnamenti, totalCFA }) {
             </div>
           </div>
         ))}
+        
+        {/* Prova Finale */}
+        {provaFinale && (provaFinale.descrizione || provaFinale.cfa > 0) && (
+          <div className="compiled-item prova-finale-item">
+            <div className="compiled-header-line">
+              <div className="compiled-number">PF</div>
+              <h3 className="compiled-title">Prova Finale</h3>
+            </div>
+            <div className="compiled-content">
+              <div className="compiled-row">
+                <span className="label">Tipo:</span>
+                <span className="value">Prova Finale</span>
+              </div>
+              {provaFinale.descrizione && (
+                <div className="compiled-row">
+                  <span className="label">Descrizione:</span>
+                  <span className="value">{provaFinale.descrizione}</span>
+                </div>
+              )}
+              <div className="compiled-row highlight">
+                <span className="label">CFA:</span>
+                <span className="value cfa">{provaFinale.cfa || 0}</span>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="compiled-total">

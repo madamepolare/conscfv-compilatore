@@ -233,15 +233,13 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
           )}
         </div>
         <div className="header-right">
-          {isComplete && (
-            <button 
-              className="btn-icon btn-collapse" 
-              onClick={toggleCollapse}
-              title={collapsed ? "Espandi" : "Comprimi"}
-            >
-              {collapsed ? <ChevronDown size={16} strokeWidth={1.5} /> : <ChevronUp size={16} strokeWidth={1.5} />}
-            </button>
-          )}
+          <button 
+            className="btn-icon btn-collapse" 
+            onClick={toggleCollapse}
+            title={collapsed ? "Espandi" : "Comprimi"}
+          >
+            {collapsed ? <ChevronDown size={16} strokeWidth={1.5} /> : <ChevronUp size={16} strokeWidth={1.5} />}
+          </button>
           <button className="btn-icon btn-remove" onClick={handleRemove} title="Rimuovi">
             <X size={16} strokeWidth={1.5} />
           </button>
