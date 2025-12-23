@@ -113,19 +113,6 @@ function App() {
             </button>
           </div>
           
-          {/* Campo Titolo Piano Didattico */}
-          <div className="titolo-piano-container">
-            <label htmlFor="titolo-piano">Titolo Piano Didattico:</label>
-            <input
-              id="titolo-piano"
-              type="text"
-              value={titoloPDF}
-              onChange={(e) => setTitoloPDF(e.target.value)}
-              className="titolo-piano-input"
-              placeholder="Inserisci titolo del piano didattico"
-            />
-          </div>
-          
           <DndContext
             sensors={sensors}
             collisionDetection={closestCenter}
@@ -198,6 +185,7 @@ function App() {
             insegnamenti={insegnamenti}
             provaFinale={provaFinale}
             titoloPDF={titoloPDF}
+            setTitoloPDF={setTitoloPDF}
             totalCFA={totalCFA}
           />
         </div>

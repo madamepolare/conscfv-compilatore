@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import jsPDF from 'jspdf'
 import 'jspdf-autotable'
 
-export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, totalCFA }) {
+export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, totalCFA }) {
   const viewRef = useRef(null)
 
   useEffect(() => {
@@ -97,6 +97,15 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, tot
   return (
     <div ref={viewRef} className="compiled-view">
       <div className="compiled-header">
+        <div className="titolo-pdf-container">
+          <input
+            type="text"
+            value={titoloPDF}
+            onChange={(e) => setTitoloPDF(e.target.value)}
+            className="titolo-pdf-input"
+            placeholder="Titolo Piano Didattico"
+          />
+        </div>
         <button className="btn-pdf" onClick={generatePDF}>
           📄 Genera PDF
         </button>
