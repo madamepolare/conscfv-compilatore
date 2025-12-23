@@ -21,7 +21,7 @@ body {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  background: var(--secondary-bg);
+  background: white;
   color: var(--primary-text);
 }
 
