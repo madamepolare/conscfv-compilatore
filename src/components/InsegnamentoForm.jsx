@@ -276,7 +276,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
           </div>
 
           {/* MOSTRA FORM COMPLETO SOLO PER INSEGNAMENTO */}
-          {insegnamento.tipoAttivita === 'Insegnamento' && (
+          {insegnamento.tipoAttivita === 'Insegnamento' ? (
             <>
               {/* CAMPO 1: AREA AFAM */}
               <div className="form-group">
@@ -443,6 +443,31 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
               )}
             </div>
           )}
+            </>
+          ) : (
+            /* FORM SEMPLIFICATO PER ALTRI TIPI (Laboratori, Seminari, Masterclass, Altro) */
+            <>
+              <div className="form-group full-width">
+                <label>Descrizione</label>
+                <textarea
+                  value={insegnamento.insegnamento || ''}
+                  onChange={(e) => onUpdate(insegnamento.id, { insegnamento: e.target.value })}
+                  className="form-control"
+                  rows="4"
+                  placeholder="Inserisci descrizione dell'attività formativa"
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Crediti (CFA) *</label>
+                <input
+                  type="number"
+                  value={insegnamento.cfa || 0}
+                  onChange={(e) => onUpdate(insegnamento.id, { cfa: parseInt(e.target.value) || 0 })}
+                  className="form-control"
+                  min="0"
+                />
+              </div>
             </>
           )}
         </div>
