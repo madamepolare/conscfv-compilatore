@@ -16,69 +16,112 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
   }, [insegnamenti])
 
   const generatePDF = () => {
-    if (insegnamenti.length === 0) {
-      alert('Aggiungi almeno un insegnamento prima di generare il PDF.')
+    if (insegnamenti.length === 0 && (!provaFinale || (!provaFinale.descrizione && !provaFinale.cfa))) {
+      alert('Aggiungi almeno un\'attività prima di generare il PDF.')
       return
     }
 
     const doc = new jsPDF()
     
-    doc.setFontSize(16)
+    // Titolo
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(18)
+    doc.setTextColor(54, 52, 142) // #36348E
     doc.text(titoloPDF || 'Piano Didattico di Corso di Studi AFAM', 14, 20)
     
+    // Data
+    doc.setFont('helvetica', 'normal')
     doc.setFontSize(10)
+    doc.setTextColor(102, 102, 102)
     const date = new Date().toLocaleDateString('it-IT')
     doc.text(`Data: ${date}`, 14, 28)
     
-    const tableData = insegnamenti.map((ins, index) => {
-      // Se è un insegnamento, mostra tutti i campi
+    // Tabella dati
+    const tableData = []
+    
+    // Aggiungi tutte le attività formative
+    insegnamenti.forEach((ins, index) => {
       if (ins.tipoAttivita === 'Insegnamento') {
-        return [
+        // Insegnamento completo
+        tableData.push([
           index + 1,
+          ins.tipoAttivita || '-',
+          ins.nomeAttivita || '-',
           ins.areaAFAM || '-',
           ins.sad || '-',
           ins.denominazioneSAD || '-',
           ins.profilo || '-',
           ins.cfa || 0,
-          ins.vecchioSAD || '-',
-          ins.denominazioneVecchioSAD || '-',
-          ins.insegnamento || '-',
-          ins.campoDisciplinare || '-'
-        ]
+          ins.insegnamento || ins.campoDisciplinare || '-'
+        ])
       } else {
-        // Per altri tipi, mostra tipo, nome e descrizione
-        return [
+        // Altri tipi (Laboratori, Seminari, Masterclass, Altro)
+        tableData.push([
           index + 1,
           ins.tipoAttivita || '-',
           ins.nomeAttivita || '-',
+          '-',
+          '-',
           ins.insegnamento || '-', // Descrizione
-          '',
+          '-',
           ins.cfa || 0,
-          '',
-          '',
-          '',
-          ''
-        ]
+          '-'
+        ])
       }
     })
     
-    tableData.push(['', '', '', '', 'TOTALE', totalCFA, '', '', '', ''])
+    // Aggiungi Prova Finale se presente
+    if (provaFinale && (provaFinale.descrizione || provaFinale.cfa > 0)) {
+      tableData.push([
+        'PF',
+        'Prova Finale',
+        '-',
+        '-',
+        '-',
+        provaFinale.descrizione || '-',
+        '-',
+        provaFinale.cfa || 0,
+        '-'
+      ])
+    }
+    
+    // Riga totale
+    tableData.push(['', '', '', '', '', '', 'TOTALE', totalCFA, ''])
     
     doc.autoTable({
-      head: [['#', 'Area AFAM', 'SAD', 'Denominazione SAD', 'Profilo', 'CFA', 'Vecchio SAD', 'Den. Vecchio SAD', 'Insegnamento', 'Campo Disc.']],
+      head: [['#', 'Tipo', 'Nome', 'Area', 'SAD', 'Denominazione', 'Profilo', 'CFA', 'Dettagli']],
       body: tableData,
       startY: 35,
-      styles: { fontSize: 8, cellPadding: 2 },
-      headStyles: { fillColor: [102, 126, 234], textColor: 255 },
+      styles: { 
+        fontSize: 8, 
+        cellPadding: 2,
+        font: 'helvetica',
+        textColor: [41, 41, 41]
+      },
+      headStyles: { 
+        fillColor: [54, 52, 142], // #36348E
+        textColor: [255, 255, 255],
+        fontStyle: 'bold',
+        fontSize: 9
+      },
       columnStyles: {
-        0: { cellWidth: 10 },
-        5: { cellWidth: 15, halign: 'center' }
+        0: { cellWidth: 10, halign: 'center' },
+        7: { cellWidth: 15, halign: 'center', fontStyle: 'bold', textColor: [247, 88, 56] } // CFA in arancione #F75838
       },
       didParseCell: function(data) {
+        // Riga totale
         if (data.row.index === tableData.length - 1) {
           data.cell.styles.fontStyle = 'bold'
-          data.cell.styles.fillColor = [230, 230, 230]
+          data.cell.styles.fillColor = [240, 240, 240]
+          data.cell.styles.textColor = [41, 41, 41]
         }
+        // Prova Finale
+        if (data.row.index === tableData.length - 2 && tableData[data.row.index][0] === 'PF') {
+          data.cell.styles.fillColor = [248, 249, 250]
+        }
+      },
+      alternateRowStyles: {
+        fillColor: [250, 250, 250]
       }
     })
     
