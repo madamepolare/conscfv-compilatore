@@ -100,19 +100,6 @@ function App() {
 
   return (
     <div className="app-container">
-      <header className="app-header">
-        <div className="header-content">
-          <div className="logo-container">
-            <img 
-              src="https://conscfv.it/wp-content/uploads/2020/02/logo-steffani-1.svg" 
-              alt="Conservatorio A. Steffani"
-              className="header-logo"
-            />
-          </div>
-          <h1>Piano Didattico di Corso di Studi AFAM</h1>
-        </div>
-      </header>
-
       <div className="main-content">
         <div className="left-column">
           <div className="column-header">
