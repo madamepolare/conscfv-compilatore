@@ -30,18 +30,37 @@ export default function CompiledView({ insegnamenti, totalCFA }) {
     const date = new Date().toLocaleDateString('it-IT')
     doc.text(`Data: ${date}`, 14, 28)
     
-    const tableData = insegnamenti.map((ins, index) => [
-      index + 1,
-      ins.areaAFAM || '-',
-      ins.sad || '-',
-      ins.denominazioneSAD || '-',
-      ins.profilo || '-',
-      ins.cfa || 0,
-      ins.vecchioSAD || '-',
-      ins.denominazioneVecchioSAD || '-',
-      ins.insegnamento || '-',
-      ins.campoDisciplinare || '-'
-    ])
+    const tableData = insegnamenti.map((ins, index) => {
+      // Se è un insegnamento, mostra tutti i campi
+      if (ins.tipoAttivita === 'Insegnamento') {
+        return [
+          index + 1,
+          ins.areaAFAM || '-',
+          ins.sad || '-',
+          ins.denominazioneSAD || '-',
+          ins.profilo || '-',
+          ins.cfa || 0,
+          ins.vecchioSAD || '-',
+          ins.denominazioneVecchioSAD || '-',
+          ins.insegnamento || '-',
+          ins.campoDisciplinare || '-'
+        ]
+      } else {
+        // Per altri tipi, mostra tipo, nome e descrizione
+        return [
+          index + 1,
+          ins.tipoAttivita || '-',
+          ins.nomeAttivita || '-',
+          ins.insegnamento || '-', // Descrizione
+          '',
+          ins.cfa || 0,
+          '',
+          '',
+          '',
+          ''
+        ]
+      }
+    })
     
     tableData.push(['', '', '', '', 'TOTALE', totalCFA, '', '', '', ''])
     
@@ -88,46 +107,77 @@ export default function CompiledView({ insegnamenti, totalCFA }) {
           <div key={ins.id} className="compiled-item">
             <div className="compiled-number">#{index + 1}</div>
             <div className="compiled-content">
+              {/* Mostra tipo di attività */}
               <div className="compiled-row">
-                <span className="label">Area AFAM:</span>
-                <span className="value">{ins.areaAFAM || '-'}</span>
+                <span className="label">Tipo:</span>
+                <span className="value">{ins.tipoAttivita || 'Insegnamento'}</span>
               </div>
-              <div className="compiled-row">
-                <span className="label">SAD:</span>
-                <span className="value">{ins.sad || '-'}</span>
-              </div>
-              <div className="compiled-row">
-                <span className="label">Denominazione:</span>
-                <span className="value">{ins.denominazioneSAD || '-'}</span>
-              </div>
-              {ins.profilo && (
+              
+              {/* Mostra nome attività se presente */}
+              {ins.nomeAttivita && (
                 <div className="compiled-row">
-                  <span className="label">Profilo:</span>
-                  <span className="value">{ins.profilo}</span>
+                  <span className="label">Nome:</span>
+                  <span className="value">{ins.nomeAttivita}</span>
                 </div>
               )}
+
+              {/* Se è un Insegnamento, mostra tutti i campi */}
+              {ins.tipoAttivita === 'Insegnamento' ? (
+                <>
+                  <div className="compiled-row">
+                    <span className="label">Area AFAM:</span>
+                    <span className="value">{ins.areaAFAM || '-'}</span>
+                  </div>
+                  <div className="compiled-row">
+                    <span className="label">SAD:</span>
+                    <span className="value">{ins.sad || '-'}</span>
+                  </div>
+                  <div className="compiled-row">
+                    <span className="label">Denominazione:</span>
+                    <span className="value">{ins.denominazioneSAD || '-'}</span>
+                  </div>
+                  {ins.profilo && (
+                    <div className="compiled-row">
+                      <span className="label">Profilo:</span>
+                      <span className="value">{ins.profilo}</span>
+                    </div>
+                  )}
+                  {ins.vecchioSAD && (
+                    <div className="compiled-row">
+                      <span className="label">Vecchio SAD:</span>
+                      <span className="value">{ins.vecchioSAD} - {ins.denominazioneVecchioSAD}</span>
+                    </div>
+                  )}
+                  {ins.insegnamento && (
+                    <div className="compiled-row">
+                      <span className="label">Insegnamento:</span>
+                      <span className="value">{ins.insegnamento}</span>
+                    </div>
+                  )}
+                  {ins.campoDisciplinare && (
+                    <div className="compiled-row">
+                      <span className="label">Campo Disciplinare:</span>
+                      <span className="value">{ins.campoDisciplinare}</span>
+                    </div>
+                  )}
+                </>
+              ) : (
+                /* Per altri tipi (Laboratori, Seminari, ecc.) mostra solo descrizione */
+                <>
+                  {ins.insegnamento && (
+                    <div className="compiled-row">
+                      <span className="label">Descrizione:</span>
+                      <span className="value">{ins.insegnamento}</span>
+                    </div>
+                  )}
+                </>
+              )}
+
+              {/* CFA sempre visibile per tutti i tipi */}
               <div className="compiled-row highlight">
                 <span className="label">CFA:</span>
                 <span className="value cfa">{ins.cfa || 0}</span>
               </div>
-              {ins.vecchioSAD && (
-                <div className="compiled-row">
-                  <span className="label">Vecchio SAD:</span>
-                  <span className="value">{ins.vecchioSAD} - {ins.denominazioneVecchioSAD}</span>
-                </div>
-              )}
-              {ins.insegnamento && (
-                <div className="compiled-row">
-                  <span className="label">Insegnamento:</span>
-                  <span className="value">{ins.insegnamento}</span>
-                </div>
-              )}
-              {ins.campoDisciplinare && (
-                <div className="compiled-row">
-                  <span className="label">Campo Disciplinare:</span>
-                  <span className="value">{ins.campoDisciplinare}</span>
-                </div>
-              )}
             </div>
           </div>
         ))}
