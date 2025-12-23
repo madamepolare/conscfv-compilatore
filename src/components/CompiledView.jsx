@@ -105,21 +105,18 @@ export default function CompiledView({ insegnamenti, totalCFA }) {
       <div className="compiled-list">
         {insegnamenti.map((ins, index) => (
           <div key={ins.id} className="compiled-item">
-            <div className="compiled-number">#{index + 1}</div>
+            <div className="compiled-header-line">
+              <div className="compiled-number">#{index + 1}</div>
+              {ins.nomeAttivita && (
+                <h3 className="compiled-title">{ins.nomeAttivita}</h3>
+              )}
+            </div>
             <div className="compiled-content">
               {/* Mostra tipo di attività */}
               <div className="compiled-row">
                 <span className="label">Tipo:</span>
                 <span className="value">{ins.tipoAttivita || 'Insegnamento'}</span>
               </div>
-              
-              {/* Mostra nome attività se presente */}
-              {ins.nomeAttivita && (
-                <div className="compiled-row">
-                  <span className="label">Nome:</span>
-                  <span className="value">{ins.nomeAttivita}</span>
-                </div>
-              )}
 
               {/* Se è un Insegnamento, mostra tutti i campi */}
               {ins.tipoAttivita === 'Insegnamento' ? (
