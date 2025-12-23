@@ -211,6 +211,23 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
             <GripVertical size={18} strokeWidth={1.5} />
           </button>
           <h3>#{index + 1}</h3>
+          <input
+            type="text"
+            value={insegnamento.nomeAttivita || ''}
+            onChange={(e) => onUpdate(insegnamento.id, { nomeAttivita: e.target.value })}
+            className="nome-attivita-input"
+            placeholder="Nome attività"
+          />
+          <div className="cfa-inline">
+            <input
+              type="number"
+              value={insegnamento.cfa || 0}
+              onChange={(e) => onUpdate(insegnamento.id, { cfa: parseInt(e.target.value) || 0 })}
+              className="cfa-input-inline"
+              min="0"
+            />
+            <span className="cfa-label">CFA</span>
+          </div>
           {insegnamento.sad && !collapsed && (
             <span className="info-badge">{insegnamento.sad}</span>
           )}
@@ -242,20 +259,39 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
         </div>
       ) : (
         <div className="form-grid">
-          {/* CAMPO 1: AREA AFAM */}
-          <div className="form-group">
-            <label>AREA AFAM *</label>
+          {/* SELEZIONE TIPO ATTIVITÀ */}
+          <div className="form-group full-width">
+            <label>Tipo di Attività Formativa *</label>
             <select
-              value={insegnamento.areaAFAM}
-              onChange={handleAreaChange}
+              value={insegnamento.tipoAttivita || 'Insegnamento'}
+              onChange={(e) => onUpdate(insegnamento.id, { tipoAttivita: e.target.value })}
               className="form-control"
             >
-              <option value="">Seleziona Area AFAM</option>
-              {AREA_OPTIONS.map(area => (
-                <option key={area} value={area}>{area}</option>
-              ))}
+              <option value="Insegnamento">Insegnamento</option>
+              <option value="Laboratori">Laboratori</option>
+              <option value="Seminari">Seminari</option>
+              <option value="Masterclass">Masterclass</option>
+              <option value="Altro">Altro</option>
             </select>
           </div>
+
+          {/* MOSTRA FORM COMPLETO SOLO PER INSEGNAMENTO */}
+          {insegnamento.tipoAttivita === 'Insegnamento' && (
+            <>
+              {/* CAMPO 1: AREA AFAM */}
+              <div className="form-group">
+                <label>AREA AFAM *</label>
+                <select
+                  value={insegnamento.areaAFAM}
+                  onChange={handleAreaChange}
+                  className="form-control"
+                >
+                  <option value="">Seleziona Area AFAM</option>
+                  {AREA_OPTIONS.map(area => (
+                    <option key={area} value={area}>{area}</option>
+                  ))}
+                </select>
+              </div>
 
           {showFields && (
             <div ref={fieldsRef} className="fields-container">
@@ -406,6 +442,8 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                 </div>
               )}
             </div>
+          )}
+            </>
           )}
         </div>
       )}

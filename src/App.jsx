@@ -36,6 +36,8 @@ function App() {
   const addInsegnamento = () => {
     const newInsegnamento = {
       id: Date.now(),
+      tipoAttivita: 'Insegnamento',
+      nomeAttivita: '',
       areaAFAM: '',
       sad: '',
       denominazioneSAD: '',
@@ -103,9 +105,9 @@ function App() {
       <div className="main-content">
         <div className="left-column">
           <div className="column-header">
-            <h2>Aggiungi Insegnamenti</h2>
+            <h2>Aggiungi Attività Formative</h2>
             <button className="btn-add" onClick={addInsegnamento}>
-              + Nuovo Insegnamento
+              + Nuova Attività Formativa
             </button>
           </div>
           <DndContext
