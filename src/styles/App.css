@@ -124,13 +124,51 @@
   padding: 0 2rem 2rem 2rem;
 }
 
+.titolo-piano-container {
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.titolo-piano-container label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.titolo-piano-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #292929;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.titolo-piano-input:focus {
+  outline: none;
+  border-color: #36348E;
+  box-shadow: 0 0 0 3px rgba(54, 52, 142, 0.1);
+}
+
+.titolo-piano-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
 .prova-finale-card {
   background: #e8e9eb;
   border-radius: 12px;
   padding: 1rem 1.25rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
-  border: 2px solid #999;
+  border: none;
 }
 
 .prova-finale-card .card-header {
@@ -579,11 +617,11 @@ textarea.form-control {
 
 .compiled-item.prova-finale-item {
   background: #e8e9eb;
-  border: 2px solid #999;
+  border: none;
 }
 
 .compiled-item.prova-finale-item:hover {
-  border-color: #666;
+  border: none;
 }
 
 .compiled-item.prova-finale-item .compiled-number {

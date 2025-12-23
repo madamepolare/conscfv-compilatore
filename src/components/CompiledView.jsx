@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import jsPDF from 'jspdf'
 import 'jspdf-autotable'
 
-export default function CompiledView({ insegnamenti, provaFinale, totalCFA }) {
+export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, totalCFA }) {
   const viewRef = useRef(null)
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function CompiledView({ insegnamenti, provaFinale, totalCFA }) {
     const doc = new jsPDF()
     
     doc.setFontSize(16)
-    doc.text('Piano Didattico di Corso di Studi AFAM', 14, 20)
+    doc.text(titoloPDF || 'Piano Didattico di Corso di Studi AFAM', 14, 20)
     
     doc.setFontSize(10)
     const date = new Date().toLocaleDateString('it-IT')

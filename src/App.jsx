@@ -11,6 +11,7 @@ function App() {
   const [data, setData] = useState([])
   const [insegnamenti, setInsegnamenti] = useState([])
   const [provaFinale, setProvaFinale] = useState({ descrizione: '', cfa: 0, collapsed: false })
+  const [titoloPDF, setTitoloPDF] = useState('Piano Didattico di Corso di Studi AFAM')
   const [loading, setLoading] = useState(true)
 
   const sensors = useSensors(
@@ -111,6 +112,20 @@ function App() {
               + Nuova Attività Formativa
             </button>
           </div>
+          
+          {/* Campo Titolo Piano Didattico */}
+          <div className="titolo-piano-container">
+            <label htmlFor="titolo-piano">Titolo Piano Didattico:</label>
+            <input
+              id="titolo-piano"
+              type="text"
+              value={titoloPDF}
+              onChange={(e) => setTitoloPDF(e.target.value)}
+              className="titolo-piano-input"
+              placeholder="Inserisci titolo del piano didattico"
+            />
+          </div>
+          
           <DndContext
             sensors={sensors}
             collisionDetection={closestCenter}
@@ -182,6 +197,7 @@ function App() {
           <CompiledView 
             insegnamenti={insegnamenti}
             provaFinale={provaFinale}
+            titoloPDF={titoloPDF}
             totalCFA={totalCFA}
           />
         </div>
