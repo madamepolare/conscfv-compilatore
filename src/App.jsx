@@ -12,7 +12,7 @@ function App() {
   const [insegnamenti, setInsegnamenti] = useState([])
   const [provaFinale, setProvaFinale] = useState({ descrizione: '', cfa: 0, collapsed: false })
   const [titoloPDF, setTitoloPDF] = useState('Denominazione del corso di studi')
-  const [creditiMassimi, setCreditiMassimi] = useState(180)
+  const [creditiMassimi, setCreditiMassimi] = useState(0)
   const [loading, setLoading] = useState(true)
 
   const sensors = useSensors(
@@ -198,15 +198,18 @@ function App() {
       </div>
 
       <div className={`total-cfa-fixed ${
-        totalCFA === creditiMassimi ? 'valid' : 
-        totalCFA > creditiMassimi ? 'exceeded' : 
-        totalCFA < creditiMassimi ? 'missing' : ''
+        creditiMassimi > 0 ? (
+          totalCFA === creditiMassimi ? 'valid' : 
+          totalCFA > creditiMassimi ? 'exceeded' : 'missing'
+        ) : ''
       }`}>
         <strong>Totale CFA:</strong>
-        <span className="cfa-value">{totalCFA}/{creditiMassimi}</span>
-        {totalCFA === creditiMassimi && <span className="status-text">✓ Completo</span>}
-        {totalCFA > creditiMassimi && <span className="status-text">⚠ Superati di {totalCFA - creditiMassimi}</span>}
-        {totalCFA < creditiMassimi && <span className="status-text">⚠ Mancanti {creditiMassimi - totalCFA}</span>}
+        <span className="cfa-value">
+          {creditiMassimi > 0 ? `${totalCFA}/${creditiMassimi}` : totalCFA}
+        </span>
+        {creditiMassimi > 0 && totalCFA === creditiMassimi && <span className="status-text">✓ Completo</span>}
+        {creditiMassimi > 0 && totalCFA > creditiMassimi && <span className="status-text">⚠ Superati di {totalCFA - creditiMassimi}</span>}
+        {creditiMassimi > 0 && totalCFA < creditiMassimi && <span className="status-text">⚠ Mancanti {creditiMassimi - totalCFA}</span>}
       </div>
     </div>
   )
