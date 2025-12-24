@@ -9,7 +9,8 @@ import {
   filterProfili,
   filterVecchiSAD,
   getDenominazioneVecchioSAD,
-  filterCampiDisciplinari
+  filterCampiDisciplinari,
+  trovaSADVecchioConBestCampo
 } from '../utils/dataFilters'
 
 const AREA_OPTIONS = ['ABA', 'AND', 'ANAD', 'ISSM', 'ISIA']
@@ -182,6 +183,54 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
     }
   }
 
+  const handleProfiloChange = (e) => {
+    const profilo = e.target.value
+    
+    if (profilo && insegnamento.sad) {
+      // Filtra i Vecchi SAD mostrando solo quelli con almeno una parola in comune con il profilo
+      const vecchiSADFiltrati = filterVecchiSAD(data, insegnamento.areaAFAM, insegnamento.sad, profilo)
+      setVecchiSADOptions(vecchiSADFiltrati)
+      
+      // Usa la funzione di similarità Jaccard per trovare automaticamente SAD vecchio e campo disciplinare
+      const result = trovaSADVecchioConBestCampo(data, insegnamento.sad, profilo, true)
+      
+      if (result && vecchiSADFiltrati.includes(result.sadVecchio)) {
+        // Aggiorna le opzioni dei campi disciplinari per il SAD vecchio trovato
+        const campi = filterCampiDisciplinari(data, result.sadVecchio)
+        setCampiDisciplinariOptions(campi)
+        
+        // Auto-compila SAD vecchio, denominazione e campo disciplinare migliore
+        onUpdate(insegnamento.id, {
+          profilo,
+          vecchioSAD: result.sadVecchio,
+          denominazioneVecchioSAD: result.sadVecchioNome,
+          campoDisciplinare: result.bestCampoDisciplinare || ''
+        })
+      } else {
+        // Se non trova corrispondenza, imposta solo il profilo e resetta i campi
+        setCampiDisciplinariOptions([])
+        onUpdate(insegnamento.id, { 
+          profilo,
+          vecchioSAD: '',
+          denominazioneVecchioSAD: '',
+          campoDisciplinare: ''
+        })
+      }
+    } else {
+      // Se profilo vuoto, mostra tutti i Vecchi SAD senza filtro
+      const vecchiSAD = filterVecchiSAD(data, insegnamento.areaAFAM, insegnamento.sad)
+      setVecchiSADOptions(vecchiSAD)
+      setCampiDisciplinariOptions([])
+      
+      onUpdate(insegnamento.id, { 
+        profilo: profilo || '',
+        vecchioSAD: '',
+        denominazioneVecchioSAD: '',
+        campoDisciplinare: ''
+      })
+    }
+  }
+
   const handleRemove = () => {
     onRemove(insegnamento.id)
   }
@@ -318,7 +367,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                 <label>Profilo</label>
                 <select
                   value={insegnamento.profilo}
-                  onChange={(e) => onUpdate(insegnamento.id, { profilo: e.target.value })}
+                  onChange={handleProfiloChange}
                   className="form-control"
                   disabled={profiliOptions.length === 0}
                 >
