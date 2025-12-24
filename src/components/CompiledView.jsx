@@ -136,15 +136,6 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     doc.save('piano_didattico_afam.pdf')
   }
 
-  if (insegnamenti.length === 0) {
-    return (
-      <div className="compiled-empty">
-        <p>Nessun insegnamento da visualizzare.</p>
-        <p>Aggiungi degli insegnamenti dalla colonna di sinistra.</p>
-      </div>
-    )
-  }
-
   return (
     <div ref={viewRef} className="compiled-view">
       <div className="compiled-header">
@@ -170,7 +161,12 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         </div>
       </div>
 
-      <div className="compiled-list">
+      {insegnamenti.length === 0 ? (
+        <div className="compiled-empty">
+          <p>Nessun insegnamento da visualizzare.</p>
+          <p>Aggiungi degli insegnamenti dalla colonna di sinistra.</p>
+        </div>
+      ) : (
         {insegnamenti.map((ins, index) => (
           <div key={ins.id} className="compiled-item">
             <div className="compiled-header-line">
@@ -273,6 +269,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           </div>
         )}
       </div>
+      )}
 
       <div className="compiled-total">
         <span>Totale CFA:</span>
