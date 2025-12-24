@@ -167,6 +167,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           <p>Aggiungi degli insegnamenti dalla colonna di sinistra.</p>
         </div>
       ) : (
+        <div className="compiled-list">
         {insegnamenti.map((ins, index) => (
           <div key={ins.id} className="compiled-item">
             <div className="compiled-header-line">
@@ -268,7 +269,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             </div>
           </div>
         )}
-      </div>
+        </div>
       )}
 
       <div className="compiled-total">
