@@ -12,6 +12,7 @@ function App() {
   const [insegnamenti, setInsegnamenti] = useState([])
   const [provaFinale, setProvaFinale] = useState({ descrizione: '', cfa: 0, collapsed: false })
   const [titoloPDF, setTitoloPDF] = useState('Denominazione del corso di studi')
+  const [creditiMassimi, setCreditiMassimi] = useState(180)
   const [loading, setLoading] = useState(true)
 
   const sensors = useSensors(
@@ -180,20 +181,32 @@ function App() {
         <div className="right-column">
           <div className="column-header">
             <h2>Riepilogo Piano Didattico</h2>
+            <button className="btn-pdf" onClick={() => document.querySelector('.compiled-view').dispatchEvent(new CustomEvent('generatePDF'))}>
+              📄 Genera PDF
+            </button>
           </div>
           <CompiledView 
             insegnamenti={insegnamenti}
             provaFinale={provaFinale}
             titoloPDF={titoloPDF}
             setTitoloPDF={setTitoloPDF}
+            creditiMassimi={creditiMassimi}
+            setCreditiMassimi={setCreditiMassimi}
             totalCFA={totalCFA}
           />
         </div>
       </div>
 
-      <div className="total-cfa-fixed">
+      <div className={`total-cfa-fixed ${
+        totalCFA === creditiMassimi ? 'valid' : 
+        totalCFA > creditiMassimi ? 'exceeded' : 
+        totalCFA < creditiMassimi ? 'missing' : ''
+      }`}>
         <strong>Totale CFA:</strong>
-        <span className="cfa-value">{totalCFA}</span>
+        <span className="cfa-value">{totalCFA}/{creditiMassimi}</span>
+        {totalCFA === creditiMassimi && <span className="status-text">✓ Completo</span>}
+        {totalCFA > creditiMassimi && <span className="status-text">⚠ Superati di {totalCFA - creditiMassimi}</span>}
+        {totalCFA < creditiMassimi && <span className="status-text">⚠ Mancanti {creditiMassimi - totalCFA}</span>}
       </div>
     </div>
   )

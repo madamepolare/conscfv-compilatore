@@ -23,7 +23,36 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #e9ecef;
+}
+
+.total-cfa-fixed.valid {
+  border-color: #28a745;
+  background: #f0fff4;
+}
+
+.total-cfa-fixed.exceeded {
+  border-color: #dc3545;
+  background: #fff5f5;
+}
+
+.total-cfa-fixed.missing {
+  border-color: #ffc107;
+  background: #fffbf0;
+}
+
+.total-cfa-fixed .status-text {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.total-cfa-fixed.valid .status-text {
+  color: #28a745;
+}
+
+.total-cfa-fixed.exceeded .status-text,
+.total-cfa-fixed.missing .status-text {
+  color: #dc3545;
 }
 
 .total-cfa-fixed:hover {
@@ -592,10 +621,44 @@ textarea.form-control {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .titolo-pdf-container {
   flex: 1;
+  min-width: 200px;
+}
+
+.crediti-massimi-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.crediti-massimi-container label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  white-space: nowrap;
+}
+
+.crediti-massimi-input {
+  width: 80px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #292929;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.crediti-massimi-input:focus {
+  outline: none;
+  border-color: #36348E;
+  box-shadow: 0 0 0 3px rgba(54, 52, 142, 0.1);
 }
 
 .titolo-pdf-input {

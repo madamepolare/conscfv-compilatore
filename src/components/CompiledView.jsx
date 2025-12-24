@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import jsPDF from 'jspdf'
 import 'jspdf-autotable'
 
-export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, totalCFA }) {
+export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, creditiMassimi, setCreditiMassimi, totalCFA }) {
   const viewRef = useRef(null)
 
   useEffect(() => {
@@ -14,6 +14,14 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
       )
     }
   }, [insegnamenti])
+
+  useEffect(() => {
+    const handleGeneratePDF = () => generatePDF()
+    if (viewRef.current) {
+      viewRef.current.addEventListener('generatePDF', handleGeneratePDF)
+      return () => viewRef.current?.removeEventListener('generatePDF', handleGeneratePDF)
+    }
+  }, [insegnamenti, provaFinale, titoloPDF, totalCFA])
 
   const generatePDF = () => {
     if (insegnamenti.length === 0 && (!provaFinale || (!provaFinale.descrizione && !provaFinale.cfa))) {
@@ -149,9 +157,17 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             placeholder="Titolo corso di studi"
           />
         </div>
-        <button className="btn-pdf" onClick={generatePDF}>
-          📄 Genera PDF
-        </button>
+        <div className="crediti-massimi-container">
+          <label htmlFor="crediti-massimi">Crediti massimi:</label>
+          <input
+            id="crediti-massimi"
+            type="number"
+            value={creditiMassimi}
+            onChange={(e) => setCreditiMassimi(parseInt(e.target.value) || 0)}
+            className="crediti-massimi-input"
+            min="0"
+          />
+        </div>
       </div>
 
       <div className="compiled-list">
