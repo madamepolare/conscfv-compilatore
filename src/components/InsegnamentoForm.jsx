@@ -433,6 +433,42 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                   </select>
                 </div>
               )}
+              
+              {/* CAMPO: Tipologia di Valutazione */}
+              {!isInsegnamentoLibero && (
+                <div className="form-group">
+                  <label>Tipologia di Valutazione</label>
+                  <select
+                    value={insegnamento.tipologiaValutazione || ''}
+                    onChange={(e) => onUpdate(insegnamento.id, { tipologiaValutazione: e.target.value })}
+                    className="form-control"
+                  >
+                    <option value="">Seleziona Tipologia</option>
+                    <option value="Esame">Esame</option>
+                    <option value="Idoneità">Idoneità</option>
+                  </select>
+                </div>
+              )}
+              
+              {/* CAMPO: Tipologia di Lezione */}
+              {!isInsegnamentoLibero && (
+                <div className="form-group">
+                  <label>Tipologia di Lezione</label>
+                  <select
+                    value={insegnamento.tipologiaLezione || ''}
+                    onChange={(e) => onUpdate(insegnamento.id, { tipologiaLezione: e.target.value })}
+                    className="form-control"
+                  >
+                    <option value="">Seleziona Tipologia</option>
+                    <option value="Teorica">Teorica</option>
+                    <option value="Teorica-Pratica">Teorica-Pratica</option>
+                    <option value="Individuale">Individuale</option>
+                    <option value="D'insieme/Gruppo">D'insieme/Gruppo</option>
+                    <option value="Teorico-Pratica/Collettiva">Teorico-Pratica/Collettiva</option>
+                    <option value="Laboratorio">Laboratorio</option>
+                  </select>
+                </div>
+              )}
             </div>
           )}
             </>

@@ -50,7 +50,15 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     // Aggiungi tutte le attività formative
     insegnamenti.forEach((ins, index) => {
       if (ins.tipoAttivita === 'Insegnamento') {
-        // Insegnamento completo
+        // Insegnamento completo - build details string
+        let details = ins.insegnamento || ins.campoDisciplinare || '-'
+        if (ins.tipologiaValutazione) {
+          details += ` | Val: ${ins.tipologiaValutazione}`
+        }
+        if (ins.tipologiaLezione) {
+          details += ` | Lez: ${ins.tipologiaLezione}`
+        }
+        
         tableData.push([
           index + 1,
           ins.tipoAttivita || '-',
@@ -60,7 +68,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           ins.denominazioneSAD || '-',
           ins.profilo || '-',
           ins.cfa || 0,
-          ins.insegnamento || ins.campoDisciplinare || '-'
+          details
         ])
       } else {
         // Altri tipi (Laboratori, Seminari, Masterclass, Altro)
@@ -133,7 +141,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
       }
     })
     
-    doc.save('piano_didattico_afam.pdf')
+    doc.save(`${titoloPDF || 'piano_didattico_afam'}.pdf`)
   }
 
   return (
@@ -220,6 +228,18 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
                     <div className="compiled-row">
                       <span className="label">Campo Disciplinare:</span>
                       <span className="value">{ins.campoDisciplinare}</span>
+                    </div>
+                  )}
+                  {ins.tipologiaValutazione && (
+                    <div className="compiled-row">
+                      <span className="label">Tipologia Valutazione:</span>
+                      <span className="value">{ins.tipologiaValutazione}</span>
+                    </div>
+                  )}
+                  {ins.tipologiaLezione && (
+                    <div className="compiled-row">
+                      <span className="label">Tipologia Lezione:</span>
+                      <span className="value">{ins.tipologiaLezione}</span>
                     </div>
                   )}
                 </>

@@ -50,6 +50,8 @@ function App() {
       denominazioneVecchioSAD: '',
       insegnamento: '',
       campoDisciplinare: '',
+      tipologiaValutazione: '',
+      tipologiaLezione: '',
       tipoInsegnamento: 'libero',
       collapsed: false
     }
