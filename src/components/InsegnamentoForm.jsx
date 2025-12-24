@@ -254,10 +254,11 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
           <div className="form-group full-width">
             <label>Tipo di Attività Formativa *</label>
             <select
-              value={insegnamento.tipoAttivita || 'Insegnamento'}
+              value={insegnamento.tipoAttivita || ''}
               onChange={(e) => onUpdate(insegnamento.id, { tipoAttivita: e.target.value })}
               className="form-control"
             >
+              <option value="">Seleziona attività</option>
               <option value="Insegnamento">Insegnamento</option>
               <option value="Laboratori">Laboratori</option>
               <option value="Seminari">Seminari</option>

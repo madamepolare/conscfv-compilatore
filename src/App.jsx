@@ -11,7 +11,7 @@ function App() {
   const [data, setData] = useState([])
   const [insegnamenti, setInsegnamenti] = useState([])
   const [provaFinale, setProvaFinale] = useState({ descrizione: '', cfa: 0, collapsed: false })
-  const [titoloPDF, setTitoloPDF] = useState('Piano Didattico di Corso di Studi AFAM')
+  const [titoloPDF, setTitoloPDF] = useState('Denominazione del corso di studi')
   const [loading, setLoading] = useState(true)
 
   const sensors = useSensors(
@@ -38,7 +38,7 @@ function App() {
   const addInsegnamento = () => {
     const newInsegnamento = {
       id: Date.now(),
-      tipoAttivita: 'Insegnamento',
+      tipoAttivita: '',
       nomeAttivita: '',
       areaAFAM: '',
       sad: '',
