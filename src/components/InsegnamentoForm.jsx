@@ -436,7 +436,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
             </div>
           )}
             </>
-          ) : (
+          ) : insegnamento.tipoAttivita !== '' ? (
             /* FORM SEMPLIFICATO PER ALTRI TIPI (Laboratori, Seminari, Masterclass, Altro) */
             <>
               <div className="form-group full-width">
@@ -461,7 +461,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                 />
               </div>
             </>
-          )}
+          ) : null}
         </div>
       )}
     </div>
