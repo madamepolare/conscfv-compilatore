@@ -600,10 +600,11 @@ textarea.form-control {
 
 .titolo-pdf-input {
   width: 100%;
-  padding: 0.4rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   border: 1px solid #e9ecef;
   border-radius: 6px;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #292929;
   font-family: 'Bricolage Grotesque', sans-serif;
   transition: all 0.2s ease;

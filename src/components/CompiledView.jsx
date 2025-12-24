@@ -146,7 +146,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             value={titoloPDF}
             onChange={(e) => setTitoloPDF(e.target.value)}
             className="titolo-pdf-input"
-            placeholder="Titolo Piano Didattico"
+            placeholder="Titolo corso di studi"
           />
         </div>
         <button className="btn-pdf" onClick={generatePDF}>

@@ -211,13 +211,6 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
             <GripVertical size={18} strokeWidth={1.5} />
           </button>
           <h3>#{index + 1}</h3>
-          <input
-            type="text"
-            value={insegnamento.nomeAttivita || ''}
-            onChange={(e) => onUpdate(insegnamento.id, { nomeAttivita: e.target.value })}
-            className="nome-attivita-input"
-            placeholder="Nome attività"
-          />
           <div className="cfa-inline">
             <input
               type="number"
