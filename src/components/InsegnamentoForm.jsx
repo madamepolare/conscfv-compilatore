@@ -309,7 +309,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
             >
               <option value="">Seleziona attività</option>
               <option value="Insegnamento">Insegnamento</option>
-              <option value="Altre attività formative">Altre attività formative</option>
+              <option value="Altra attività formativa">Altra attività formativa</option>
             </select>
           </div>
 
@@ -507,7 +507,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                   >
                     <option value="">Seleziona Tipologia</option>
                     <option value="Teorica">Teorica</option>
-                    <option value="Teorica-Pratica">Teorico-Pratica</option>
+                    <option value="Teorico-Pratica">Teorico-Pratica</option>
                     <option value="Individuale">Individuale</option>
                     <option value="D'insieme/Gruppo">D'insieme/Gruppo</option>
                     <option value="Teorico-Pratica/Collettiva">Teorico-Pratica/Collettiva</option>
