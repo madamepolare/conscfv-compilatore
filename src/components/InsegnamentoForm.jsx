@@ -546,7 +546,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
               {/* Fine sezione informazioni aggiuntive */}
             </div>
           )}
-            </>
+          </>
           ) : insegnamento.tipoAttivita !== '' ? (
             /* FORM SEMPLIFICATO PER ALTRE ATTIVITÀ FORMATIVE */
             <>
