@@ -71,7 +71,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           details
         ])
       } else {
-        // Altri tipi (Laboratori, Seminari, Masterclass, Altro)
+        // Altre attività formative
         tableData.push([
           index + 1,
           ins.tipoAttivita || '-',
@@ -244,7 +244,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
                   )}
                 </>
               ) : (
-                /* Per altri tipi (Laboratori, Seminari, ecc.) mostra solo descrizione */
+                /* Per altre attività formative mostra solo descrizione */
                 <>
                   {ins.insegnamento && (
                     <div className="compiled-row">

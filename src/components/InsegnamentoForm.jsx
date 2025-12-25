@@ -309,10 +309,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
             >
               <option value="">Seleziona attività</option>
               <option value="Insegnamento">Insegnamento</option>
-              <option value="Laboratori">Laboratori</option>
-              <option value="Seminari">Seminari</option>
-              <option value="Masterclass">Masterclass</option>
-              <option value="Altro">Altro</option>
+              <option value="Altre attività formative">Altre attività formative</option>
             </select>
           </div>
 
@@ -510,7 +507,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                   >
                     <option value="">Seleziona Tipologia</option>
                     <option value="Teorica">Teorica</option>
-                    <option value="Teorica-Pratica">Teorica-Pratica</option>
+                    <option value="Teorica-Pratica">Teorico-Pratica</option>
                     <option value="Individuale">Individuale</option>
                     <option value="D'insieme/Gruppo">D'insieme/Gruppo</option>
                     <option value="Teorico-Pratica/Collettiva">Teorico-Pratica/Collettiva</option>
@@ -522,7 +519,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
           )}
             </>
           ) : insegnamento.tipoAttivita !== '' ? (
-            /* FORM SEMPLIFICATO PER ALTRI TIPI (Laboratori, Seminari, Masterclass, Altro) */
+            /* FORM SEMPLIFICATO PER ALTRE ATTIVITÀ FORMATIVE */
             <>
               <div className="form-group full-width">
                 <label>Descrizione</label>
