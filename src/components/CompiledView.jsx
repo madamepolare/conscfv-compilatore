@@ -52,6 +52,9 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
       if (ins.tipoAttivita === 'Insegnamento') {
         // Insegnamento completo - build details string
         let details = ins.insegnamento || ins.campoDisciplinare || '-'
+        if (ins.tipologiaAttivitaFormativa) {
+          details += ` | Tip: ${ins.tipologiaAttivitaFormativa}`
+        }
         if (ins.tipologiaValutazione) {
           details += ` | Val: ${ins.tipologiaValutazione}`
         }
@@ -210,6 +213,12 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
                     <div className="compiled-row">
                       <span className="label">Profilo:</span>
                       <span className="value">{ins.profilo}</span>
+                    </div>
+                  )}
+                  {ins.tipologiaAttivitaFormativa && (
+                    <div className="compiled-row">
+                      <span className="label">Tipologia Attività:</span>
+                      <span className="value">{ins.tipologiaAttivitaFormativa}</span>
                     </div>
                   )}
                   {ins.vecchioSAD && (

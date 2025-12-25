@@ -334,188 +334,216 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
 
           {showFields && (
             <div ref={fieldsRef} className="fields-container">
-              {/* CAMPO 2: SAD */}
-              <div className="form-group">
-                <label>SAD *</label>
-                <select
-                  value={insegnamento.sad}
-                  onChange={handleSADChange}
-                  className="form-control"
-                >
-                  <option value="">Scegli SAD</option>
-                  {sadOptions.map(sad => (
-                    <option key={sad} value={sad}>{sad}</option>
-                  ))}
-                </select>
-              </div>
-
-              {/* CAMPO 3: Denominazione SAD */}
-              <div className="form-group">
-                <label>Denominazione SAD</label>
-                <input
-                  type="text"
-                  value={insegnamento.denominazioneSAD}
-                  className="form-control"
-                  readOnly
-                />
-              </div>
-
-              {/* CAMPO 4: Profilo */}
-              <div className="form-group">
-                <label>Profilo</label>
-                <select
-                  value={insegnamento.profilo}
-                  onChange={handleProfiloChange}
-                  className="form-control"
-                  disabled={profiliOptions.length === 0}
-                >
-                  <option value="">Seleziona Profilo</option>
-                  {profiliOptions.map(profilo => (
-                    <option key={profilo} value={profilo}>{profilo}</option>
-                  ))}
-                </select>
-              </div>
-
-              {/* CAMPO 5: CFA */}
-              <div className="form-group">
-                <label>CFA *</label>
-                <input
-                  type="number"
-                  value={insegnamento.cfa}
-                  onChange={(e) => onUpdate(insegnamento.id, { cfa: parseInt(e.target.value) || 0 })}
-                  className="form-control"
-                  min="0"
-                />
-              </div>
-
-              {/* CAMPO 6: Vecchio/Vecchi SAD */}
-              <div className="form-group">
-                <label>Vecchio/Vecchi SAD</label>
-                <select
-                  value={insegnamento.vecchioSAD}
-                  onChange={handleVecchioSADChange}
-                  className="form-control"
-                >
-                  <option value="">Scegli SAD</option>
-                  {vecchiSADOptions.map(sad => (
-                    <option key={sad} value={sad}>{sad}</option>
-                  ))}
-                </select>
-              </div>
-
-              {/* CAMPO 7: Denominazione SAD vecchio */}
-              <div className="form-group">
-                <label>Denominazione SAD vecchio</label>
-                <input
-                  type="text"
-                  value={insegnamento.denominazioneVecchioSAD}
-                  className="form-control"
-                  readOnly
-                />
-              </div>
-
-              {/* SWITCHER: Insegnamento Libero vs Campo Disciplinare */}
-              <div className="form-group full-width">
-                <div className="switcher-container">
-                  <label className="switcher-label">Tipo di insegnamento</label>
-                  <div className="switcher-toggle">
-                    <button
-                      type="button"
-                      className={`toggle-btn ${isInsegnamentoLibero ? 'active' : ''}`}
-                      onClick={() => {
-                        setIsInsegnamentoLibero(true)
-                        onUpdate(insegnamento.id, { 
-                          tipoInsegnamento: 'libero',
-                          campoDisciplinare: '' 
-                        })
-                      }}
-                    >
-                      Insegnamento Libero
-                    </button>
-                    <button
-                      type="button"
-                      className={`toggle-btn ${!isInsegnamentoLibero ? 'active' : ''}`}
-                      onClick={() => {
-                        setIsInsegnamentoLibero(false)
-                        onUpdate(insegnamento.id, { 
-                          tipoInsegnamento: 'campoDisciplinare',
-                          insegnamento: '' 
-                        })
-                      }}
-                    >
-                      Campo Disciplinare
-                    </button>
-                  </div>
+              {/* === SEZIONE 1: INFORMAZIONI BASE === */}
+              <div className="form-section">
+                <div className="section-header">
+                  <span className="section-title">Informazioni base</span>
                 </div>
-              </div>
-
-              {/* CAMPO 8: Insegnamento (condizionale) */}
-              {isInsegnamentoLibero && (
-                <div className="form-group full-width">
-                  <label>Insegnamento</label>
-                  <textarea
-                    value={insegnamento.insegnamento}
-                    onChange={(e) => onUpdate(insegnamento.id, { insegnamento: e.target.value })}
-                    className="form-control"
-                    rows="3"
-                    placeholder="Inserisci nome insegnamento"
-                  />
-                </div>
-              )}
-
-              {/* CAMPO 9: Campo disciplinare (condizionale) */}
-              {!isInsegnamentoLibero && (
-                <div className="form-group full-width">
-                  <label>Campo Disciplinare</label>
+                
+                {/* CAMPO 2: SAD */}
+                <div className="form-group">
+                  <label>SAD *</label>
                   <select
-                    value={insegnamento.campoDisciplinare}
-                    onChange={(e) => onUpdate(insegnamento.id, { campoDisciplinare: e.target.value })}
+                    value={insegnamento.sad}
+                    onChange={handleSADChange}
                     className="form-control"
-                    disabled={campiDisciplinariOptions.length === 0}
                   >
-                    <option value="">Seleziona Campo Disciplinare</option>
-                    {campiDisciplinariOptions.map(campo => (
-                      <option key={campo} value={campo}>{campo}</option>
+                    <option value="">Scegli SAD</option>
+                    {sadOptions.map(sad => (
+                      <option key={sad} value={sad}>{sad}</option>
                     ))}
                   </select>
                 </div>
-              )}
-              
-              {/* CAMPO: Tipologia di Valutazione */}
-              {!isInsegnamentoLibero && (
+
+                {/* CAMPO 3: Denominazione SAD */}
                 <div className="form-group">
-                  <label>Tipologia di Valutazione</label>
+                  <label>Denominazione SAD</label>
+                  <input
+                    type="text"
+                    value={insegnamento.denominazioneSAD}
+                    className="form-control"
+                    readOnly
+                  />
+                </div>
+
+                {/* CAMPO 4: Profilo */}
+                <div className="form-group">
+                  <label>Profilo</label>
                   <select
-                    value={insegnamento.tipologiaValutazione || ''}
-                    onChange={(e) => onUpdate(insegnamento.id, { tipologiaValutazione: e.target.value })}
+                    value={insegnamento.profilo}
+                    onChange={handleProfiloChange}
+                    className="form-control"
+                    disabled={profiliOptions.length === 0}
+                  >
+                    <option value="">Seleziona Profilo</option>
+                    {profiliOptions.map(profilo => (
+                      <option key={profilo} value={profilo}>{profilo}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* CAMPO 5: Tipologia attività formativa */}
+                <div className="form-group">
+                  <label>Tipologia attività formativa *</label>
+                  <select
+                    value={insegnamento.tipologiaAttivitaFormativa || ''}
+                    onChange={(e) => onUpdate(insegnamento.id, { tipologiaAttivitaFormativa: e.target.value })}
                     className="form-control"
                   >
                     <option value="">Seleziona Tipologia</option>
-                    <option value="Esame">Esame</option>
-                    <option value="Idoneità">Idoneità</option>
+                    <option value="Attività di base">Attività di base</option>
+                    <option value="Attività caratterizzanti">Attività caratterizzanti</option>
+                    <option value="Attività integrative/Affini">Attività integrative/Affini</option>
+                    <option value="Attività ulteriori">Attività ulteriori</option>
+                    <option value="Lingua Straniera">Lingua Straniera</option>
                   </select>
                 </div>
-              )}
-              
-              {/* CAMPO: Tipologia di Lezione */}
-              {!isInsegnamentoLibero && (
+
+                {/* CAMPO 6: CFA */}
                 <div className="form-group">
-                  <label>Tipologia di Lezione</label>
-                  <select
-                    value={insegnamento.tipologiaLezione || ''}
-                    onChange={(e) => onUpdate(insegnamento.id, { tipologiaLezione: e.target.value })}
+                  <label>CFA *</label>
+                  <input
+                    type="number"
+                    value={insegnamento.cfa}
+                    onChange={(e) => onUpdate(insegnamento.id, { cfa: parseInt(e.target.value) || 0 })}
                     className="form-control"
-                  >
-                    <option value="">Seleziona Tipologia</option>
-                    <option value="Teorica">Teorica</option>
-                    <option value="Teorico-Pratica">Teorico-Pratica</option>
-                    <option value="Individuale">Individuale</option>
-                    <option value="D'insieme/Gruppo">D'insieme/Gruppo</option>
-                    <option value="Teorico-Pratica/Collettiva">Teorico-Pratica/Collettiva</option>
-                    <option value="Laboratorio">Laboratorio</option>
-                  </select>
+                    min="0"
+                  />
+                </div>
+
+                {/* SWITCHER: Insegnamento Libero vs Campo Disciplinare */}
+                <div className="form-group full-width">
+                  <div className="switcher-container">
+                    <label className="switcher-label">Tipo di insegnamento</label>
+                    <div className="switcher-toggle">
+                      <button
+                        type="button"
+                        className={`toggle-btn ${isInsegnamentoLibero ? 'active' : ''}`}
+                        onClick={() => {
+                          setIsInsegnamentoLibero(true)
+                          onUpdate(insegnamento.id, { 
+                            tipoInsegnamento: 'libero',
+                            campoDisciplinare: '' 
+                          })
+                        }}
+                      >
+                        Insegnamento Libero
+                      </button>
+                      <button
+                        type="button"
+                        className={`toggle-btn ${!isInsegnamentoLibero ? 'active' : ''}`}
+                        onClick={() => {
+                          setIsInsegnamentoLibero(false)
+                          onUpdate(insegnamento.id, { 
+                            tipoInsegnamento: 'campoDisciplinare',
+                            insegnamento: '' 
+                          })
+                        }}
+                      >
+                        Campo Disciplinare
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CAMPO: Insegnamento (solo se Insegnamento Libero) */}
+                {isInsegnamentoLibero && (
+                  <div className="form-group full-width">
+                    <label>Nome Insegnamento</label>
+                    <textarea
+                      value={insegnamento.insegnamento}
+                      onChange={(e) => onUpdate(insegnamento.id, { insegnamento: e.target.value })}
+                      className="form-control"
+                      rows="3"
+                      placeholder="Inserisci nome insegnamento"
+                    />
+                  </div>
+                )}
+              </div>
+
+              {/* === SEZIONE 2: INFORMAZIONI AGGIUNTIVE (solo per Campo Disciplinare) === */}
+              {!isInsegnamentoLibero && (
+                <div className="form-section optional-section">
+                  <div className="section-header">
+                    <span className="section-title">Informazioni aggiuntive</span>
+                  </div>
+
+                  {/* CAMPO: Vecchio/Vecchi SAD */}
+                  <div className="form-group">
+                    <label>Vecchio/Vecchi SAD</label>
+                    <select
+                      value={insegnamento.vecchioSAD}
+                      onChange={handleVecchioSADChange}
+                      className="form-control"
+                    >
+                      <option value="">Scegli SAD</option>
+                      {vecchiSADOptions.map(sad => (
+                        <option key={sad} value={sad}>{sad}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {/* CAMPO: Denominazione SAD vecchio */}
+                  <div className="form-group">
+                    <label>Denominazione SAD vecchio</label>
+                    <input
+                      type="text"
+                      value={insegnamento.denominazioneVecchioSAD}
+                      className="form-control"
+                      readOnly
+                    />
+                  </div>
+
+                  {/* CAMPO: Campo disciplinare */}
+                  <div className="form-group full-width">
+                    <label>Campo Disciplinare</label>
+                    <select
+                      value={insegnamento.campoDisciplinare}
+                      onChange={(e) => onUpdate(insegnamento.id, { campoDisciplinare: e.target.value })}
+                      className="form-control"
+                      disabled={campiDisciplinariOptions.length === 0}
+                    >
+                      <option value="">Seleziona Campo Disciplinare</option>
+                      {campiDisciplinariOptions.map(campo => (
+                        <option key={campo} value={campo}>{campo}</option>
+                      ))}
+                    </select>
+                  </div>
+                  
+                  {/* CAMPO: Tipologia di Valutazione */}
+                  <div className="form-group">
+                    <label>Tipologia di Valutazione</label>
+                    <select
+                      value={insegnamento.tipologiaValutazione || ''}
+                      onChange={(e) => onUpdate(insegnamento.id, { tipologiaValutazione: e.target.value })}
+                      className="form-control"
+                    >
+                      <option value="">Seleziona Tipologia</option>
+                      <option value="Esame">Esame</option>
+                      <option value="Idoneità">Idoneità</option>
+                    </select>
+                  </div>
+                  
+                  {/* CAMPO: Tipologia di Lezione */}
+                  <div className="form-group">
+                    <label>Tipologia di Lezione</label>
+                    <select
+                      value={insegnamento.tipologiaLezione || ''}
+                      onChange={(e) => onUpdate(insegnamento.id, { tipologiaLezione: e.target.value })}
+                      className="form-control"
+                    >
+                      <option value="">Seleziona Tipologia</option>
+                      <option value="Teorica">Teorica</option>
+                      <option value="Teorico-Pratica">Teorico-Pratica</option>
+                      <option value="Individuale">Individuale</option>
+                      <option value="D'insieme/Gruppo">D'insieme/Gruppo</option>
+                      <option value="Teorico-Pratica/Collettiva">Teorico-Pratica/Collettiva</option>
+                      <option value="Laboratorio">Laboratorio</option>
+                    </select>
+                  </div>
                 </div>
               )}
+              {/* Fine sezione informazioni aggiuntive */}
             </div>
           )}
             </>

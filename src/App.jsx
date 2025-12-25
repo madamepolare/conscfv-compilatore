@@ -46,6 +46,7 @@ function App() {
       denominazioneSAD: '',
       profilo: '',
       cfa: 0,
+      tipologiaAttivitaFormativa: '',
       vecchioSAD: '',
       denominazioneVecchioSAD: '',
       insegnamento: '',
