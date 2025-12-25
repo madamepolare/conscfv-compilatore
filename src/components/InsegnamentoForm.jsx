@@ -74,7 +74,8 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
       
       if (insegnamento.sad) {
         const profili = filterProfili(data, insegnamento.sad)
-        const vecchiSAD = filterVecchiSAD(data, insegnamento.areaAFAM, insegnamento.sad)
+        // Filtra i vecchi SAD in base al profilo se presente
+        const vecchiSAD = filterVecchiSAD(data, insegnamento.areaAFAM, insegnamento.sad, insegnamento.profilo || null)
         setProfiliOptions(profili)
         setVecchiSADOptions(vecchiSAD)
       }
@@ -85,7 +86,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
       const campi = filterCampiDisciplinari(data, insegnamento.vecchioSAD)
       setCampiDisciplinariOptions(campi)
     }
-  }, [data, insegnamento.areaAFAM, insegnamento.sad, insegnamento.vecchioSAD])
+  }, [data, insegnamento.areaAFAM, insegnamento.sad, insegnamento.profilo, insegnamento.vecchioSAD])
 
   const handleAreaChange = (e) => {
     const area = e.target.value
