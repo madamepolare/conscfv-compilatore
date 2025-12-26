@@ -51,11 +51,12 @@ function App() {
       denominazioneVecchioSAD: '',
       insegnamento: '',
       campoDisciplinare: '',
+      curvatura: '',
       tipologiaValutazione: '',
       tipologiaLezione: '',
       oreLezione: 0,
       propedeuticita: '',
-      tipoInsegnamento: 'libero',
+      tipoInsegnamento: 'campoDisciplinare',
       collapsed: false
     }
     setInsegnamenti([...insegnamenti, newInsegnamento])

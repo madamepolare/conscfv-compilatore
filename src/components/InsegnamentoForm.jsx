@@ -510,6 +510,18 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                     </select>
                   </div>
                   
+                  {/* CAMPO: Curvatura */}
+                  <div className="form-group full-width">
+                    <label>Curvatura</label>
+                    <input
+                      type="text"
+                      value={insegnamento.curvatura || ''}
+                      onChange={(e) => onUpdate(insegnamento.id, { curvatura: e.target.value })}
+                      className="form-control"
+                      placeholder="Inserisci curvatura (opzionale)"
+                    />
+                  </div>
+                  
                   {/* CAMPO: Tipologia di Valutazione */}
                   <div className="form-group">
                     <label>Tipologia di Valutazione</label>

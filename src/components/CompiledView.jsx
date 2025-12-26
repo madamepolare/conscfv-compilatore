@@ -55,6 +55,9 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         if (ins.tipologiaAttivitaFormativa) {
           details += ` | Tip: ${ins.tipologiaAttivitaFormativa}`
         }
+        if (ins.curvatura) {
+          details += ` | Curv: ${ins.curvatura}`
+        }
         if (ins.tipologiaValutazione) {
           details += ` | Val: ${ins.tipologiaValutazione}`
         }
@@ -246,6 +249,12 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
                     <div className="compiled-row">
                       <span className="label">Campo Disciplinare:</span>
                       <span className="value">{ins.campoDisciplinare}</span>
+                    </div>
+                  )}
+                  {ins.curvatura && (
+                    <div className="compiled-row">
+                      <span className="label">Curvatura:</span>
+                      <span className="value">{ins.curvatura}</span>
                     </div>
                   )}
                   {ins.tipologiaValutazione && (
