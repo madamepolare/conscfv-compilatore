@@ -15,6 +15,56 @@ import {
 
 const AREA_OPTIONS = ['ABA', 'AND', 'ANAD', 'ISSM', 'ISIA']
 
+// Validazione Rapporto Ore/Crediti basata su Tipologia di Lezione
+const validateOreCrediti = (percentuale, tipologiaLezione, areaAFAM) => {
+  if (!tipologiaLezione || percentuale === 0) return { valid: true, message: '' }
+  
+  // Valori fissi (exact) o range (min-max)
+  const rules = {
+    'Teorica': { exact: 30 },
+    'Teorico-Pratica': { exact: 50 },
+    'Individuale': { min: 6, max: 24 },
+    "D'insieme/Gruppo": { min: 12, max: 48 },
+    'Teorico-Pratica/Collettiva': { min: 24, max: 60 },
+    'Laboratorio': areaAFAM === 'ISSM' 
+      ? { min: 32, max: 80 } 
+      : { exact: 100 }
+  }
+  
+  const rule = rules[tipologiaLezione]
+  if (!rule) return { valid: true, message: '' }
+  
+  // Valore fisso
+  if (rule.exact !== undefined) {
+    if (Math.abs(percentuale - rule.exact) > 0.5) {
+      return { 
+        valid: false, 
+        type: 'error',
+        message: `Deve essere ${rule.exact}%` 
+      }
+    }
+    return { valid: true, message: '' }
+  }
+  
+  // Range
+  if (percentuale < rule.min) {
+    return { 
+      valid: false, 
+      type: 'warning',
+      message: `Troppo basso (min ${rule.min}%)` 
+    }
+  }
+  if (percentuale > rule.max) {
+    return { 
+      valid: false, 
+      type: 'error',
+      message: `Troppo alto (max ${rule.max}%)` 
+    }
+  }
+  
+  return { valid: true, message: '' }
+}
+
 export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, onRemove }) {
   const [showFields, setShowFields] = useState(!!insegnamento.areaAFAM)
   const [collapsed, setCollapsed] = useState(false)
@@ -567,15 +617,32 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                   </div>
                   
                   {/* CAMPO: Rapporto Ore/Crediti (calcolato) */}
-                  <div className="form-group">
-                    <label>Rapporto Ore/Crediti</label>
-                    <input
-                      type="text"
-                      value={insegnamento.cfa > 0 ? `${((insegnamento.oreLezione || 0) / (25 * insegnamento.cfa) * 100).toFixed(1)}%` : '0%'}
-                      className="form-control"
-                      readOnly
-                    />
-                  </div>
+                  {(() => {
+                    const percentuale = insegnamento.cfa > 0 
+                      ? ((insegnamento.oreLezione || 0) / (25 * insegnamento.cfa) * 100) 
+                      : 0
+                    const validation = validateOreCrediti(
+                      percentuale, 
+                      insegnamento.tipologiaLezione, 
+                      insegnamento.areaAFAM
+                    )
+                    return (
+                      <div className="form-group">
+                        <label>Rapporto Ore/Crediti</label>
+                        <input
+                          type="text"
+                          value={`${percentuale.toFixed(1)}%`}
+                          className={`form-control ${!validation.valid ? (validation.type === 'error' ? 'input-error' : 'input-warning') : ''}`}
+                          readOnly
+                        />
+                        {!validation.valid && (
+                          <span className={`validation-message ${validation.type}`}>
+                            {validation.message}
+                          </span>
+                        )}
+                      </div>
+                    )
+                  })()}
                   
                   {/* CAMPO: Propedeuticità */}
                   <div className="form-group">

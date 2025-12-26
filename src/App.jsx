@@ -187,9 +187,14 @@ function App() {
         <div className="right-column">
           <div className="column-header">
             <h2>Riepilogo Piano Didattico</h2>
-            <button className="btn-pdf" onClick={() => document.querySelector('.compiled-view').dispatchEvent(new CustomEvent('generatePDF'))}>
-              📄 Genera PDF
-            </button>
+            <div className="export-buttons">
+              <button className="btn-excel" onClick={() => document.querySelector('.compiled-view').dispatchEvent(new CustomEvent('generateExcel'))}>
+                📊 Esporta Excel
+              </button>
+              <button className="btn-pdf" onClick={() => document.querySelector('.compiled-view').dispatchEvent(new CustomEvent('generatePDF'))}>
+                📄 Genera PDF
+              </button>
+            </div>
           </div>
           <CompiledView 
             insegnamenti={insegnamenti}

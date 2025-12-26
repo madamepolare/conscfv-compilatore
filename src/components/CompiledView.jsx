@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import jsPDF from 'jspdf'
 import 'jspdf-autotable'
+import * as XLSX from 'xlsx'
 
 export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, creditiMassimi, setCreditiMassimi, totalCFA }) {
   const viewRef = useRef(null)
@@ -17,9 +18,14 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
 
   useEffect(() => {
     const handleGeneratePDF = () => generatePDF()
+    const handleGenerateExcel = () => generateExcel()
     if (viewRef.current) {
       viewRef.current.addEventListener('generatePDF', handleGeneratePDF)
-      return () => viewRef.current?.removeEventListener('generatePDF', handleGeneratePDF)
+      viewRef.current.addEventListener('generateExcel', handleGenerateExcel)
+      return () => {
+        viewRef.current?.removeEventListener('generatePDF', handleGeneratePDF)
+        viewRef.current?.removeEventListener('generateExcel', handleGenerateExcel)
+      }
     }
   }, [insegnamenti, provaFinale, titoloPDF, totalCFA])
 
@@ -157,6 +163,134 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     })
     
     doc.save(`${titoloPDF || 'piano_didattico_afam'}.pdf`)
+  }
+
+  const generateExcel = () => {
+    if (insegnamenti.length === 0 && (!provaFinale || (!provaFinale.descrizione && !provaFinale.cfa))) {
+      alert('Aggiungi almeno un\'attività prima di generare il file Excel.')
+      return
+    }
+
+    // Prepara i dati per Excel
+    const excelData = []
+    
+    // Header
+    excelData.push([
+      '#', 'Tipo Attività', 'Nome Attività', 'Area AFAM', 'SAD', 'Denominazione SAD', 
+      'Profilo', 'Vecchio SAD', 'Denominazione Vecchio SAD', 'Campo Disciplinare', 
+      'Curvatura', 'Tipologia Attività Formativa', 'Tipologia Valutazione', 
+      'Tipologia Lezione', 'Ore Lezione', 'Rapporto Ore/Crediti', 'Propedeuticità', 'CFA'
+    ])
+    
+    // Dati insegnamenti
+    insegnamenti.forEach((ins, index) => {
+      const rapporto = ins.cfa > 0 ? ((ins.oreLezione || 0) / (25 * ins.cfa) * 100).toFixed(1) + '%' : '-'
+      
+      if (ins.tipoAttivita === 'Insegnamento') {
+        excelData.push([
+          index + 1,
+          ins.tipoAttivita || '-',
+          ins.nomeAttivita || '-',
+          ins.areaAFAM || '-',
+          ins.sad || '-',
+          ins.denominazioneSAD || '-',
+          ins.profilo || '-',
+          ins.vecchioSAD || '-',
+          ins.denominazioneVecchioSAD || '-',
+          ins.campoDisciplinare || '-',
+          ins.curvatura || '-',
+          ins.tipologiaAttivitaFormativa || '-',
+          ins.tipologiaValutazione || '-',
+          ins.tipologiaLezione || '-',
+          ins.oreLezione || '-',
+          rapporto,
+          ins.propedeuticita || '-',
+          ins.cfa || 0
+        ])
+      } else {
+        // Altre attività formative
+        excelData.push([
+          index + 1,
+          ins.tipoAttivita || '-',
+          ins.nomeAttivita || '-',
+          '-',
+          '-',
+          ins.insegnamento || '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          ins.cfa || 0
+        ])
+      }
+    })
+    
+    // Prova Finale
+    if (provaFinale && (provaFinale.descrizione || provaFinale.cfa > 0)) {
+      excelData.push([
+        'PF',
+        'Prova Finale',
+        '-',
+        '-',
+        '-',
+        provaFinale.descrizione || '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        provaFinale.cfa || 0
+      ])
+    }
+    
+    // Riga totale
+    excelData.push([
+      '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TOTALE', totalCFA
+    ])
+    
+    // Crea workbook e worksheet
+    const wb = XLSX.utils.book_new()
+    const ws = XLSX.utils.aoa_to_sheet(excelData)
+    
+    // Imposta larghezza colonne
+    ws['!cols'] = [
+      { wch: 5 },   // #
+      { wch: 15 },  // Tipo
+      { wch: 20 },  // Nome
+      { wch: 10 },  // Area
+      { wch: 12 },  // SAD
+      { wch: 30 },  // Denominazione
+      { wch: 20 },  // Profilo
+      { wch: 12 },  // Vecchio SAD
+      { wch: 30 },  // Denom Vecchio
+      { wch: 25 },  // Campo Disc
+      { wch: 20 },  // Curvatura
+      { wch: 20 },  // Tip Attività
+      { wch: 15 },  // Tip Valut
+      { wch: 20 },  // Tip Lezione
+      { wch: 10 },  // Ore
+      { wch: 15 },  // Rapporto
+      { wch: 12 },  // Propedeuticità
+      { wch: 8 }    // CFA
+    ]
+    
+    XLSX.utils.book_append_sheet(wb, ws, 'Piano Didattico')
+    
+    // Salva file
+    XLSX.writeFile(wb, `${titoloPDF || 'piano_didattico_afam'}.xlsx`)
   }
 
   return (

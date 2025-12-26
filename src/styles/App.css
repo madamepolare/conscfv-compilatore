@@ -115,8 +115,14 @@
   font-family: 'Bricolage Grotesque', sans-serif;
 }
 
+.export-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .btn-add,
-.btn-pdf {
+.btn-pdf,
+.btn-excel {
   padding: 0.4rem 1rem;
   border: 1px solid #292929;
   border-radius: 1000px;
@@ -131,12 +137,24 @@
   font-family: 'Bricolage Grotesque', sans-serif;
 }
 
+.btn-excel {
+  border-color: #1d6f42;
+  color: #1d6f42;
+}
+
 .btn-add:hover,
 .btn-pdf:hover {
   background: #292929;
   color: white;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-excel:hover {
+  background: #1d6f42;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(29, 111, 66, 0.2);
 }
 
 /* Insegnamenti List */
@@ -551,6 +569,35 @@
   outline: none;
   border-color: #36348E;
   box-shadow: 0 0 0 2px rgba(54, 52, 142, 0.1);
+}
+
+.form-control.input-error {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+.form-control.input-warning {
+  border-color: #ffc107;
+  background-color: #fffbeb;
+}
+
+.validation-message {
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.validation-message.error {
+  color: #dc3545;
+  background-color: #fff5f5;
+  border: 1px solid #f5c6cb;
+}
+
+.validation-message.warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
 }
 
 .form-control:disabled {
