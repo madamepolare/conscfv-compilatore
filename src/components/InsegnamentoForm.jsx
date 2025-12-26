@@ -541,6 +541,44 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                       <option value="Laboratorio">Laboratorio</option>
                     </select>
                   </div>
+                  
+                  {/* CAMPO: Ore di lezione */}
+                  <div className="form-group">
+                    <label>Ore di lezione</label>
+                    <input
+                      type="number"
+                      value={insegnamento.oreLezione || 0}
+                      onChange={(e) => onUpdate(insegnamento.id, { oreLezione: parseInt(e.target.value) || 0 })}
+                      className="form-control"
+                      min="0"
+                    />
+                  </div>
+                  
+                  {/* CAMPO: Rapporto Ore/Crediti (calcolato) */}
+                  <div className="form-group">
+                    <label>Rapporto Ore/Crediti</label>
+                    <input
+                      type="text"
+                      value={insegnamento.cfa > 0 ? `${((insegnamento.oreLezione || 0) / (25 * insegnamento.cfa) * 100).toFixed(1)}%` : '0%'}
+                      className="form-control"
+                      readOnly
+                    />
+                  </div>
+                  
+                  {/* CAMPO: Propedeuticità */}
+                  <div className="form-group">
+                    <label>Propedeuticità</label>
+                    <select
+                      value={insegnamento.propedeuticita || ''}
+                      onChange={(e) => onUpdate(insegnamento.id, { propedeuticita: e.target.value })}
+                      className="form-control"
+                    >
+                      <option value="">Seleziona</option>
+                      <option value="I">I</option>
+                      <option value="II">II</option>
+                      <option value="III">III</option>
+                    </select>
+                  </div>
                 </div>
               )}
               {/* Fine sezione informazioni aggiuntive */}

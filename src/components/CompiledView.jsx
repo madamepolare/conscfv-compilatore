@@ -61,6 +61,15 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         if (ins.tipologiaLezione) {
           details += ` | Lez: ${ins.tipologiaLezione}`
         }
+        if (ins.oreLezione) {
+          details += ` | Ore: ${ins.oreLezione}`
+        }
+        if (ins.oreLezione && ins.cfa > 0) {
+          details += ` | Rapp: ${((ins.oreLezione / (25 * ins.cfa)) * 100).toFixed(1)}%`
+        }
+        if (ins.propedeuticita) {
+          details += ` | Prop: ${ins.propedeuticita}`
+        }
         
         tableData.push([
           index + 1,
@@ -249,6 +258,24 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
                     <div className="compiled-row">
                       <span className="label">Tipologia Lezione:</span>
                       <span className="value">{ins.tipologiaLezione}</span>
+                    </div>
+                  )}
+                  {ins.oreLezione > 0 && (
+                    <div className="compiled-row">
+                      <span className="label">Ore di lezione:</span>
+                      <span className="value">{ins.oreLezione}</span>
+                    </div>
+                  )}
+                  {ins.oreLezione > 0 && ins.cfa > 0 && (
+                    <div className="compiled-row">
+                      <span className="label">Rapporto Ore/Crediti:</span>
+                      <span className="value">{((ins.oreLezione / (25 * ins.cfa)) * 100).toFixed(1)}%</span>
+                    </div>
+                  )}
+                  {ins.propedeuticita && (
+                    <div className="compiled-row">
+                      <span className="label">Propedeuticità:</span>
+                      <span className="value">{ins.propedeuticita}</span>
                     </div>
                   )}
                 </>

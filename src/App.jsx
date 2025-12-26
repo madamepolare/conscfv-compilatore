@@ -53,6 +53,8 @@ function App() {
       campoDisciplinare: '',
       tipologiaValutazione: '',
       tipologiaLezione: '',
+      oreLezione: 0,
+      propedeuticita: '',
       tipoInsegnamento: 'libero',
       collapsed: false
     }
