@@ -9,16 +9,13 @@ import './styles/App.css'
 
 const AREA_AFAM_OPTIONS = [
   { value: 'ABA', label: 'ABA - Accademie di Belle Arti' },
-  { value: 'AND', label: 'AND - Accademie Nazionali di Danza' },
+  { value: 'AND', label: 'AND - Accademia Nazionale di Danza' },
   { value: 'ANAD', label: 'ANAD - Accademia Nazionale di Arte Drammatica' },
   { value: 'ISSM', label: 'ISSM - Istituti Superiori di Studi Musicali' },
   { value: 'ISIA', label: 'ISIA - Istituti Superiori per le Industrie Artistiche' }
 ]
 
-// Genera un ID univoco per il draft
-const generateDraftId = () => {
-  return 'draft_' + Date.now().toString(36) + Math.random().toString(36).substr(2, 9)
-}
+
 
 function App() {
   const [data, setData] = useState([])
@@ -33,9 +30,7 @@ function App() {
   const [areaAFAM, setAreaAFAM] = useState('')
   const [nomeCorso, setNomeCorso] = useState('')
   const [activeTab, setActiveTab] = useState('working') // 'working' or 'recap'
-  const [draftId, setDraftId] = useState(null)
-  const [lastSaved, setLastSaved] = useState(null)
-  const [showSaveNotification, setShowSaveNotification] = useState(false)
+  // Draft-related state removed
   const stepContentRef = useRef(null)
   const modalContainerRef = useRef(null)
 
@@ -59,83 +54,9 @@ function App() {
         setLoading(false)
       })
     
-    // Controlla se c'è un draft ID nell'URL
-    const urlDraftId = window.location.hash.replace('#', '')
-    if (urlDraftId && urlDraftId.startsWith('draft_')) {
-      loadDraft(urlDraftId)
-    }
   }, [])
 
-  // Salva draft
-  const saveDraft = useCallback(() => {
-    const currentDraftId = draftId || generateDraftId()
-    const draftData = {
-      id: currentDraftId,
-      savedAt: new Date().toISOString(),
-      tipoDiploma,
-      areaAFAM,
-      titoloPDF,
-      creditiMassimi,
-      insegnamenti,
-      provaFinale
-    }
-    
-    localStorage.setItem(currentDraftId, JSON.stringify(draftData))
-    localStorage.setItem('conscfv_last_draft', currentDraftId)
-    
-    if (!draftId) {
-      setDraftId(currentDraftId)
-      window.history.replaceState(null, '', `#${currentDraftId}`)
-    }
-    
-    setLastSaved(new Date())
-    setShowSaveNotification(true)
-    setTimeout(() => setShowSaveNotification(false), 2000)
-    
-    return currentDraftId
-  }, [draftId, tipoDiploma, areaAFAM, titoloPDF, creditiMassimi, insegnamenti, provaFinale])
 
-  // Carica draft
-  const loadDraft = (id) => {
-    try {
-      const savedData = localStorage.getItem(id)
-      if (savedData) {
-        const draft = JSON.parse(savedData)
-        setTipoDiploma(draft.tipoDiploma || '')
-        setAreaAFAM(draft.areaAFAM || '')
-        setTitoloPDF(draft.titoloPDF || 'Denominazione del corso di studi')
-        setCreditiMassimi(draft.creditiMassimi || 0)
-        setInsegnamenti(draft.insegnamenti || [])
-        setProvaFinale(draft.provaFinale || { descrizione: '', cfa: 0, collapsed: false })
-        setDraftId(id)
-        setShowInitialModal(false)
-        console.log('✅ Draft caricato:', id)
-        return true
-      }
-    } catch (error) {
-      console.error('❌ Errore caricamento draft:', error)
-    }
-    return false
-  }
-
-  // Copia link negli appunti
-  const copyDraftLink = () => {
-    const id = saveDraft()
-    const url = `${window.location.origin}${window.location.pathname}#${id}`
-    navigator.clipboard.writeText(url).then(() => {
-      alert('Link copiato negli appunti! Puoi condividerlo o salvarlo per continuare più tardi.')
-    })
-  }
-
-  // Auto-save ogni 30 secondi se ci sono modifiche
-  useEffect(() => {
-    if (!showInitialModal && (insegnamenti.length > 0 || provaFinale.cfa > 0)) {
-      const autoSaveInterval = setInterval(() => {
-        saveDraft()
-      }, 30000)
-      return () => clearInterval(autoSaveInterval)
-    }
-  }, [showInitialModal, insegnamenti, provaFinale, saveDraft])
 
   const addInsegnamento = () => {
     const newInsegnamento = {
@@ -400,23 +321,10 @@ function App() {
           <div className={`tab-indicator ${activeTab === 'recap' ? 'right' : ''}`}></div>
         </div>
         
-        {/* Save/Draft buttons */}
-        <div className="draft-actions">
-          <button className="btn-save-draft" onClick={saveDraft} title="Salva bozza">
-            💾 Salva
-          </button>
-          <button className="btn-copy-link" onClick={copyDraftLink} title="Copia link per condividere">
-            🔗 Condividi
-          </button>
-        </div>
+
       </div>
 
-      {/* Save notification */}
-      {showSaveNotification && (
-        <div className="save-notification">
-          ✓ Salvato
-        </div>
-      )}
+
 
       <div className="tab-content">
         {/* Working Tab */}
