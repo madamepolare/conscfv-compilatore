@@ -4,7 +4,7 @@ import jsPDF from 'jspdf'
 import 'jspdf-autotable'
 import * as XLSX from 'xlsx'
 
-export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, creditiMassimi, setCreditiMassimi, totalCFA }) {
+export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, creditiMassimi, setCreditiMassimi, totalCFA, tipoDiploma, areaAFAM }) {
   const viewRef = useRef(null)
 
   useEffect(() => {
@@ -43,12 +43,23 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     doc.setTextColor(54, 52, 142) // #36348E
     doc.text(titoloPDF || 'Piano Didattico di Corso di Studi AFAM', 14, 20)
     
-    // Data
+    // Tipo Diploma e Area AFAM
     doc.setFont('helvetica', 'normal')
     doc.setFontSize(10)
     doc.setTextColor(102, 102, 102)
+    let yPos = 28
+    if (tipoDiploma) {
+      doc.text(`Tipo: ${tipoDiploma}`, 14, yPos)
+      yPos += 5
+    }
+    if (areaAFAM) {
+      doc.text(`Area AFAM: ${areaAFAM}`, 14, yPos)
+      yPos += 5
+    }
+    
+    // Data
     const date = new Date().toLocaleDateString('it-IT')
-    doc.text(`Data: ${date}`, 14, 28)
+    doc.text(`Data: ${date}`, 14, yPos)
     
     // Tabella dati
     const tableData = []
@@ -128,7 +139,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     doc.autoTable({
       head: [['#', 'Tipo', 'Nome', 'Area', 'SAD', 'Denominazione', 'Profilo', 'CFA', 'Dettagli']],
       body: tableData,
-      startY: 35,
+      startY: yPos + 8,
       styles: { 
         fontSize: 8, 
         cellPadding: 2,
@@ -173,6 +184,17 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
 
     // Prepara i dati per Excel
     const excelData = []
+    
+    // Info corso
+    excelData.push(['Piano Didattico:', titoloPDF || 'Piano Didattico di Corso di Studi AFAM'])
+    if (tipoDiploma) {
+      excelData.push(['Tipo Diploma:', tipoDiploma])
+    }
+    if (areaAFAM) {
+      excelData.push(['Area AFAM:', areaAFAM])
+    }
+    excelData.push(['Data:', new Date().toLocaleDateString('it-IT')])
+    excelData.push([]) // Riga vuota di separazione
     
     // Header
     excelData.push([
@@ -295,6 +317,20 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
 
   return (
     <div ref={viewRef} className="compiled-view">
+      {(tipoDiploma || areaAFAM) && (
+        <div className="corso-badges">
+          {tipoDiploma && (
+            <div className="tipo-diploma-badge">
+              {tipoDiploma}
+            </div>
+          )}
+          {areaAFAM && (
+            <div className="area-afam-badge">
+              {areaAFAM}
+            </div>
+          )}
+        </div>
+      )}
       <div className="compiled-header">
         <div className="titolo-pdf-container">
           <input
@@ -306,7 +342,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           />
         </div>
         <div className="crediti-massimi-container">
-          <label htmlFor="crediti-massimi">Crediti massimi:</label>
+          <label htmlFor="crediti-massimi">Crediti totali:</label>
           <input
             id="crediti-massimi"
             type="number"

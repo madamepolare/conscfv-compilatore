@@ -445,6 +445,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                     <option value="Attività caratterizzanti">Attività caratterizzanti</option>
                     <option value="Attività integrative/Affini">Attività integrative/Affini</option>
                     <option value="Attività ulteriori">Attività ulteriori</option>
+                    <option value="Ulteriori CFA di base e caratterizzanti">Ulteriori CFA di base e caratterizzanti</option>
                     <option value="Lingua Straniera">Lingua Straniera</option>
                   </select>
                 </div>
@@ -498,16 +499,105 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
 
                 {/* CAMPO: Insegnamento (solo se Insegnamento Libero) */}
                 {isInsegnamentoLibero && (
-                  <div className="form-group full-width">
-                    <label>Nome Insegnamento</label>
-                    <textarea
-                      value={insegnamento.insegnamento}
-                      onChange={(e) => onUpdate(insegnamento.id, { insegnamento: e.target.value })}
-                      className="form-control"
-                      rows="3"
-                      placeholder="Inserisci nome insegnamento"
-                    />
-                  </div>
+                  <>
+                    <div className="form-group full-width">
+                      <label>Nome Insegnamento</label>
+                      <textarea
+                        value={insegnamento.insegnamento}
+                        onChange={(e) => onUpdate(insegnamento.id, { insegnamento: e.target.value })}
+                        className="form-control"
+                        rows="3"
+                        placeholder="Inserisci nome insegnamento"
+                      />
+                    </div>
+                    
+                    {/* CAMPO: Tipologia di Valutazione (per Insegnamento Libero) */}
+                    <div className="form-group">
+                      <label>Tipologia di Valutazione</label>
+                      <select
+                        value={insegnamento.tipologiaValutazione || ''}
+                        onChange={(e) => onUpdate(insegnamento.id, { tipologiaValutazione: e.target.value })}
+                        className="form-control"
+                      >
+                        <option value="">Seleziona Tipologia</option>
+                        <option value="Esame">Esame</option>
+                        <option value="Idoneità">Idoneità</option>
+                      </select>
+                    </div>
+                    
+                    {/* CAMPO: Tipologia di Lezione (per Insegnamento Libero) */}
+                    <div className="form-group">
+                      <label>Tipologia di Lezione</label>
+                      <select
+                        value={insegnamento.tipologiaLezione || ''}
+                        onChange={(e) => onUpdate(insegnamento.id, { tipologiaLezione: e.target.value })}
+                        className="form-control"
+                      >
+                        <option value="">Seleziona Tipologia</option>
+                        <option value="Teorica">Teorica</option>
+                        <option value="Teorico-Pratica">Teorico-Pratica</option>
+                        <option value="Individuale">Individuale</option>
+                        <option value="D'insieme/Gruppo">D'insieme/Gruppo</option>
+                        <option value="Teorico-Pratica/Collettiva">Teorico-Pratica/Collettiva</option>
+                        <option value="Laboratorio">Laboratorio</option>
+                      </select>
+                    </div>
+                    
+                    {/* CAMPO: Ore di lezione (per Insegnamento Libero) */}
+                    <div className="form-group">
+                      <label>Ore di lezione</label>
+                      <input
+                        type="number"
+                        value={insegnamento.oreLezione || 0}
+                        onChange={(e) => onUpdate(insegnamento.id, { oreLezione: parseInt(e.target.value) || 0 })}
+                        className="form-control"
+                        min="0"
+                      />
+                    </div>
+                    
+                    {/* CAMPO: Rapporto Ore/Crediti (per Insegnamento Libero) */}
+                    {(() => {
+                      const percentuale = insegnamento.cfa > 0 
+                        ? ((insegnamento.oreLezione || 0) / (25 * insegnamento.cfa) * 100) 
+                        : 0
+                      const validation = validateOreCrediti(
+                        percentuale, 
+                        insegnamento.tipologiaLezione, 
+                        insegnamento.areaAFAM
+                      )
+                      return (
+                        <div className="form-group">
+                          <label>Rapporto Ore/Crediti</label>
+                          <input
+                            type="text"
+                            value={`${percentuale.toFixed(1)}%`}
+                            className={`form-control ${!validation.valid ? (validation.type === 'error' ? 'input-error' : 'input-warning') : ''}`}
+                            readOnly
+                          />
+                          {!validation.valid && (
+                            <span className={`validation-message ${validation.type}`}>
+                              {validation.message}
+                            </span>
+                          )}
+                        </div>
+                      )
+                    })()}
+                    
+                    {/* CAMPO: Propedeuticità (per Insegnamento Libero) */}
+                    <div className="form-group">
+                      <label>Propedeuticità</label>
+                      <select
+                        value={insegnamento.propedeuticita || ''}
+                        onChange={(e) => onUpdate(insegnamento.id, { propedeuticita: e.target.value })}
+                        className="form-control"
+                      >
+                        <option value="">Seleziona</option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                      </select>
+                    </div>
+                  </>
                 )}
               </div>
 
