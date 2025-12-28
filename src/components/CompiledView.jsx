@@ -67,8 +67,9 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     }
     
     // Data
-    const date = new Date().toLocaleDateString('it-IT')
-    doc.text(`Data: ${date}`, 14, yPos)
+    const dateObj = new Date()
+    const dateDisplay = dateObj.toLocaleDateString('it-IT')
+    doc.text(`Data: ${dateDisplay}`, 14, yPos)
     
     // Tabella dati
     const tableData = []
@@ -385,7 +386,10 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             onChange={(e) => setCreditiMassimi(parseInt(e.target.value) || 0)}
             className="crediti-massimi-input"
             min="0"
-            title="Imposta il numero totale di crediti previsti per il corso (es. 180 per triennale, 120 per biennale)"
+            readOnly={!tipoDiploma.includes('Perfezionamento')}
+            title={tipoDiploma.includes('Perfezionamento') 
+              ? "Imposta il numero totale di crediti previsti per il corso di perfezionamento" 
+              : "Crediti totali impostati automaticamente in base al tipo di diploma"}
           />
         </div>
         <div className="crediti-massimi-container">

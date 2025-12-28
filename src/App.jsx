@@ -31,9 +31,26 @@ function App() {
   const [nomeCorso, setNomeCorso] = useState('')
   const [indirizzo, setIndirizzo] = useState('')
   const [activeTab, setActiveTab] = useState('working') // 'working' or 'recap'
+  const [masterCredits, setMasterCredits] = useState(60) // For Master diplomas
   // Draft-related state removed
   const stepContentRef = useRef(null)
   const modalContainerRef = useRef(null)
+
+  // Auto-set creditiMassimi based on tipoDiploma
+  useEffect(() => {
+    if (tipoDiploma === 'Diploma accademico di primo livello') {
+      setCreditiMassimi(180)
+    } else if (tipoDiploma === 'Diploma accademico di secondo livello') {
+      setCreditiMassimi(120)
+    } else if (tipoDiploma === 'Master di primo livello' || tipoDiploma === 'Master di secondo livello') {
+      setCreditiMassimi(masterCredits)
+    } else if (tipoDiploma === 'Diploma di Perfezionamento di primo livello' || tipoDiploma === 'Diploma di Perfezionamento di secondo livello') {
+      // Keep user-defined value or set to 0 if not defined
+      if (creditiMassimi === 180 || creditiMassimi === 120 || creditiMassimi === 60) {
+        setCreditiMassimi(0)
+      }
+    }
+  }, [tipoDiploma, masterCredits])
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -228,6 +245,30 @@ function App() {
                     <option value="Master di primo livello">Master di primo livello</option>
                     <option value="Master di secondo livello">Master di secondo livello</option>
                   </select>
+                  
+                  {(tipoDiploma === 'Master di primo livello' || tipoDiploma === 'Master di secondo livello') && (
+                    <div style={{ marginTop: '1rem' }}>
+                      <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: '#666' }}>Crediti totali:</label>
+                      <div style={{ display: 'flex', gap: '1rem' }}>
+                        <button
+                          type="button"
+                          className={`toggle-btn ${masterCredits === 60 ? 'active' : ''}`}
+                          onClick={() => setMasterCredits(60)}
+                          style={{ flex: 1, padding: '0.75rem' }}
+                        >
+                          60 CFA
+                        </button>
+                        <button
+                          type="button"
+                          className={`toggle-btn ${masterCredits === 120 ? 'active' : ''}`}
+                          onClick={() => setMasterCredits(120)}
+                          style={{ flex: 1, padding: '0.75rem' }}
+                        >
+                          120 CFA
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </>
             )}
