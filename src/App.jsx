@@ -318,12 +318,14 @@ function App() {
           <button 
             className={`tab-btn ${activeTab === 'working' ? 'active' : ''}`}
             onClick={() => setActiveTab('working')}
+            title="Inserisci e modifica le attività formative del piano didattico"
           >
             ✏️ Inserimento
           </button>
           <button 
             className={`tab-btn ${activeTab === 'recap' ? 'active' : ''}`}
             onClick={() => setActiveTab('recap')}
+            title="Visualizza il riepilogo completo ed esporta il piano didattico"
           >
             📋 Riepilogo
           </button>
@@ -341,7 +343,11 @@ function App() {
           <div className="working-tab">
             <div className="tab-header">
               <h2>Aggiungi Attività Formative</h2>
-              <button className="btn-add" onClick={addInsegnamento}>
+              <button 
+                className="btn-add" 
+                onClick={addInsegnamento}
+                title="Aggiungi una nuova attività formativa (insegnamento o altra attività) al piano didattico"
+              >
                 + Nuova Attività Formativa
               </button>
             </div>
@@ -419,10 +425,18 @@ function App() {
             <div className="tab-header">
               <h2>Riepilogo Piano Didattico</h2>
               <div className="export-buttons">
-                <button className="btn-excel" onClick={() => document.querySelector('.compiled-view').dispatchEvent(new CustomEvent('generateExcel'))}>
+                <button 
+                  className="btn-excel" 
+                  onClick={() => document.querySelector('.compiled-view').dispatchEvent(new CustomEvent('generateExcel'))}
+                  title="Esporta il piano didattico in formato Excel (.xlsx)"
+                >
                   📊 Esporta Excel
                 </button>
-                <button className="btn-pdf" onClick={() => document.querySelector('.compiled-view').dispatchEvent(new CustomEvent('generatePDF'))}>
+                <button 
+                  className="btn-pdf" 
+                  onClick={() => document.querySelector('.compiled-view').dispatchEvent(new CustomEvent('generatePDF'))}
+                  title="Genera e scarica il piano didattico in formato PDF"
+                >
                   📄 Genera PDF
                 </button>
               </div>

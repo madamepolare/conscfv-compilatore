@@ -18,8 +18,8 @@ export default function InsegnamentiList({ insegnamenti, data, onUpdate, onRemov
   if (insegnamenti.length === 0) {
     return (
       <div className="empty-state">
-        <p>Nessun insegnamento aggiunto.</p>
-        <p>Clicca su "+ Nuovo Insegnamento" per iniziare.</p>
+        <p>Nessuna attività formativa aggiunta</p>
+        <p>Clicca su + Nuova attività formativa</p>
       </div>
     )
   }

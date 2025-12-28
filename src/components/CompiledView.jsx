@@ -323,7 +323,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
 
   return (
     <div ref={viewRef} className="compiled-view">
-      {(tipoDiploma || areaAFAM || indirizzo) && (
+      {(tipoDiploma || areaAFAM) && (
         <div className="corso-badges">
           {tipoDiploma && (
             <div className="tipo-diploma-badge">
@@ -333,11 +333,6 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           {areaAFAM && (
             <div className="area-afam-badge">
               {areaAFAM}
-            </div>
-          )}
-          {indirizzo && (
-            <div className="indirizzo-badge">
-              {indirizzo}
             </div>
           )}
         </div>
@@ -350,7 +345,13 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             className="titolo-pdf-input"
             placeholder="Titolo corso di studi"
             rows="2"
+            title="Modifica il nome del corso che apparirà nel PDF e Excel"
           />
+          {indirizzo && (
+            <div className="indirizzo-badge" style={{ marginTop: '0.5rem' }}>
+              {indirizzo}
+            </div>
+          )}
         </div>
         <div className="crediti-massimi-container">
           <label htmlFor="crediti-massimi">Crediti totali:</label>
@@ -361,14 +362,15 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             onChange={(e) => setCreditiMassimi(parseInt(e.target.value) || 0)}
             className="crediti-massimi-input"
             min="0"
+            title="Imposta il numero totale di crediti previsti per il corso (es. 180 per triennale, 120 per biennale)"
           />
         </div>
       </div>
 
       {insegnamenti.length === 0 ? (
         <div className="compiled-empty">
-          <p>Nessun insegnamento da visualizzare.</p>
-          <p>Aggiungi degli insegnamenti dalla colonna di sinistra.</p>
+          <p>Nessuna attività formativa aggiunta</p>
+          <p>Clicca su + Nuova attività formativa</p>
         </div>
       ) : (
         <div className="compiled-list">
