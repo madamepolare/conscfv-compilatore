@@ -447,6 +447,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                     <option value="Attività ulteriori">Attività ulteriori</option>
                     <option value="Ulteriori CFA di base e caratterizzanti">Ulteriori CFA di base e caratterizzanti</option>
                     <option value="Lingua Straniera">Lingua Straniera</option>
+                    <option value="Nessuna">Nessuna</option>
                   </select>
                 </div>
 
@@ -570,7 +571,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                           <label>Rapporto Ore/Crediti</label>
                           <input
                             type="text"
-                            value={`${percentuale.toFixed(1)}%`}
+                            value={`${Math.round(percentuale)}%`}
                             className={`form-control ${!validation.valid ? (validation.type === 'error' ? 'input-error' : 'input-warning') : ''}`}
                             readOnly
                           />
@@ -721,7 +722,7 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                         <label>Rapporto Ore/Crediti</label>
                         <input
                           type="text"
-                          value={`${percentuale.toFixed(1)}%`}
+                          value={`${Math.round(percentuale)}%`}
                           className={`form-control ${!validation.valid ? (validation.type === 'error' ? 'input-error' : 'input-warning') : ''}`}
                           readOnly
                         />

@@ -29,6 +29,7 @@ function App() {
   const [onboardingStep, setOnboardingStep] = useState(1)
   const [areaAFAM, setAreaAFAM] = useState('')
   const [nomeCorso, setNomeCorso] = useState('')
+  const [indirizzo, setIndirizzo] = useState('')
   const [activeTab, setActiveTab] = useState('working') // 'working' or 'recap'
   // Draft-related state removed
   const stepContentRef = useRef(null)
@@ -259,13 +260,21 @@ function App() {
                 <h2>Nome del Corso</h2>
                 <p>Inserisci il nome completo del corso di studi</p>
                 <div className="modal-form">
-                  <input
-                    type="text"
+                  <textarea
                     value={nomeCorso}
                     onChange={(e) => setNomeCorso(e.target.value)}
                     className="form-control modal-input"
                     placeholder="Es. Diploma Accademico di I livello in Design"
                     autoFocus
+                    rows="3"
+                  />
+                  <input
+                    type="text"
+                    value={indirizzo}
+                    onChange={(e) => setIndirizzo(e.target.value)}
+                    className="form-control modal-input"
+                    placeholder="Indirizzo (opzionale)"
+                    style={{ marginTop: '1rem' }}
                   />
                 </div>
               </>
@@ -310,7 +319,7 @@ function App() {
             className={`tab-btn ${activeTab === 'working' ? 'active' : ''}`}
             onClick={() => setActiveTab('working')}
           >
-            ✏️ Lavoro
+            ✏️ Inserimento
           </button>
           <button 
             className={`tab-btn ${activeTab === 'recap' ? 'active' : ''}`}
@@ -429,6 +438,7 @@ function App() {
                 totalCFA={totalCFA}
                 tipoDiploma={tipoDiploma}
                 areaAFAM={areaAFAM}
+                indirizzo={indirizzo}
               />
             </div>
           </div>

@@ -4,7 +4,7 @@ import jsPDF from 'jspdf'
 import 'jspdf-autotable'
 import * as XLSX from 'xlsx'
 
-export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, creditiMassimi, setCreditiMassimi, totalCFA, tipoDiploma, areaAFAM }) {
+export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, creditiMassimi, setCreditiMassimi, totalCFA, tipoDiploma, areaAFAM, indirizzo }) {
   const viewRef = useRef(null)
 
   useEffect(() => {
@@ -35,26 +35,30 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
       return
     }
 
-    const doc = new jsPDF()
+    const doc = new jsPDF('landscape', 'mm', 'a4')
     
     // Titolo
     doc.setFont('helvetica', 'bold')
-    doc.setFontSize(18)
+    doc.setFontSize(16)
     doc.setTextColor(54, 52, 142) // #36348E
-    doc.text(titoloPDF || 'Piano Didattico di Corso di Studi AFAM', 14, 20)
+    doc.text(titoloPDF || 'Piano Didattico di Corso di Studi AFAM', 14, 15)
     
     // Tipo Diploma e Area AFAM
     doc.setFont('helvetica', 'normal')
-    doc.setFontSize(10)
+    doc.setFontSize(9)
     doc.setTextColor(102, 102, 102)
-    let yPos = 28
+    let yPos = 22
     if (tipoDiploma) {
       doc.text(`Tipo: ${tipoDiploma}`, 14, yPos)
-      yPos += 5
+      yPos += 4
     }
     if (areaAFAM) {
       doc.text(`Area AFAM: ${areaAFAM}`, 14, yPos)
-      yPos += 5
+      yPos += 4
+    }
+    if (indirizzo) {
+      doc.text(`Indirizzo: ${indirizzo}`, 14, yPos)
+      yPos += 4
     }
     
     // Data
@@ -66,54 +70,48 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     
     // Aggiungi tutte le attività formative
     insegnamenti.forEach((ins, index) => {
+      const rapporto = ins.cfa > 0 ? Math.round((ins.oreLezione || 0) / (25 * ins.cfa) * 100) + '%' : '-'
+      
       if (ins.tipoAttivita === 'Insegnamento') {
-        // Insegnamento completo - build details string
-        let details = ins.insegnamento || ins.campoDisciplinare || '-'
-        if (ins.tipologiaAttivitaFormativa) {
-          details += ` | Tip: ${ins.tipologiaAttivitaFormativa}`
-        }
-        if (ins.curvatura) {
-          details += ` | Curv: ${ins.curvatura}`
-        }
-        if (ins.tipologiaValutazione) {
-          details += ` | Val: ${ins.tipologiaValutazione}`
-        }
-        if (ins.tipologiaLezione) {
-          details += ` | Lez: ${ins.tipologiaLezione}`
-        }
-        if (ins.oreLezione) {
-          details += ` | Ore: ${ins.oreLezione}`
-        }
-        if (ins.oreLezione && ins.cfa > 0) {
-          details += ` | Rapp: ${((ins.oreLezione / (25 * ins.cfa)) * 100).toFixed(1)}%`
-        }
-        if (ins.propedeuticita) {
-          details += ` | Prop: ${ins.propedeuticita}`
-        }
-        
         tableData.push([
           index + 1,
           ins.tipoAttivita || '-',
-          ins.nomeAttivita || '-',
           ins.areaAFAM || '-',
           ins.sad || '-',
           ins.denominazioneSAD || '-',
           ins.profilo || '-',
-          ins.cfa || 0,
-          details
+          ins.vecchioSAD || '-',
+          ins.denominazioneVecchioSAD || '-',
+          ins.insegnamento || ins.campoDisciplinare || '-',
+          ins.curvatura || '-',
+          ins.tipologiaAttivitaFormativa || '-',
+          ins.tipologiaValutazione || '-',
+          ins.tipologiaLezione || '-',
+          ins.oreLezione || '-',
+          rapporto,
+          ins.propedeuticita || '-',
+          ins.cfa || 0
         ])
       } else {
         // Altre attività formative
         tableData.push([
           index + 1,
           ins.tipoAttivita || '-',
-          ins.nomeAttivita || '-',
           '-',
           '-',
-          ins.insegnamento || '-', // Descrizione
+          ins.insegnamento || '-',
           '-',
-          ins.cfa || 0,
-          '-'
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          '-',
+          ins.cfa || 0
         ])
       }
     })
@@ -125,36 +123,45 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         'Prova Finale',
         '-',
         '-',
-        '-',
         provaFinale.descrizione || '-',
         '-',
-        provaFinale.cfa || 0,
-        '-'
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        '-',
+        provaFinale.cfa || 0
       ])
     }
     
     // Riga totale
-    tableData.push(['', '', '', '', '', '', 'TOTALE', totalCFA, ''])
+    tableData.push(['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TOTALE', totalCFA])
     
     doc.autoTable({
-      head: [['#', 'Tipo', 'Nome', 'Area', 'SAD', 'Denominazione', 'Profilo', 'CFA', 'Dettagli']],
+      head: [['#', 'Tipo Attività', 'Area AFAM', 'SAD', 'Denominazione SAD', 'Profilo', 'Vecchio SAD', 'Denominazione Vecchio SAD', 'Campo Disciplinare', 'Curvatura', 'Tipologia Attività Formativa', 'Tipologia Valutazione', 'Tipologia Lezione', 'Ore Lezione', 'Rapporto Ore/Crediti', 'Propedeuticità', 'CFA']],
       body: tableData,
-      startY: yPos + 8,
+      startY: yPos + 5,
       styles: { 
-        fontSize: 8, 
-        cellPadding: 2,
+        fontSize: 6, 
+        cellPadding: 1.5,
         font: 'helvetica',
-        textColor: [41, 41, 41]
+        textColor: [41, 41, 41],
+        overflow: 'linebreak'
       },
       headStyles: { 
         fillColor: [54, 52, 142], // #36348E
         textColor: [255, 255, 255],
         fontStyle: 'bold',
-        fontSize: 9
+        fontSize: 7
       },
       columnStyles: {
-        0: { cellWidth: 10, halign: 'center' },
-        7: { cellWidth: 15, halign: 'center', fontStyle: 'bold', textColor: [247, 88, 56] } // CFA in arancione #F75838
+        0: { cellWidth: 8, halign: 'center' },
+        16: { cellWidth: 12, halign: 'center', fontStyle: 'bold', textColor: [247, 88, 56] } // CFA in arancione #F75838
       },
       didParseCell: function(data) {
         // Riga totale
@@ -193,12 +200,15 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     if (areaAFAM) {
       excelData.push(['Area AFAM:', areaAFAM])
     }
+    if (indirizzo) {
+      excelData.push(['Indirizzo:', indirizzo])
+    }
     excelData.push(['Data:', new Date().toLocaleDateString('it-IT')])
     excelData.push([]) // Riga vuota di separazione
     
     // Header
     excelData.push([
-      '#', 'Tipo Attività', 'Nome Attività', 'Area AFAM', 'SAD', 'Denominazione SAD', 
+      '#', 'Tipo Attività', 'Area AFAM', 'SAD', 'Denominazione SAD', 
       'Profilo', 'Vecchio SAD', 'Denominazione Vecchio SAD', 'Campo Disciplinare', 
       'Curvatura', 'Tipologia Attività Formativa', 'Tipologia Valutazione', 
       'Tipologia Lezione', 'Ore Lezione', 'Rapporto Ore/Crediti', 'Propedeuticità', 'CFA'
@@ -206,20 +216,19 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     
     // Dati insegnamenti
     insegnamenti.forEach((ins, index) => {
-      const rapporto = ins.cfa > 0 ? ((ins.oreLezione || 0) / (25 * ins.cfa) * 100).toFixed(1) + '%' : '-'
+      const rapporto = ins.cfa > 0 ? Math.round((ins.oreLezione || 0) / (25 * ins.cfa) * 100) + '%' : '-'
       
       if (ins.tipoAttivita === 'Insegnamento') {
         excelData.push([
           index + 1,
           ins.tipoAttivita || '-',
-          ins.nomeAttivita || '-',
           ins.areaAFAM || '-',
           ins.sad || '-',
           ins.denominazioneSAD || '-',
           ins.profilo || '-',
           ins.vecchioSAD || '-',
           ins.denominazioneVecchioSAD || '-',
-          ins.campoDisciplinare || '-',
+          ins.insegnamento || ins.campoDisciplinare || '-',
           ins.curvatura || '-',
           ins.tipologiaAttivitaFormativa || '-',
           ins.tipologiaValutazione || '-',
@@ -234,7 +243,6 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         excelData.push([
           index + 1,
           ins.tipoAttivita || '-',
-          ins.nomeAttivita || '-',
           '-',
           '-',
           ins.insegnamento || '-',
@@ -261,7 +269,6 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         'Prova Finale',
         '-',
         '-',
-        '-',
         provaFinale.descrizione || '-',
         '-',
         '-',
@@ -280,7 +287,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     
     // Riga totale
     excelData.push([
-      '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TOTALE', totalCFA
+      '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TOTALE', totalCFA
     ])
     
     // Crea workbook e worksheet
@@ -291,7 +298,6 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     ws['!cols'] = [
       { wch: 5 },   // #
       { wch: 15 },  // Tipo
-      { wch: 20 },  // Nome
       { wch: 10 },  // Area
       { wch: 12 },  // SAD
       { wch: 30 },  // Denominazione
@@ -317,7 +323,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
 
   return (
     <div ref={viewRef} className="compiled-view">
-      {(tipoDiploma || areaAFAM) && (
+      {(tipoDiploma || areaAFAM || indirizzo) && (
         <div className="corso-badges">
           {tipoDiploma && (
             <div className="tipo-diploma-badge">
@@ -329,16 +335,21 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
               {areaAFAM}
             </div>
           )}
+          {indirizzo && (
+            <div className="indirizzo-badge">
+              {indirizzo}
+            </div>
+          )}
         </div>
       )}
       <div className="compiled-header">
         <div className="titolo-pdf-container">
-          <input
-            type="text"
+          <textarea
             value={titoloPDF}
             onChange={(e) => setTitoloPDF(e.target.value)}
             className="titolo-pdf-input"
             placeholder="Titolo corso di studi"
+            rows="2"
           />
         </div>
         <div className="crediti-massimi-container">
@@ -365,12 +376,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           <div key={ins.id} className="compiled-item">
             <div className="compiled-header-line">
               <div className="compiled-number">#{index + 1}</div>
-              {ins.nomeAttivita && (
-                <h3 className="compiled-title">{ins.nomeAttivita}</h3>
-              )}
             </div>
-            <div className="compiled-content">
-              {/* Mostra tipo di attività */}
+            <div className="compiled-content">{/* Mostra tipo di attività */}
               <div className="compiled-row">
                 <span className="label">Tipo:</span>
                 <span className="value">{ins.tipoAttivita || 'Insegnamento'}</span>
@@ -504,6 +511,106 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             </div>
           </div>
         )}
+        </div>
+      )}
+
+      {/* CFA Summary for "Diploma accademico di primo livello" */}
+      {tipoDiploma === 'Diploma accademico di primo livello' && (
+        <div className="cfa-summary">
+          <div className="cfa-summary-row">
+            <span className="label">CFA di base:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività di base')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">CFA caratterizzanti:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività caratterizzanti')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">CFA integrativi e affini:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività integrative/Affini')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">CFA ulteriori:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività ulteriori' || ins.tipoAttivita === 'Altra attività formativa')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">CFA prova finale e lingua straniera:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Lingua Straniera')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0) + (provaFinale?.cfa || 0)}
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* CFA Summary for "Diploma accademico di secondo livello" */}
+      {tipoDiploma === 'Diploma accademico di secondo livello' && (
+        <div className="cfa-summary">
+          <div className="cfa-summary-row">
+            <span className="label">CFA di base:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività di base')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">CFA caratterizzanti:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività caratterizzanti')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">Ulteriori CFA base/caratterizzanti:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Ulteriori CFA di base e caratterizzanti')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">CFA integrativi e affini:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività integrative/Affini')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">CFA ulteriori:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività ulteriori' || ins.tipoAttivita === 'Altra attività formativa')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          <div className="cfa-summary-row">
+            <span className="label">CFA prova finale e lingua straniera:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Lingua Straniera')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0) + (provaFinale?.cfa || 0)}
+            </span>
+          </div>
         </div>
       )}
 

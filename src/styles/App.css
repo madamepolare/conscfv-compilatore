@@ -347,6 +347,17 @@
   letter-spacing: 0.05em;
 }
 
+.indirizzo-badge {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  letter-spacing: 0.05em;
+}
+
 .app-container {
   min-height: 100vh;
   display: flex;
@@ -1409,6 +1420,41 @@ textarea.form-control {
   font-size: 1rem;
   font-weight: 700;
   color: #F75838;
+}
+
+/* CFA Summary */
+.cfa-summary {
+  background: white;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+}
+
+.cfa-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cfa-summary-row:last-child {
+  border-bottom: none;
+}
+
+.cfa-summary-row .label {
+  font-weight: 500;
+  color: #495057;
+}
+
+.cfa-summary-row .value {
+  font-weight: 700;
+  color: #36348E;
+  font-size: 1rem;
 }
 
 .compiled-total {
