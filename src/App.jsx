@@ -126,6 +126,18 @@ function App() {
     })
   }
 
+  const duplicateInsegnamento = (id) => {
+    const original = insegnamenti.find(ins => ins.id === id)
+    if (original) {
+      const duplicate = {
+        ...original,
+        id: Date.now(),
+        collapsed: false
+      }
+      setInsegnamenti([...insegnamenti, duplicate])
+    }
+  }
+
   const handleDragEnd = (event) => {
     const { active, over } = event
 
@@ -408,6 +420,7 @@ function App() {
                     data={data}
                     onUpdate={updateInsegnamento}
                     onRemove={removeInsegnamento}
+                    onDuplicate={duplicateInsegnamento}
                     onToggleCollapse={toggleCollapse}
                   />
                 </SortableContext>

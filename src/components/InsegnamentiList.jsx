@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import InsegnamentoForm from './InsegnamentoForm'
 
-export default function InsegnamentiList({ insegnamenti, data, onUpdate, onRemove, onToggleCollapse }) {
+export default function InsegnamentiList({ insegnamenti, data, onUpdate, onRemove, onDuplicate, onToggleCollapse }) {
   const listRef = useRef(null)
 
   useEffect(() => {
@@ -34,6 +34,7 @@ export default function InsegnamentiList({ insegnamenti, data, onUpdate, onRemov
           data={data}
           onUpdate={onUpdate}
           onRemove={onRemove}
+          onDuplicate={onDuplicate}
           onToggleCollapse={onToggleCollapse}
         />
       ))}

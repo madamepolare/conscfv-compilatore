@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
-import { ChevronDown, ChevronUp, X, GripVertical } from 'lucide-react'
+import { ChevronDown, ChevronUp, X, GripVertical, Copy } from 'lucide-react'
 import {
   filterSADByArea,
   getDenominazioneSAD,
@@ -65,7 +65,7 @@ const validateOreCrediti = (percentuale, tipologiaLezione, areaAFAM) => {
   return { valid: true, message: '' }
 }
 
-export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, onRemove }) {
+export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, onRemove, onDuplicate }) {
   const [showFields, setShowFields] = useState(!!insegnamento.areaAFAM)
   const [collapsed, setCollapsed] = useState(false)
   const [isInsegnamentoLibero, setIsInsegnamentoLibero] = useState(insegnamento.tipoInsegnamento !== 'campoDisciplinare')
@@ -332,6 +332,13 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
             title={collapsed ? "Espandi" : "Comprimi"}
           >
             {collapsed ? <ChevronDown size={16} strokeWidth={1.5} /> : <ChevronUp size={16} strokeWidth={1.5} />}
+          </button>
+          <button 
+            className="btn-icon btn-duplicate" 
+            onClick={() => onDuplicate(insegnamento.id)} 
+            title="Duplica attività"
+          >
+            <Copy size={16} strokeWidth={1.5} />
           </button>
           <button className="btn-icon btn-remove" onClick={handleRemove} title="Rimuovi">
             <X size={16} strokeWidth={1.5} />
