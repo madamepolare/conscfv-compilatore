@@ -187,8 +187,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     })
     
     // Generate filename
-    const date = new Date()
-    const dateStr = `${String(date.getDate()).padStart(2, '0')}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getFullYear()).slice(-2)}`
+    const pdfDate = new Date()
+    const dateStr = `${String(pdfDate.getDate()).padStart(2, '0')}${String(pdfDate.getMonth() + 1).padStart(2, '0')}${String(pdfDate.getFullYear()).slice(-2)}`
     let filename = titoloPDF || 'piano_didattico_afam'
     if (indirizzo) {
       filename += `_${indirizzo}`
@@ -333,8 +333,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     XLSX.utils.book_append_sheet(wb, ws, 'Piano Didattico')
     
     // Generate filename
-    const date = new Date()
-    const dateStr = `${String(date.getDate()).padStart(2, '0')}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getFullYear()).slice(-2)}`
+    const dateObj2 = new Date()
+    const dateStr = `${String(dateObj2.getDate()).padStart(2, '0')}${String(dateObj2.getMonth() + 1).padStart(2, '0')}${String(dateObj2.getFullYear()).slice(-2)}`
     let filename = titoloPDF || 'piano_didattico_afam'
     if (indirizzo) {
       filename += `_${indirizzo}`
