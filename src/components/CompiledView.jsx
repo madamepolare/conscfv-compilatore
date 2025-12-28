@@ -7,6 +7,11 @@ import * as XLSX from 'xlsx'
 export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, setTitoloPDF, creditiMassimi, setCreditiMassimi, totalCFA, tipoDiploma, areaAFAM, indirizzo }) {
   const viewRef = useRef(null)
 
+  // Calculate number of exams
+  const numeroEsami = insegnamenti.filter(ins => ins.tipologiaValutazione === 'Esame').length
+  const isSecondoLivello = tipoDiploma === 'Diploma accademico di secondo livello'
+  const esamiExceeded = isSecondoLivello && numeroEsami > 14
+
   useEffect(() => {
     if (viewRef.current) {
       gsap.fromTo(viewRef.current.querySelectorAll('.compiled-item'),
@@ -180,7 +185,16 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
       }
     })
     
-    doc.save(`${titoloPDF || 'piano_didattico_afam'}.pdf`)
+    // Generate filename
+    const date = new Date()
+    const dateStr = `${String(date.getDate()).padStart(2, '0')}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getFullYear()).slice(-2)}`
+    let filename = titoloPDF || 'piano_didattico_afam'
+    if (indirizzo) {
+      filename += `_${indirizzo}`
+    }
+    filename += `_${dateStr}`
+    
+    doc.save(`${filename}.pdf`)
   }
 
   const generateExcel = () => {
@@ -317,8 +331,17 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
     
     XLSX.utils.book_append_sheet(wb, ws, 'Piano Didattico')
     
+    // Generate filename
+    const date = new Date()
+    const dateStr = `${String(date.getDate()).padStart(2, '0')}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getFullYear()).slice(-2)}`
+    let filename = titoloPDF || 'piano_didattico_afam'
+    if (indirizzo) {
+      filename += `_${indirizzo}`
+    }
+    filename += `_${dateStr}`
+    
     // Salva file
-    XLSX.writeFile(wb, `${titoloPDF || 'piano_didattico_afam'}.xlsx`)
+    XLSX.writeFile(wb, `${filename}.xlsx`)
   }
 
   return (
@@ -348,9 +371,9 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             title="Modifica il nome del corso che apparirà nel PDF e Excel"
           />
           {indirizzo && (
-            <div className="indirizzo-badge" style={{ marginTop: '0.5rem' }}>
-              {indirizzo}
-            </div>
+            <p style={{ marginTop: '0.5rem', fontSize: '0.9rem', color: '#666' }}>
+              Indirizzo: {indirizzo}
+            </p>
           )}
         </div>
         <div className="crediti-massimi-container">
@@ -364,6 +387,22 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             min="0"
             title="Imposta il numero totale di crediti previsti per il corso (es. 180 per triennale, 120 per biennale)"
           />
+        </div>
+        <div className="crediti-massimi-container">
+          <label htmlFor="numero-esami">n. Esami:</label>
+          <input
+            id="numero-esami"
+            type="number"
+            value={numeroEsami}
+            className={`crediti-massimi-input ${esamiExceeded ? 'input-error' : ''}`}
+            readOnly
+            title={isSecondoLivello ? `Per il diploma di secondo livello il numero massimo è 14 (attuale: ${numeroEsami})` : `Numero totale di esami nel piano didattico: ${numeroEsami}`}
+          />
+          {esamiExceeded && (
+            <span className="validation-message error" style={{ marginTop: '0.25rem', fontSize: '0.85rem' }}>
+              Superato il limite di 14 esami
+            </span>
+          )}
         </div>
       </div>
 
