@@ -86,6 +86,7 @@ function App() {
       denominazioneSAD: '',
       profilo: '',
       cfa: 0,
+      annoCorso: '',
       tipologiaAttivitaFormativa: '',
       vecchioSAD: '',
       denominazioneVecchioSAD: '',
@@ -422,6 +423,7 @@ function App() {
                     onRemove={removeInsegnamento}
                     onDuplicate={duplicateInsegnamento}
                     onToggleCollapse={toggleCollapse}
+                    totalCFA={totalCFA}
                   />
                 </SortableContext>
               </DndContext>

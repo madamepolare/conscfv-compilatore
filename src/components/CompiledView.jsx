@@ -96,7 +96,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           ins.oreLezione || '-',
           rapporto,
           ins.propedeuticita || '-',
-          ins.cfa || 0
+          ins.cfa || 0,
+          ins.annoCorso || '-'
         ])
       } else {
         // Altre attività formative
@@ -117,7 +118,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           '-',
           '-',
           '-',
-          ins.cfa || 0
+          ins.cfa || 0,
+          ins.annoCorso || '-'
         ])
       }
     })
@@ -141,15 +143,16 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         '-',
         '-',
         '-',
-        provaFinale.cfa || 0
+        provaFinale.cfa || 0,
+        '-'
       ])
     }
     
     // Riga totale
-    tableData.push(['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TOTALE', totalCFA])
+    tableData.push(['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TOTALE', totalCFA, ''])
     
     doc.autoTable({
-      head: [['#', 'Tipo Attività', 'Area AFAM', 'SAD', 'Denominazione SAD', 'Profilo', 'Vecchio SAD', 'Denominazione Vecchio SAD', 'Campo Disciplinare', 'Curvatura', 'Tipologia Attività Formativa', 'Tipologia Valutazione', 'Tipologia Lezione', 'Ore Lezione', 'Rapporto Ore/Crediti', 'Propedeuticità', 'CFA']],
+      head: [['#', 'Tipo Attività', 'Area AFAM', 'SAD', 'Denominazione SAD', 'Profilo', 'Vecchio SAD', 'Denominazione Vecchio SAD', 'Campo Disciplinare', 'Curvatura', 'Tipologia Attività Formativa', 'Tipologia Valutazione', 'Tipologia Lezione', 'Ore Lezione', 'Rapporto Ore/Crediti', 'Propedeuticità', 'CFA', 'Anno di corso']],
       body: tableData,
       startY: yPos + 5,
       styles: { 
@@ -167,7 +170,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
       },
       columnStyles: {
         0: { cellWidth: 8, halign: 'center' },
-        16: { cellWidth: 12, halign: 'center', fontStyle: 'bold', textColor: [247, 88, 56] } // CFA in arancione #F75838
+        16: { cellWidth: 12, halign: 'center', fontStyle: 'bold', textColor: [247, 88, 56] }, // CFA in arancione #F75838
+        17: { cellWidth: 10, halign: 'center' } // Anno di corso
       },
       didParseCell: function(data) {
         // Riga totale
@@ -226,7 +230,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
       '#', 'Tipo Attività', 'Area AFAM', 'SAD', 'Denominazione SAD', 
       'Profilo', 'Vecchio SAD', 'Denominazione Vecchio SAD', 'Campo Disciplinare', 
       'Curvatura', 'Tipologia Attività Formativa', 'Tipologia Valutazione', 
-      'Tipologia Lezione', 'Ore Lezione', 'Rapporto Ore/Crediti', 'Propedeuticità', 'CFA'
+      'Tipologia Lezione', 'Ore Lezione', 'Rapporto Ore/Crediti', 'Propedeuticità', 'CFA', 'Anno di corso'
     ])
     
     // Dati insegnamenti
@@ -251,7 +255,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           ins.oreLezione || '-',
           rapporto,
           ins.propedeuticita || '-',
-          ins.cfa || 0
+          ins.cfa || 0,
+          ins.annoCorso || '-'
         ])
       } else {
         // Altre attività formative
@@ -272,7 +277,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
           '-',
           '-',
           '-',
-          ins.cfa || 0
+          ins.cfa || 0,
+          ins.annoCorso || '-'
         ])
       }
     })
@@ -296,13 +302,14 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         '-',
         '-',
         '-',
-        provaFinale.cfa || 0
+        provaFinale.cfa || 0,
+        '-'
       ])
     }
     
     // Riga totale
     excelData.push([
-      '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TOTALE', totalCFA
+      '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TOTALE', totalCFA, ''
     ])
     
     // Crea workbook e worksheet
@@ -327,7 +334,8 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
       { wch: 10 },  // Ore
       { wch: 15 },  // Rapporto
       { wch: 12 },  // Propedeuticità
-      { wch: 8 }    // CFA
+      { wch: 8 },   // CFA
+      { wch: 12 }   // Anno di corso
     ]
     
     XLSX.utils.book_append_sheet(wb, ws, 'Piano Didattico')
@@ -527,6 +535,14 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
                 <span className="label">CFA:</span>
                 <span className="value cfa">{ins.cfa || 0}</span>
               </div>
+              
+              {/* Anno di corso se presente */}
+              {ins.annoCorso && (
+                <div className="compiled-row">
+                  <span className="label">Anno di corso:</span>
+                  <span className="value">{ins.annoCorso}</span>
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -663,6 +679,44 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         <span>Totale CFA:</span>
         <span className="total-value">{totalCFA}</span>
       </div>
+
+      {/* Year-based CFA totals */}
+      {(totalCFA > 60) && (
+        <div className="cfa-year-summary">
+          {totalCFA > 60 && totalCFA <= 120 && (
+            <>
+              <div className="cfa-year-row">
+                <span className="label">Totale CFA II anno:</span>
+                <span className="value">
+                  {insegnamenti
+                    .filter(ins => ins.annoCorso === 'II')
+                    .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+                </span>
+              </div>
+            </>
+          )}
+          {totalCFA > 120 && (
+            <>
+              <div className="cfa-year-row">
+                <span className="label">Totale CFA II anno:</span>
+                <span className="value">
+                  {insegnamenti
+                    .filter(ins => ins.annoCorso === 'II')
+                    .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+                </span>
+              </div>
+              <div className="cfa-year-row">
+                <span className="label">Totale CFA III anno:</span>
+                <span className="value">
+                  {insegnamenti
+                    .filter(ins => ins.annoCorso === 'III')
+                    .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+                </span>
+              </div>
+            </>
+          )}
+        </div>
+      )}
     </div>
   )
 }

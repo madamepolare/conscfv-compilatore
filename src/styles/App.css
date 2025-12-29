@@ -1457,6 +1457,41 @@ textarea.form-control {
   font-size: 1rem;
 }
 
+/* CFA Year Summary */
+.cfa-year-summary {
+  background: white;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9ecef;
+}
+
+.cfa-year-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cfa-year-row:last-child {
+  border-bottom: none;
+}
+
+.cfa-year-row .label {
+  font-weight: 500;
+  color: #495057;
+}
+
+.cfa-year-row .value {
+  font-weight: 700;
+  color: #F75838;
+  font-size: 1rem;
+}
+
 .compiled-total {
   background: white;
   padding: 1rem 1.25rem;
