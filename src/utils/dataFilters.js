@@ -156,11 +156,11 @@ export function filterProfili(data, sadNuovo) {
     if (row['SAD nuovi'] && Array.isArray(row['SAD nuovi'])) {
       const found = row['SAD nuovi'].find(s => s['SAD nuovo'] === sadNuovo)
       if (found && found.Profili && Array.isArray(found.Profili)) {
-        return found.Profili.length > 0 ? found.Profili : ['- - -']
+        return found.Profili
       }
     }
   }
-  return ['- - -']
+  return []
 }
 
 export function filterVecchiSAD(data, area, sadNuovo, profilo = null) {
