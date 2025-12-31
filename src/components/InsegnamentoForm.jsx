@@ -470,22 +470,21 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
                   />
                 </div>
 
-                {/* CAMPO: Anno di corso */}
-                {totalCFA > 60 && (
-                  <div className="form-group">
-                    <label>Anno di corso</label>
-                    <select
-                      value={insegnamento.annoCorso || ''}
-                      onChange={(e) => onUpdate(insegnamento.id, { annoCorso: e.target.value })}
-                      className="form-control"
-                    >
-                      <option value="">Seleziona anno</option>
-                      <option value="I">I</option>
-                      <option value="II">II</option>
-                      {totalCFA > 120 && <option value="III">III</option>}
-                    </select>
-                  </div>
-                )}
+                {/* CAMPO 7: Anno di corso */}
+                <div className="form-group">
+                  <label>Anno di corso *</label>
+                  <select
+                    value={insegnamento.annoCorso || ''}
+                    onChange={(e) => onUpdate(insegnamento.id, { annoCorso: e.target.value })}
+                    className="form-control"
+                    required
+                  >
+                    <option value="">Seleziona anno</option>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                  </select>
+                </div>
 
                 {/* SWITCHER: Insegnamento Libero vs Campo Disciplinare */}
                 <div className="form-group full-width">
@@ -805,21 +804,20 @@ export default function InsegnamentoForm({ insegnamento, index, data, onUpdate, 
               </div>
 
               {/* CAMPO: Anno di corso per Altra attività formativa */}
-              {totalCFA > 60 && (
-                <div className="form-group">
-                  <label>Anno di corso</label>
-                  <select
-                    value={insegnamento.annoCorso || ''}
-                    onChange={(e) => onUpdate(insegnamento.id, { annoCorso: e.target.value })}
-                    className="form-control"
-                  >
-                    <option value="">Seleziona anno</option>
-                    <option value="I">I</option>
-                    <option value="II">II</option>
-                    {totalCFA > 120 && <option value="III">III</option>}
-                  </select>
-                </div>
-              )}
+              <div className="form-group">
+                <label>Anno di corso *</label>
+                <select
+                  value={insegnamento.annoCorso || ''}
+                  onChange={(e) => onUpdate(insegnamento.id, { annoCorso: e.target.value })}
+                  className="form-control"
+                  required
+                >
+                  <option value="">Seleziona anno</option>
+                  <option value="I">I</option>
+                  <option value="II">II</option>
+                  <option value="III">III</option>
+                </select>
+              </div>
             </>
           ) : null}
         </div>

@@ -575,11 +575,53 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
         </div>
       )}
 
-      {/* CFA Summary for "Diploma accademico di primo livello" */}
-      {tipoDiploma === 'Diploma accademico di primo livello' && (
+      <div className="compiled-total">
+        <span>Totale CFA:</span>
+        <span className="total-value">{totalCFA}</span>
+      </div>
+
+      {/* Riepilogo Section - Totals by Year and Activity Type */}
+      <div className="cfa-summary-section">
+        <h3 className="summary-section-title">Riepilogo</h3>
+        
+        {/* Year-based CFA totals */}
         <div className="cfa-summary">
+          <h4 className="summary-subtitle">Totali per Anno di Corso</h4>
           <div className="cfa-summary-row">
-            <span className="label">CFA di base:</span>
+            <span className="label">Totale I anno:</span>
+            <span className="value">
+              {insegnamenti
+                .filter(ins => ins.annoCorso === 'I')
+                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+            </span>
+          </div>
+          {creditiMassimi > 60 && (
+            <div className="cfa-summary-row">
+              <span className="label">Totale II anno:</span>
+              <span className="value">
+                {insegnamenti
+                  .filter(ins => ins.annoCorso === 'II')
+                  .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+              </span>
+            </div>
+          )}
+          {creditiMassimi > 120 && (
+            <div className="cfa-summary-row">
+              <span className="label">Totale III anno:</span>
+              <span className="value">
+                {insegnamenti
+                  .filter(ins => ins.annoCorso === 'III')
+                  .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
+              </span>
+            </div>
+          )}
+        </div>
+
+        {/* Activity type-based CFA totals */}
+        <div className="cfa-summary">
+          <h4 className="summary-subtitle">Totali per Tipologia Attività Formativa</h4>
+          <div className="cfa-summary-row">
+            <span className="label">Totale base:</span>
             <span className="value">
               {insegnamenti
                 .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività di base')
@@ -587,7 +629,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             </span>
           </div>
           <div className="cfa-summary-row">
-            <span className="label">CFA caratterizzanti:</span>
+            <span className="label">Totale caratterizzanti:</span>
             <span className="value">
               {insegnamenti
                 .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività caratterizzanti')
@@ -595,7 +637,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             </span>
           </div>
           <div className="cfa-summary-row">
-            <span className="label">CFA integrativi e affini:</span>
+            <span className="label">Totale integrative/affini:</span>
             <span className="value">
               {insegnamenti
                 .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività integrative/Affini')
@@ -603,45 +645,15 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             </span>
           </div>
           <div className="cfa-summary-row">
-            <span className="label">CFA ulteriori:</span>
+            <span className="label">Totale attività ulteriori:</span>
             <span className="value">
               {insegnamenti
-                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività ulteriori' || ins.tipoAttivita === 'Altra attività formativa')
+                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività ulteriori')
                 .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
             </span>
           </div>
           <div className="cfa-summary-row">
-            <span className="label">CFA prova finale e lingua straniera:</span>
-            <span className="value">
-              {insegnamenti
-                .filter(ins => ins.tipologiaAttivitaFormativa === 'Lingua Straniera')
-                .reduce((sum, ins) => sum + (ins.cfa || 0), 0) + (provaFinale?.cfa || 0)}
-            </span>
-          </div>
-        </div>
-      )}
-
-      {/* CFA Summary for "Diploma accademico di secondo livello" */}
-      {tipoDiploma === 'Diploma accademico di secondo livello' && (
-        <div className="cfa-summary">
-          <div className="cfa-summary-row">
-            <span className="label">CFA di base:</span>
-            <span className="value">
-              {insegnamenti
-                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività di base')
-                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
-            </span>
-          </div>
-          <div className="cfa-summary-row">
-            <span className="label">CFA caratterizzanti:</span>
-            <span className="value">
-              {insegnamenti
-                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività caratterizzanti')
-                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
-            </span>
-          </div>
-          <div className="cfa-summary-row">
-            <span className="label">Ulteriori CFA base/caratterizzanti:</span>
+            <span className="label">Totale ulteriori base/caratterizzanti:</span>
             <span className="value">
               {insegnamenti
                 .filter(ins => ins.tipologiaAttivitaFormativa === 'Ulteriori CFA di base e caratterizzanti')
@@ -649,23 +661,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             </span>
           </div>
           <div className="cfa-summary-row">
-            <span className="label">CFA integrativi e affini:</span>
-            <span className="value">
-              {insegnamenti
-                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività integrative/Affini')
-                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
-            </span>
-          </div>
-          <div className="cfa-summary-row">
-            <span className="label">CFA ulteriori:</span>
-            <span className="value">
-              {insegnamenti
-                .filter(ins => ins.tipologiaAttivitaFormativa === 'Attività ulteriori' || ins.tipoAttivita === 'Altra attività formativa')
-                .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
-            </span>
-          </div>
-          <div className="cfa-summary-row">
-            <span className="label">CFA prova finale e lingua straniera:</span>
+            <span className="label">Totale prova finale e lingua straniera:</span>
             <span className="value">
               {insegnamenti
                 .filter(ins => ins.tipologiaAttivitaFormativa === 'Lingua Straniera')
@@ -673,50 +669,7 @@ export default function CompiledView({ insegnamenti, provaFinale, titoloPDF, set
             </span>
           </div>
         </div>
-      )}
-
-      <div className="compiled-total">
-        <span>Totale CFA:</span>
-        <span className="total-value">{totalCFA}</span>
       </div>
-
-      {/* Year-based CFA totals */}
-      {(totalCFA > 60) && (
-        <div className="cfa-year-summary">
-          {totalCFA > 60 && totalCFA <= 120 && (
-            <>
-              <div className="cfa-year-row">
-                <span className="label">Totale CFA II anno:</span>
-                <span className="value">
-                  {insegnamenti
-                    .filter(ins => ins.annoCorso === 'II')
-                    .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
-                </span>
-              </div>
-            </>
-          )}
-          {totalCFA > 120 && (
-            <>
-              <div className="cfa-year-row">
-                <span className="label">Totale CFA II anno:</span>
-                <span className="value">
-                  {insegnamenti
-                    .filter(ins => ins.annoCorso === 'II')
-                    .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
-                </span>
-              </div>
-              <div className="cfa-year-row">
-                <span className="label">Totale CFA III anno:</span>
-                <span className="value">
-                  {insegnamenti
-                    .filter(ins => ins.annoCorso === 'III')
-                    .reduce((sum, ins) => sum + (ins.cfa || 0), 0)}
-                </span>
-              </div>
-            </>
-          )}
-        </div>
-      )}
     </div>
   )
 }
